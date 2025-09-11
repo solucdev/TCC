@@ -7,8 +7,8 @@ public class PlayerMove : MonoBehaviour
     Rigidbody rb;
     public PlayerCrouchCam crouch;
     public Camera cam;
-    [SerializeField] float speed;
-    [SerializeField] float spdrun;
+    public float speed;
+    public float spdrun;
     private float isp;
     void Start()
     {
@@ -29,6 +29,7 @@ public class PlayerMove : MonoBehaviour
         rb.velocity = new Vector3(move.x, rb.velocity.y, move.z);
     }
     private void Run() {
+
         if (Input.GetKey(KeyCode.LeftShift) && crouch.isdown == false) 
        { speed = spdrun; 
             cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 90, Time.deltaTime * 10f);
