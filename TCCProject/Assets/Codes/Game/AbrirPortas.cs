@@ -7,6 +7,8 @@ public class AbrirPortas : MonoBehaviour
     public float openAngle = 90f;
     public float openSpeed = 2f;
     public bool isOpen = false;
+    public Transform jogador;             
+    public float distanciaMaxima = 3f;
 
     private Quaternion _closedRotation;
     private Quaternion _openRotation;
@@ -22,8 +24,17 @@ public class AbrirPortas : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (_currentCoroutine != null) StopCoroutine(_currentCoroutine);
-            _currentCoroutine = StartCoroutine(ToggleDoor());
+            float distancia = Vector3.Distance(jogador.position, transform.position);
+
+            if (distancia <= distanciaMaxima)
+            {
+                if (_currentCoroutine != null) StopCoroutine(_currentCoroutine);
+                _currentCoroutine = StartCoroutine(ToggleDoor());
+            }
+            else
+            {
+                Debug.Log("Você está muito longe da porta para interagir.");
+            }
         }
     }
 
