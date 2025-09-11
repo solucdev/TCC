@@ -3435,6 +3435,7 @@ MonoBehaviour:
   pLayer:
     serializedVersion: 2
     m_Bits: 8
+  ai: {fileID: 1494165551}
 --- !u!1 &495517471
 GameObject:
   m_ObjectHideFlags: 0
@@ -7415,6 +7416,7 @@ MonoBehaviour:
   pLayer:
     serializedVersion: 2
     m_Bits: 8
+  ai: {fileID: 1494165551}
 --- !u!1 &695360131
 GameObject:
   m_ObjectHideFlags: 0
@@ -8232,6 +8234,7 @@ MonoBehaviour:
   pLayer:
     serializedVersion: 2
     m_Bits: 8
+  ai: {fileID: 1494165551}
 --- !u!64 &823586626
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13858,6 +13861,9 @@ MonoBehaviour:
   - {fileID: 305972874}
   - {fileID: 1794421221}
   - {fileID: 1443691583}
+  idleTime: 5
+  difficult: 10
+  player: {fileID: 161493400}
 --- !u!64 &1498085341
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19165,3 +19171,5 @@ MonoBehaviour:
   openAngle: 90
   openSpeed: 2
   isOpen: 0
+  jogador: {fileID: 0}
+  distanciaMaxima: 3

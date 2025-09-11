@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
@@ -7,14 +8,31 @@ public class NavMeshMove : MonoBehaviour
 {
     NavMeshAgent ai;
     public List<Transform> points = new List<Transform>();
+    [SerializeField] int idleTime;
+    [SerializeField] int difficult;
+    [SerializeField] Transform player;
+
+    int times;
     int randpoint;
+    bool fp;
     Vector3 destination;
 
     void Start()
     {
         ai = GetComponent<NavMeshAgent>();
         Invoke(nameof(AIWalk), 2f);
-
+    }
+    async private void Update()
+    {
+        if (!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance || !fp)
+        {
+            await Task.Delay(idleTime * 1000); // aq teria uma animação do inimigo em idle fazendo nada
+            AIWalk();
+        }
+        if(!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance || fp)
+        {
+            FollowAgain(difficult);
+        }
     }
 
     void RandomPoint()
@@ -27,16 +45,33 @@ public class NavMeshMove : MonoBehaviour
 
     void AIWalk()
     {
-        RandomPoint();
-        ai.SetDestination(destination);
+        if (!fp)
+        { RandomPoint();
+        ai.SetDestination(destination); }
     }
 
-    async private void Update()
+    public void FollowPlayer()
     {
-        if (!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance)
+        fp = true;
+        StartCoroutine(Recalculate());
+        Debug.Log("é para seguir o jogador");
+
+    }
+
+    void FollowAgain(int difficult)
+    {
+        StartCoroutine(Recalculate());
+        times++;
+        if(times >= difficult)
         {
-           await Task.Delay(5000); // aq teria uma animação do inimigo em idle fazendo nada
+            fp = false;
             AIWalk();
         }
+    }
+
+    IEnumerator Recalculate()
+    {
+        yield return new WaitForSeconds(0.01f);
+        ai.SetDestination(player.position);
     }
 }

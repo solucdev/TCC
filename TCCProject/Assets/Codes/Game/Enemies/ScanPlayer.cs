@@ -5,12 +5,14 @@ using UnityEngine;
 public class ScanPlayer : MonoBehaviour
 {
     [SerializeField] LayerMask pLayer;
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.layer == pLayer)
-        {
-            Debug.Log("aaa viu o playre");
-        }
+    [SerializeField] NavMeshMove ai;
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (((1 << other.gameObject.layer) & pLayer) != 0)
+        {
+            Debug.Log("INIMIGO VIU O PLAYER FINALMENTE");
+            ai.FollowPlayer();
+        }
     }
 }
