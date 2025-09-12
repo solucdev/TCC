@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     Rigidbody rb;
+    [SerializeField] Stamina stamina;
     public PlayerCrouchCam crouch;
     public Camera cam;
     public float speed;
@@ -30,7 +31,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void Run() {
 
-        if (Input.GetKey(KeyCode.LeftShift) && crouch.isdown == false) 
+        if (Input.GetKey(KeyCode.LeftShift) && crouch.isdown == false && !stamina.tired) 
        { speed = spdrun; 
             cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 90, Time.deltaTime * 10f);
 		}

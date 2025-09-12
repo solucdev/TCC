@@ -7,16 +7,26 @@ public class Stamina : MonoBehaviour
     [SerializeField] PlayerMove player;
     [SerializeField] GameObject staminaobj;
     public RectTransform bar;
-    float timing = 0;
+    [HideInInspector] public bool tired;
+    public float timing = 0;
     float stamina = 5;
-
+    float sizey;
     void Update()
     {
-        if(player.speed == player.spdrun)
+        if(Input.GetKey(KeyCode.LeftShift) && !player.crouch.isdown)
         {
             SpendStamina();
+            if(bar.sizeDelta.y <= 1)
+            {
+                tired = true;
+            }
+            else
+            {
+                tired = false;
+            }
         }
-        else { staminaobj.SetActive(false); }
+        else { 
+            Recovering(); }
     }
 
     void SpendStamina()
@@ -30,9 +40,11 @@ public class Stamina : MonoBehaviour
 
     void Recovering()
     {
+        staminaobj.SetActive(false);
         timing += Time.deltaTime;
         float t = Mathf.Clamp01(timing / 10f);
 
         bar.sizeDelta = new Vector2(bar.sizeDelta.x, Mathf.Lerp(0, 100, t));
+        sizey = bar.sizeDelta.y;    
     }
 }

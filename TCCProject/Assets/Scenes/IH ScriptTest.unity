@@ -1301,6 +1301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50f9991daf30a574488bdff2ef6f7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stamina: {fileID: 289959917}
   crouch: {fileID: 1228006045}
   cam: {fileID: 1389892167}
   speed: 3
@@ -2151,6 +2152,8 @@ MonoBehaviour:
   player: {fileID: 161493399}
   staminaobj: {fileID: 2136607489}
   bar: {fileID: 1894916230}
+  tired: 0
+  staminaValue: 0
 --- !u!64 &295173720
 MeshCollider:
   m_ObjectHideFlags: 0

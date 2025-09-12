@@ -24,12 +24,12 @@ public class NavMeshMove : MonoBehaviour
     }
     async private void Update()
     {
-        if (!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance || !fp)
+        if (!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance && !fp)
         {
             await Task.Delay(idleTime * 1000); // aq teria uma animação do inimigo em idle fazendo nada
             AIWalk();
         }
-        if(!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance || fp)
+        if(!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance && fp)
         {
             FollowAgain(difficult);
         }
