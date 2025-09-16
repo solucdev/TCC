@@ -12,6 +12,11 @@ public class Inventory : MonoBehaviour {
 	GameObject useditem;
 	int MaxSlots = 8;
 
+	public bool TemItem(GameObject item)
+	{
+		return inventory.Contains(item);
+	}
+
 	private void Start() {
 		drop = GetComponent<ItemDrop>();
 		useditem = null;
