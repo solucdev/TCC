@@ -1305,7 +1305,7 @@ MonoBehaviour:
   crouch: {fileID: 1228006045}
   cam: {fileID: 1389892167}
   speed: 3
-  spdrun: 6
+  spdrun: 5
 --- !u!4 &161493400
 Transform:
   m_ObjectHideFlags: 0
@@ -2153,7 +2153,7 @@ MonoBehaviour:
   staminaobj: {fileID: 2136607489}
   bar: {fileID: 1894916230}
   tired: 0
-  staminaValue: 0
+  stamina: 110
 --- !u!64 &295173720
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19383,3 +19383,6 @@ MonoBehaviour:
   isOpen: 0
   jogador: {fileID: 0}
   distanciaMaxima: 3
+  estaTrancada: 0
+  jogadorTemChave: 0
+  chaveNecessaria: {fileID: 0}

@@ -31,7 +31,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void Run() {
 
-        if (Input.GetKey(KeyCode.LeftShift) && crouch.isdown == false && !stamina.tired) 
+        if (Input.GetKey(KeyCode.LeftShift) && crouch.isdown == false && !stamina.IsTired()) 
        { speed = spdrun; 
             cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 90, Time.deltaTime * 10f);
 		}
