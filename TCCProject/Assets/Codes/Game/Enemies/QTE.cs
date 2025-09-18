@@ -68,7 +68,18 @@ public class QTE : MonoBehaviour {
 	}
 
 	void ClearPF() {
-		errorflash.color = new Color(1, 0, 0, 0f);
+		errorflash.color = new Color(1, 1, 1, 1f);
 	}
+
+    void ArrestPlayer()
+    {
+        /*orientation.enabled = false;
+        playercam.enabled = false;
+        playermove.enabled = false;
+        cambreath.enabled = false;
+        cam.rotation = Quaternion.Euler(0, 0, 0);
+        camholder.position = new Vector3(154.65f, 5, 242);
+        camholder.rotation = Quaternion.Euler(45, 0, 0);*/
+    }
 
 }

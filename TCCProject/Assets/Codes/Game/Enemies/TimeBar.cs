@@ -11,7 +11,7 @@ public class TimeBar : MonoBehaviour {
 
 	void Start() {
 		enemie = GetComponent<QTE>();
-		bar.sizeDelta = new Vector2(400, bar.sizeDelta.y);
+		bar.sizeDelta = new Vector2(72, bar.sizeDelta.y);
 	}
 
 	void Update() {
@@ -20,7 +20,7 @@ public class TimeBar : MonoBehaviour {
 			timing += Time.deltaTime;
 			float t = Mathf.Clamp01(timing / enemie.timer);
 
-			bar.sizeDelta = new Vector2(Mathf.Lerp(400, 0, t), bar.sizeDelta.y);
+			bar.sizeDelta = new Vector2(Mathf.Lerp(72, 0, t), bar.sizeDelta.y);
 
 			if (!coroutineStarted) {
 				StartCoroutine(Reset());
