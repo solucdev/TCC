@@ -27,7 +27,7 @@ public class AbrirPortas : MonoBehaviour
         inventarioJogador = jogador.GetComponent<Inventory>();
     }
 
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -56,7 +56,7 @@ public class AbrirPortas : MonoBehaviour
                 Debug.Log("Você está muito longe da porta para interagir.");
             }
         }
-    }
+    }*/
 
     IEnumerator ToggleDoor()
     {
