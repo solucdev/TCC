@@ -1,12 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\aluno\\tcc\\TCCProject\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Lucas\\TCC\\TCCProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\lucas\\tcc\\tccproject\\assets\\codes\\item\\itemstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\itemstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\lucas\\tcc\\tccproject\\assets\\codes\\item\\inventory\\collect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\inventory\\collect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Collect.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Collect.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Item\\Inventory\\Collect.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Collect.cs",
+              "RelativeToolTip": "Assets\\Codes\\Item\\Inventory\\Collect.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T01:55:37.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ItemStats.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\ItemStats.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Item\\ItemStats.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\ItemStats.cs",
+              "RelativeToolTip": "Assets\\Codes\\Item\\ItemStats.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T01:27:49.291Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
