@@ -5,8 +5,8 @@ using UnityEngine;
 public class CamOutside : MonoBehaviour
 
 {
-    [SerializeField] float sensX;
-    [SerializeField] float sensY;
+    [SerializeField] float sensX = 100;
+    [SerializeField] float sensY = 100;
     [SerializeField] SenseConfig sensebindx;
     [SerializeField] SenseConfig sensebindy;
 
@@ -25,13 +25,13 @@ public class CamOutside : MonoBehaviour
         UpdateSense();
     }
 
-    void Update()
+    void LateUpdate()
     {
-        /*float mouseX = Input.GetAxis("Mouse X") * sensX * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * sensY * Time.deltaTime;*/
+        float mouseX = Input.GetAxis("Mouse X") * sensX * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * sensY * Time.deltaTime;
 
-        float mouseX = Input.GetAxis("Mouse X") * sensX;
-        float mouseY = Input.GetAxis("Mouse Y") * sensY;
+        /*float mouseX = Input.GetAxis("Mouse X") * sensX;
+        float mouseY = Input.GetAxis("Mouse Y") * sensY;*/
 
 
         yRotation += mouseX;
@@ -39,9 +39,7 @@ public class CamOutside : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         cameraRoot.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        orientation.rotation = Quaternion.Euler(0f, yRotation, 0f);
-        player.rotation = orientation.rotation;
-
+        player.rotation = Quaternion.Euler(0f, yRotation, 0f);
     }
 
     public void UpdateSense()

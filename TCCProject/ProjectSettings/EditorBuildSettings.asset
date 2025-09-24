@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/OutsideCutscene.unity
+    guid: 243ab8d1a3599e94c8a07c124eecb38d
+  - enabled: 1
+    path: Assets/Scenes/IH Suzanna.unity
+    guid: 9cdae5a37ba88e149a190c0e85d48776
   m_configObjects: {}
