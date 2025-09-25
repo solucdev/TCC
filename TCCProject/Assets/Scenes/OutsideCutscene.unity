@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.0015633914, g: 0.0002728511, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22150,7 +22150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAudio: {fileID: 1988094287}
-  nextSceneName: IH Suzanna
+  nextSceneName: Cena2
 --- !u!4 &8269254078699804071
 Transform:
   m_ObjectHideFlags: 0

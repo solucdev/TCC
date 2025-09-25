@@ -32,17 +32,22 @@ public class PlayerMove : MonoBehaviour
         //Vector3 move = (orientation.transform.right * moveX + orientation.transform.forward * moveZ).normalized * speed;
         rb.velocity = new Vector3(move.x, rb.velocity.y, move.z);
     }
-    private void Run() {
+    private void Run()
+    {
 
-        if (Input.GetKey(KeyCode.LeftShift) && crouch.isdown == false && !stamina.IsTired()) 
-       { speed = spdrun; 
+        if (Input.GetKey(KeyCode.LeftShift) && crouch.isdown == false && !stamina.IsTired())
+        {
+            speed = spdrun;
             cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 90, Time.deltaTime * 10f);
-		}
-        else { speed = isp; 
+        }
+        else
+        {
+            speed = isp;
             cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 75, Time.deltaTime * 10f);
-		}
+        }
 
-		if (crouch.isdown) {
+        if (crouch.isdown)
+        {
             speed -= 1;
         }
     }
