@@ -35,7 +35,7 @@ public class Stamina : MonoBehaviour
 
     void Recovering()
     {
-        staminaobj.SetActive(true);
+        staminaobj.SetActive(false);
         timing += Time.deltaTime;
         float t = Mathf.Clamp01(timing / 1400);
 

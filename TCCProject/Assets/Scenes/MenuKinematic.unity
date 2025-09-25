@@ -7201,7 +7201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!154 &1067338885
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -8946,6 +8946,7 @@ GameObject:
   - component: {fileID: 1806716362}
   - component: {fileID: 1806716364}
   - component: {fileID: 1806716365}
+  - component: {fileID: 1806716366}
   m_Layer: 0
   m_Name: Screen Options
   m_TagString: Untagged
@@ -9044,6 +9045,19 @@ MonoBehaviour:
   gama: {fileID: 1699532105}
   ntext: {fileID: 2017180139}
   gamaPanel: {fileID: 712840379}
+--- !u!114 &1806716366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806716360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f443b336afda643bf003e3270e49a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 1109240872}
 --- !u!1 &1906524208
 GameObject:
   m_ObjectHideFlags: 0
@@ -9498,7 +9512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2032223379
 RectTransform:
   m_ObjectHideFlags: 0
