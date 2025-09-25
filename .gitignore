@@ -50,3 +50,5 @@ out/
 TCCProject/UserSettings/EditorUserSettings.asset
 TCCProject/UserSettings/EditorUserSettings.asset
 *.vsidx
+*.asset
+*.asset

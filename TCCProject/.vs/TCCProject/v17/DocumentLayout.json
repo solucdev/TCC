@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Lucas\\TCC\\TCCProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\lucas\\tcc\\tccproject\\assets\\codes\\game\\mech\\togglelight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\detailss\\camoutside.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\detailss\\camoutside.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\lucas\\tcc\\tccproject\\assets\\codes\\menu\\menugame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\menu\\menugame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\detailss\\timelinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\detailss\\timelinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\mech\\togglelight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\mech\\togglelight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -22,11 +34,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuGame.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Menu\\MenuGame.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Menu\\MenuGame.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Menu\\MenuGame.cs",
+              "RelativeToolTip": "Assets\\Codes\\Menu\\MenuGame.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T00:29:06.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CamOutside.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\DetailsS\\CamOutside.cs",
+              "RelativeDocumentMoniker": "Assets\\DetailsS\\CamOutside.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\DetailsS\\CamOutside.cs",
+              "RelativeToolTip": "Assets\\DetailsS\\CamOutside.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T00:17:03.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TimelineController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\DetailsS\\TimelineController.cs",
+              "RelativeDocumentMoniker": "Assets\\DetailsS\\TimelineController.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\DetailsS\\TimelineController.cs",
+              "RelativeToolTip": "Assets\\DetailsS\\TimelineController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T00:12:27.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ToggleLight.cs",
               "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Mech\\ToggleLight.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Mech\\ToggleLight.cs",
@@ -34,12 +84,11 @@
               "RelativeToolTip": "Assets\\Codes\\Game\\Mech\\ToggleLight.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T02:07:25.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T02:07:25.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Collect.cs",
               "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Collect.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Item\\Inventory\\Collect.cs",
@@ -51,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ItemStats.cs",
               "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\ItemStats.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Item\\ItemStats.cs",
