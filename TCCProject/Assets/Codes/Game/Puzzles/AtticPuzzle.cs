@@ -12,7 +12,11 @@ public class AtticPuzzle : MonoBehaviour
     private bool clicked;
     private bool withItem;
 
-    private void OnTriggerEnter(Collider other)
+    [SerializeField] float openSpeed = -125;
+	private float currentAngle = 0;
+	private bool opening = false;
+
+	private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "banquinho----------puzzle attic")
         {
@@ -23,15 +27,16 @@ public class AtticPuzzle : MonoBehaviour
 
     private void Update()
     {
-        if (clicked)
-        {
-            tdu.transform.position = Vector3.MoveTowards(tdu.transform.position, tdu.transform.right, 2 * Time.deltaTime); //SÓ TEMPORÁRIO, DPS TERÁ ANIMAÇÃO.
-        }
-        CheckInv();
+		if (clicked && !opening) {
+			opening = true;
+			StartCoroutine(OpenTrapdoor());
+		}
+		CheckInv();
         if (Physics.Raycast(playercam.transform.position, playercam.transform.forward, out RaycastHit hit, 3) && withItem)
         {
+            Debug.DrawRay(playercam.transform.position, playercam.transform.forward * 3, Color.yellow);
             GameObject trapdoor = hit.collider.gameObject;
-            if (trapdoor == tdu)
+            if (trapdoor.name == "trapdoor")
             {
                 Collect camcollect = playercam.GetComponent<Collect>();
                 
@@ -66,5 +71,13 @@ public class AtticPuzzle : MonoBehaviour
             }
             else { withItem = false; }
         }
-    }  
+    }
+	IEnumerator OpenTrapdoor() {
+		while (currentAngle < 90) {
+			float step = openSpeed * Time.deltaTime;
+			tdu.transform.Rotate(Vector3.left, step, Space.Self);
+			currentAngle += step;
+			yield return null;
+		}
+	}
 }
