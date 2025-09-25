@@ -20,6 +20,8 @@ public class CamOutside : MonoBehaviour
 
     void Start()
     {
+        sensX = 100;
+        sensY = 100;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         UpdateSense();
@@ -27,6 +29,8 @@ public class CamOutside : MonoBehaviour
 
     void LateUpdate()
     {
+        sensX = 100;
+        sensY = 100;
         float mouseX = Input.GetAxis("Mouse X") * sensX * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * sensY * Time.deltaTime;
 

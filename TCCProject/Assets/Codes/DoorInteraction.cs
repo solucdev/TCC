@@ -10,6 +10,7 @@ public class DoorInteraction : MonoBehaviour
     private bool playerNear = false;      // Se o jogador está perto da porta
     private bool doorUsed = false;        // Se já tocou o som
     private bool loadingScene = false;    // Para não carregar várias vezes
+    public AudioSource doorOpeningAudio;
 
     void Update()
     {
@@ -25,6 +26,7 @@ public class DoorInteraction : MonoBehaviour
             else if (!loadingScene)
             {
                 // Segunda vez → troca de cena quando o som terminar
+                doorOpeningAudio.Play();
                 StartCoroutine(LoadSceneAfterSound());
                 loadingScene = true;
                 Debug.Log("dois");
