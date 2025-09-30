@@ -22,6 +22,9 @@ public class Collect : MonoBehaviour {
 				script.ShowName();
 
 				if (Input.GetMouseButtonDown(0)) {
+					script.Feedback();
+					StartCoroutine(ClearText(script));
+
 					itemPrefab.layer = LayerMask.NameToLayer("MyItem");
 					inv.AddItem(itemPrefab);
 					itemPrefab.transform.localScale = new Vector3(itemPrefab.transform.localScale.x * 2,
@@ -34,5 +37,10 @@ public class Collect : MonoBehaviour {
 		{
 			i.SetActive(false);
 		}
+	}
+
+	IEnumerator ClearText(ItemStats scr) {
+		yield return new WaitForSeconds(2);
+		scr.f.text = "";
 	}
 }

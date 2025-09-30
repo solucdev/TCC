@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class ItemStats : MonoBehaviour {
 	[SerializeField] ItemObject scr;
@@ -8,6 +9,7 @@ public class ItemStats : MonoBehaviour {
 	[SerializeField] Transform handfit;
 
 	[SerializeField] Text i;
+	public Text f;
 
 	void Start() {
 		itemname = scr.itemName;
@@ -25,4 +27,8 @@ public class ItemStats : MonoBehaviour {
 	{
 		i.text = "pressione 'M1' para coletar " + itemname;
 	}
+	public void Feedback() {
+		f.text = "Coletou " + itemname;
+	}
+
 }
