@@ -28,8 +28,8 @@ public class PlayerMove : MonoBehaviour
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveZ = Input.GetAxisRaw("Vertical");
-        Vector3 move = (transform.right * moveX + transform.forward * moveZ).normalized * speed;
-        //Vector3 move = (orientation.transform.right * moveX + orientation.transform.forward * moveZ).normalized * speed;
+        //Vector3 move = (transform.right * moveX + transform.forward * moveZ).normalized * speed;
+        Vector3 move = (orientation.transform.right * moveX + orientation.transform.forward * moveZ).normalized * speed;
         rb.velocity = new Vector3(move.x, rb.velocity.y, move.z);
     }
     private void Run()
