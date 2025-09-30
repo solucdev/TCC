@@ -4,35 +4,48 @@ using UnityEngine;
 
 public class AtticPuzzle : MonoBehaviour
 {
+    [SerializeField] GameObject bench;
     [SerializeField] GameObject weapon;
     [SerializeField] GameObject playercam;
-    [SerializeField] GameObject i;
-    [SerializeField] GameObject tdu;
+	[SerializeField] GameObject i;
+    [SerializeField] GameObject iplacer;
+	[SerializeField] GameObject tdu;
     [SerializeField] Inventory inv;
+
+    [SerializeField] Transform placePos;
     private bool clicked;
-    private bool withItem;
+    private bool withPdCabra;
+    private bool withBench;
 
     [SerializeField] float openSpeed = -125;
 	private float currentAngle = 0;
 	private bool opening = false;
 
-	private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.name == "banquinho----------puzzle attic")
-        {
-            Debug.Log("banco na posição só subir");
-            weapon.layer = LayerMask.NameToLayer("Item");
-        }
-    }
+	private void OnTriggerStay(Collider other) {
+		if (other.CompareTag("Player") && withBench) {
+			iplacer.SetActive(true);
+			if (Input.GetKeyDown(KeyCode.F)) {
+				inv.PlaceItem(bench, placePos);
+				weapon.layer = LayerMask.NameToLayer("Item");
+			}
+		}
+	}
+	private void OnTriggerExit(Collider other) {
+		if (other.CompareTag("Player")) {
+			iplacer.SetActive(false );
+		}
+		}
 
-    private void Update()
+	private void Update()
     {
+
 		if (clicked && !opening) {
 			opening = true;
 			StartCoroutine(OpenTrapdoor());
 		}
-		CheckInv();
-        if (Physics.Raycast(playercam.transform.position, playercam.transform.forward, out RaycastHit hit, 3) && withItem)
+		withPdCabra = CheckInv("Pé de Cabra");
+        withBench = CheckInv("Banquinho");
+        if (Physics.Raycast(playercam.transform.position, playercam.transform.forward, out RaycastHit hit, 3) && withPdCabra)
         {
             Debug.DrawRay(playercam.transform.position, playercam.transform.forward * 3, Color.yellow);
             GameObject trapdoor = hit.collider.gameObject;
@@ -53,25 +66,16 @@ public class AtticPuzzle : MonoBehaviour
         }
     }
 
-    void CheckInv()
-    {
-        for (int i = 0; i < inv.inventory.Count; i++)
-        {
-            GameObject prefab = inv.inventory[i];
-            ItemStats scripter = prefab.GetComponent<ItemStats>();
+	bool CheckInv(string ItemName) {
+		for (int i = 0; i < inv.inventory.Count; i++) {
+			GameObject prefab = inv.inventory[i];
+			ItemStats scripter = prefab.GetComponent<ItemStats>();
 
-            if (prefab.activeSelf)
-            {
-                if (scripter.itemname == "Pé de Cabra")
-                {
-                    withItem = true;
-                }
-                else
-                { withItem = false; }
-            }
-            else { withItem = false; }
-        }
-    }
+			if (prefab.activeSelf && scripter.itemname == ItemName)
+				return true;
+		}
+		return false;
+	}
 	IEnumerator OpenTrapdoor() {
 		while (currentAngle < 90) {
 			float step = openSpeed * Time.deltaTime;

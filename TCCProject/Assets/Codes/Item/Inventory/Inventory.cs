@@ -65,8 +65,20 @@ public class Inventory : MonoBehaviour {
 			Destroy(item);
 			ReorganizeIcons();
 		}
+	}
 
-
+	public void PlaceItem(GameObject item, Transform transform) 
+    {
+		if (!inventory.Contains(item)) return;
+		else {
+			inventory.Remove(item);
+			item.transform.SetParent(null);
+			item.SetActive(true);
+			item.transform.position = transform.position;
+			item.transform.rotation = transform.rotation;
+			item.layer = LayerMask.NameToLayer("Item");
+			ReorganizeIcons();
+		}
 	}
 
 	public void ActiveItem(int slot) {

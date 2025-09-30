@@ -41,9 +41,10 @@ public class ItemDrop : MonoBehaviour
 		itemdrop.transform.position = drope;
 		itemdrop.transform.rotation = Quaternion.Euler(0, itemdrop.transform.rotation.y, 0);
 		itemdrop.layer = LayerMask.NameToLayer("Item");
+		rb.AddForce(Vector3.up);
 
-		itemdrop.transform.localScale = new Vector3(itemdrop.transform.localScale.x / 2,
-						itemdrop.transform.localScale.y / 2, itemdrop.transform.localScale.z / 2);
+		//itemdrop.transform.localScale = new Vector3(itemdrop.transform.localScale.x / 2,
+						//itemdrop.transform.localScale.y / 2, itemdrop.transform.localScale.z / 2);
 	}
 
 	IEnumerator delay(Rigidbody rb) {

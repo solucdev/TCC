@@ -25,10 +25,11 @@ public class Collect : MonoBehaviour {
 					script.Feedback();
 					StartCoroutine(ClearText(script));
 
-					itemPrefab.layer = LayerMask.NameToLayer("MyItem");
+					SetLayerAllChildrens(itemPrefab, "MyItem");
+					//itemPrefab.layer = LayerMask.NameToLayer("MyItem");
 					inv.AddItem(itemPrefab);
-					itemPrefab.transform.localScale = new Vector3(itemPrefab.transform.localScale.x * 2,
-						itemPrefab.transform.localScale.y * 2, itemPrefab.transform.localScale.z * 2);
+					//itemPrefab.transform.localScale = new Vector3(itemPrefab.transform.localScale.x * 2,
+						//itemPrefab.transform.localScale.y * 2, itemPrefab.transform.localScale.z * 2);
 					itemPrefab.SetActive(false);
 				}
 			}
@@ -42,5 +43,12 @@ public class Collect : MonoBehaviour {
 	IEnumerator ClearText(ItemStats scr) {
 		yield return new WaitForSeconds(2);
 		scr.f.text = "";
+	}
+
+	private void SetLayerAllChildrens(GameObject obj, string layerName) {
+		int layer = LayerMask.NameToLayer(layerName);
+		foreach (Transform t in obj.GetComponentsInChildren<Transform>(true)) {
+			t.gameObject.layer = layer;
+		}
 	}
 }
