@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class AtticPuzzle : MonoBehaviour
@@ -16,6 +17,9 @@ public class AtticPuzzle : MonoBehaviour
     private bool clicked;
     private bool withPdCabra;
     private bool withBench;
+
+	private float timer;
+	[SerializeField] GameObject ladderanim;
 
     [SerializeField] float openSpeed = -125;
 	private float currentAngle = 0;
@@ -42,12 +46,13 @@ public class AtticPuzzle : MonoBehaviour
 		if (clicked && !opening) {
 			opening = true;
 			StartCoroutine(OpenTrapdoor());
+			if ((timer += Time.deltaTime) > 0.4f) {ladderanim.GetComponent<Animator>().Play("open_ladder"); timer = 0; }
 		}
+
 		withPdCabra = CheckInv("Pé de Cabra");
         withBench = CheckInv("Banquinho");
         if (Physics.Raycast(playercam.transform.position, playercam.transform.forward, out RaycastHit hit, 3) && withPdCabra)
         {
-            Debug.DrawRay(playercam.transform.position, playercam.transform.forward * 3, Color.yellow);
             GameObject trapdoor = hit.collider.gameObject;
             if (trapdoor.name == "trapdoor")
             {
@@ -79,7 +84,7 @@ public class AtticPuzzle : MonoBehaviour
 	IEnumerator OpenTrapdoor() {
 		while (currentAngle < 90) {
 			float step = openSpeed * Time.deltaTime;
-			tdu.transform.Rotate(Vector3.left, step, Space.Self);
+			tdu.transform.Rotate(Vector3.back, step, Space.Self);
 			currentAngle += step;
 			yield return null;
 		}

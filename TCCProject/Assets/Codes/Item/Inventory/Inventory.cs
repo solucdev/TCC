@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,22 +40,14 @@ public class Inventory : MonoBehaviour {
 	public void AddItem(GameObject item) {
 		if (inventory.Contains(item)) return;
 
-		if (inventory.Count < MaxSlots) {
-			inventory.Add(item);
-			ReorganizeIcons();
+		if (inventory.Count >= MaxSlots) {
+			drop.Drop(item);
+			return;
 		}
-
-		if (lastItem >= 0 && lastItem < inventory.Count) {
-			drop.Drop(inventory[lastItem]); 
-			inventory[lastItem] = item;
-			ReorganizeIcons();
-		}
-
-		if(inventory.Count == MaxSlots && lastItem == -1){
-			drop.Drop(inventory[inventory.Count - 1]);
-			inventory[inventory.Count - 1] = item;
-			ReorganizeIcons();
-		}
+		item.layer = LayerMask.NameToLayer("MyItem");
+		item.SetActive(false);
+		inventory.Add(item);
+		ReorganizeIcons();
 	}
 
 	public void RemoveItem(GameObject item) {
@@ -76,7 +68,7 @@ public class Inventory : MonoBehaviour {
 			item.SetActive(true);
 			item.transform.position = transform.position;
 			item.transform.rotation = transform.rotation;
-			item.layer = LayerMask.NameToLayer("Item");
+			SetLayerAllChildrens(item, "Item"); 
 			ReorganizeIcons();
 		}
 	}
@@ -113,6 +105,13 @@ public class Inventory : MonoBehaviour {
 				slots[i].sprite = null;
 				slots[i].color = new Color(slots[i].color.r, slots[i].color.g, slots[i].color.b, 0);
 			}
+		}
+	}
+
+	private void SetLayerAllChildrens(GameObject obj, string layerName) {
+		int layer = LayerMask.NameToLayer(layerName);
+		foreach (Transform t in obj.GetComponentsInChildren<Transform>(true)) {
+			t.gameObject.layer = layer;
 		}
 	}
 }
