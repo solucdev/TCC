@@ -7298,6 +7298,7 @@ MonoBehaviour:
   icon: {fileID: 0}
   handfit: {fileID: 0}
   i: {fileID: 0}
+  f: {fileID: 0}
 --- !u!65 &392866792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9754,6 +9755,7 @@ MonoBehaviour:
   icon: {fileID: 0}
   handfit: {fileID: 0}
   i: {fileID: 0}
+  f: {fileID: 0}
 --- !u!65 &583004893
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11615,11 +11617,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07074020181b5704c8bb6f9f81a407d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bench: {fileID: 0}
   weapon: {fileID: 0}
   playercam: {fileID: 0}
   i: {fileID: 0}
+  iplacer: {fileID: 0}
   tdu: {fileID: 1918426233}
   inv: {fileID: 0}
+  placePos: {fileID: 0}
+  ladderanim: {fileID: 0}
   openSpeed: -125
 --- !u!65 &739319745
 BoxCollider:
