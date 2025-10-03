@@ -11,7 +11,6 @@ public class ScanPlayer : MonoBehaviour
     {
         if (((1 << other.gameObject.layer) & pLayer) != 0)
         {
-            Debug.Log("INIMIGO VIU O PLAYER FINALMENTE");
             ai.FollowPlayer();
         }
     }
