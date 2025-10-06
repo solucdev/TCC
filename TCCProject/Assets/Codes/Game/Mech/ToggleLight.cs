@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class ToggleLight : MonoBehaviour
 {
-    Light lighte;
+    private Light lighte;
+
 	private void Start() {
         lighte = GetComponent<Light>();
 	}
+
 	void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && lighte.enabled) {
-            lighte.enabled = false;
+        if (Input.GetKeyDown(KeyCode.F)) {
+            lighte.enabled = !lighte.enabled;
         }
-        else if(Input.GetKeyDown(KeyCode.F) && !lighte.enabled) {
-			lighte.enabled = true;
-		}
     }
 }
