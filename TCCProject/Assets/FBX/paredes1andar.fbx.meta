@@ -9,6 +9,36 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Default_Material
     second: {fileID: -1134714066672644336, guid: 5d311a9f4b40c464bbfcaf25e5342715, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: azulejos
+    second: {fileID: 2100000, guid: d76fc6bfcd00e694a8a3f76524d85954, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: banheiro
+    second: {fileID: 2100000, guid: f7bdbaf88b984a741bae5a7bf0ba4932, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: biblioteca
+    second: {fileID: 2100000, guid: 7525cd5a7f2314a4bbdbaa584e02ab39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sala_parede
+    second: {fileID: 2100000, guid: 3988bba4309a8974dac4a34d9edb71c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: salajantar
+    second: {fileID: 2100000, guid: 5da16624c1bda2647bf3bda6dd67afa4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface1
+    second: {fileID: 2100000, guid: 54f064f6d79ba13459faaa6b44171b96, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
