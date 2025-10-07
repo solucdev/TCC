@@ -37,7 +37,7 @@ public class AbrirPortas : MonoBehaviour
             {
                 if (estaTrancada)
                 {
-                    if (inventarioJogador != null && inventarioJogador.TemItem(chaveNecessaria))
+                    if (inventarioJogador != null && inventarioJogador.TemItemSz(chaveNecessaria))
                     {
                         estaTrancada = false;
                         Debug.Log("Você usou a chave correta para destrancar a porta.");

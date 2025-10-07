@@ -1,46 +1,57 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
-public class QTE : MonoBehaviour {
+public class QTE : MonoBehaviour
+{
     [SerializeField] GameObject qte;
 
     public List<KeyCode> KeyButtons = new List<KeyCode>();
     public List<Sprite> KeySprites = new List<Sprite>();
-	[SerializeField] Image buttonPlace;
+    [SerializeField] Image buttonPlace;
     [SerializeField] Image errorflash;
     public float timer;
     private float startime;
     private float tsecs;
     private KeyCode stringkey;
-    [HideInInspector] public bool onqte = false;
+   [HideInInspector] public bool onqte = false;
 
-	private void Start() {
+    private void Start()
+    {
         startime = timer;
-	}
-	private void Update()
+    }
+    private void Update()
     {
         tsecs += Time.deltaTime;
 
-        if(Input.GetKeyDown(stringkey) && tsecs < timer && onqte)
+        if (arrest)
+        {
+            ArrestPlayer();
+        }
+
+        if (Input.GetKeyDown(stringkey) && tsecs < timer && onqte)
         {
             Debug.Log("legal");
+            arrest = false;
+            disable.EnablePlayer();
             qte.SetActive(false);
             onqte = false;
         }
-        if(tsecs > timer && onqte) {
+        if (tsecs > timer && onqte)
+        {
             Debug.Log("perdeu o qte");
             timer = startime;
-			qte.SetActive(false);
-			onqte = false;
-		}
-        if (Input.anyKeyDown  && !Input.GetKeyDown(KeyCode.W) && !Input.GetKeyDown(KeyCode.A)
-			 && !Input.GetKeyDown(KeyCode.S) && !Input.GetKeyDown(KeyCode.D) && !Input.GetKeyDown(KeyCode.LeftShift)
-			  && !Input.GetKeyDown(KeyCode.LeftControl) && !Input.GetKeyDown(stringkey) && tsecs < timer && onqte) {
+            qte.SetActive(false);
+            onqte = false;
+        }
+        if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.W) && !Input.GetKeyDown(KeyCode.A)
+             && !Input.GetKeyDown(KeyCode.S) && !Input.GetKeyDown(KeyCode.D) && !Input.GetKeyDown(KeyCode.LeftShift)
+              && !Input.GetKeyDown(KeyCode.LeftControl) && !Input.GetKeyDown(stringkey) && tsecs < timer && onqte)
+        {
             PiFlash();
             timer -= 1f;
-		}
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -49,7 +60,8 @@ public class QTE : MonoBehaviour {
         {
             qte.SetActive(true);
             OnQTE();
-		}
+            arrest = true;
+        }
     }
 
     void OnQTE()
@@ -61,24 +73,27 @@ public class QTE : MonoBehaviour {
         stringkey = KeyButtons[button];
         buttonPlace.sprite = KeySprites[button];
     }
-	public void PiFlash() {
-		errorflash.color = new Color(1, 0, 0, 0.5f);
-		Invoke(nameof(ClearPF), 0.1f);
-	}
+    public void PiFlash()
+    {
+        errorflash.color = new Color(1, 0, 0, 0.5f);
+        Invoke(nameof(ClearPF), 0.1f);
+    }
 
-	void ClearPF() {
-		errorflash.color = new Color(1, 1, 1, 1f);
-	}
+    void ClearPF()
+    {
+        errorflash.color = new Color(1, 1, 1, 1f);
+    }
+
+    [SerializeField] Transform cam;
+    [SerializeField] Transform player;
+    [SerializeField] Disable disable;
+    private bool arrest;
 
     void ArrestPlayer()
     {
-        /*orientation.enabled = false;
-        playercam.enabled = false;
-        playermove.enabled = false;
-        cambreath.enabled = false;
-        cam.rotation = Quaternion.Euler(0, 0, 0);
-        camholder.position = new Vector3(154.65f, 5, 242);
-        camholder.rotation = Quaternion.Euler(45, 0, 0);*/
+        disable.DisablePlayer();
+        cam.rotation = Quaternion.LookRotation(transform.position - cam.position);
+        gameObject.GetComponent<NavMeshAgent>().isStopped = true;
     }
 
 }
