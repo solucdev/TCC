@@ -3935,7 +3935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cfc03208000d844b9cf05b20e16e1d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 165
+  jumpforce: 140
   grounded: 0
   rb: {fileID: 314199068}
   invset: {fileID: 1150996034}
@@ -6015,7 +6015,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314199066}
   serializedVersion: 2
-  m_Mass: 40000
+  m_Mass: 60000
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -19446,10 +19446,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4265338650084452101, guid: 160d38380afb08245822eeea127c77b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f58cf65ea995c4b45be95713bdea8134, type: 2}
+    - target: {fileID: -2788549694072353013, guid: 160d38380afb08245822eeea127c77b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 6842171497431288246, guid: 65a5f8124d6d7534a84dfeaac11e3b58, type: 3}
     - target: {fileID: 919132149155446097, guid: 160d38380afb08245822eeea127c77b8, type: 3}
       propertyPath: m_Name
       value: mascraa:vestidinho_uiui
       objectReference: {fileID: 0}
+    - target: {fileID: 4422624561164107396, guid: 160d38380afb08245822eeea127c77b8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ef134b6ee3d2a6449c68b4ff9fbe5ba, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 160d38380afb08245822eeea127c77b8, type: 3}
 --- !u!4 &1142246734 stripped
@@ -19926,6 +19938,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8009536630302719701, guid: 16987acd668cccf49802447c835b7a86, type: 3}
+--- !u!1 &1170233859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1170233860}
+  m_Layer: 0
+  m_Name: HEAD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1170233860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170233859}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.828, z: 0.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2074267326}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1172988411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34403,6 +34446,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b039cdec09d67b646bba8e76475912b9, type: 3}
   buttonPlace: {fileID: 519450313}
   errorflash: {fileID: 519450313}
+  head: {fileID: 1170233860}
   timer: 4
   onqte: 0
   cam: {fileID: 50533839}
@@ -34490,6 +34534,7 @@ Transform:
   - {fileID: 2072854275}
   - {fileID: 902084798}
   - {fileID: 1142246734}
+  - {fileID: 1170233860}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

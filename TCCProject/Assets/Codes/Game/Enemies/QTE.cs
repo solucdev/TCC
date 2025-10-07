@@ -11,6 +11,8 @@ public class QTE : MonoBehaviour
     public List<Sprite> KeySprites = new List<Sprite>();
     [SerializeField] Image buttonPlace;
     [SerializeField] Image errorflash;
+    [SerializeField] Transform head;
+
     public float timer;
     private float startime;
     private float tsecs;
@@ -35,6 +37,7 @@ public class QTE : MonoBehaviour
             Debug.Log("legal");
             arrest = false;
             disable.EnablePlayer();
+            gameObject.GetComponent<NavMeshAgent>().isStopped = false;
             qte.SetActive(false);
             onqte = false;
         }
@@ -92,7 +95,7 @@ public class QTE : MonoBehaviour
     void ArrestPlayer()
     {
         disable.DisablePlayer();
-        cam.rotation = Quaternion.LookRotation(transform.position - cam.position);
+        cam.rotation = Quaternion.LookRotation(head.position - cam.position);
         gameObject.GetComponent<NavMeshAgent>().isStopped = true;
     }
 
