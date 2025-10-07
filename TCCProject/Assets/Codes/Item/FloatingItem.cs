@@ -1,26 +1,25 @@
 using UnityEngine;
 
 public class FloatingItem : MonoBehaviour {
-	[SerializeField] float amplitude = 0.25f;
-	[SerializeField] float frequency = 1f;
-	[SerializeField] float rotationSpeed = 50f;
+	[SerializeField] private float amplitude = 0.25f;
+	[SerializeField] private float frequency = 1f;
+	[SerializeField] private float rotationSpeed = 50f;
+	private bool collected;
 
-	Vector3 startPos;
-	Quaternion startRot;
+	private Vector3 startPos;
+	private Quaternion startRot;
 
 	void Start() {
 		startPos = transform.position;
 	}
 
 	void Update() {
-		if (LayerMask.LayerToName(gameObject.layer) == "Item") {
+		if (LayerMask.LayerToName(gameObject.layer) == "Item" && !collected) {
 			float newY = startPos.y + Mathf.Sin(Time.time * frequency) * amplitude;
 			transform.position = new Vector3(startPos.x, newY, startPos.z);
 
-			transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime, Space.World);
-		} else {
-			transform.position = startPos;
-			transform.rotation = startRot;
+			transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime, Space.World);	
 		}
+		else { collected = true; }
 	}
 }

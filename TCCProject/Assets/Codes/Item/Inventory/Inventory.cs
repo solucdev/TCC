@@ -12,7 +12,7 @@ public class Inventory : MonoBehaviour {
 	GameObject useditem;
 	int MaxSlots = 8;
 
-	public bool TemItem(GameObject item)
+	public bool TemItemSz(GameObject item)
 	{
 		return inventory.Contains(item);
 	}

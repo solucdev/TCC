@@ -28,7 +28,7 @@ public class AtticPuzzle : MonoBehaviour
 	private void OnTriggerStay(Collider other) {
 		if (other.CompareTag("Player") && withBench) {
 			iplacer.SetActive(true);
-			if (Input.GetKeyDown(KeyCode.F)) {
+			if (Input.GetKeyDown(KeyCode.E)) {
 				inv.PlaceItem(bench, placePos);
 				weapon.layer = LayerMask.NameToLayer("Item");
 			}
@@ -46,7 +46,7 @@ public class AtticPuzzle : MonoBehaviour
 		if (clicked && !opening) {
 			opening = true;
 			StartCoroutine(OpenTrapdoor());
-			if ((timer += Time.deltaTime) > 0.4f) {ladderanim.GetComponent<Animator>().Play("open_ladder"); timer = 0; }
+			//if ((timer += Time.deltaTime) > 0.4f) {ladderanim.GetComponent<Animator>().Play("open_ladder"); timer = 0; }
 		}
 
 		withPdCabra = CheckInv("Pé de Cabra");
@@ -54,12 +54,12 @@ public class AtticPuzzle : MonoBehaviour
         if (Physics.Raycast(playercam.transform.position, playercam.transform.forward, out RaycastHit hit, 3) && withPdCabra)
         {
             GameObject trapdoor = hit.collider.gameObject;
-            if (trapdoor.name == "trapdoor")
+            if (trapdoor.name == "trapdoor" && !clicked)
             {
                 Collect camcollect = playercam.GetComponent<Collect>();
                 
                 i.SetActive(true);
-                if (Input.GetKeyDown(KeyCode.F))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     clicked = true;
                 }
