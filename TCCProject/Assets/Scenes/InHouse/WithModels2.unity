@@ -3935,7 +3935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cfc03208000d844b9cf05b20e16e1d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 140
+  jumpforce: 220
   grounded: 0
   rb: {fileID: 314199068}
   invset: {fileID: 1150996034}
@@ -4775,7 +4775,7 @@ Light:
     m_Strength: 0.725
     m_Bias: 0.18
     m_NormalBias: 0.4
-    m_NearPlane: 0.07
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -4846,6 +4846,7 @@ RectTransform:
   - {fileID: 1726169678}
   - {fileID: 1558303472}
   - {fileID: 1634507373}
+  - {fileID: 1465706132}
   m_Father: {fileID: 917595597}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5923,7 +5924,7 @@ Light:
     m_Strength: 0.725
     m_Bias: 0.18
     m_NormalBias: 0.4
-    m_NearPlane: 0.07
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -6061,8 +6062,8 @@ MonoBehaviour:
   stamina: {fileID: 355372989}
   crouch: {fileID: 1857840984}
   cam: {fileID: 50533844}
-  speed: 3
-  spdrun: 5
+  speed: 2
+  spdrun: 4
   orientation: {fileID: 1857840982}
 --- !u!65 &314199071
 BoxCollider:
@@ -10168,7 +10169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd3a77ee618fb74baa0a83fcfbf190e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.25
+  amplitude: 0.08
   frequency: 1
   rotationSpeed: 50
 --- !u!114 &559394146
@@ -10197,8 +10198,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 1
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
+  outlineColor: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
+  outlineWidth: 1
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -10613,9 +10614,9 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.725
-    m_Bias: 0.18
-    m_NormalBias: 0.4
-    m_NearPlane: 0.07
+    m_Bias: 0
+    m_NormalBias: 0
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -10645,7 +10646,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -12673,7 +12674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd3a77ee618fb74baa0a83fcfbf190e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.25
+  amplitude: 0.08
   frequency: 1
   rotationSpeed: 50
 --- !u!114 &716279686
@@ -12702,8 +12703,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 1
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
+  outlineColor: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
+  outlineWidth: 1
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -15665,7 +15666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd3a77ee618fb74baa0a83fcfbf190e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.25
+  amplitude: 0.08
   frequency: 1
   rotationSpeed: 50
 --- !u!114 &908632972
@@ -15694,8 +15695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 1
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
+  outlineColor: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
+  outlineWidth: 1
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -16595,7 +16596,7 @@ Light:
     m_Strength: 0.725
     m_Bias: 0.18
     m_NormalBias: 0.4
-    m_NearPlane: 0.07
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -17698,7 +17699,7 @@ Light:
     m_Strength: 0.725
     m_Bias: 0.18
     m_NormalBias: 0.4
-    m_NearPlane: 0.07
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -21383,7 +21384,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ...tenho que ralar man
+  m_Text: ...tenho que sair desse lugar
 --- !u!222 &1284113574
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21522,7 +21523,7 @@ Light:
     m_Strength: 0.725
     m_Bias: 0.18
     m_NormalBias: 0.4
-    m_NearPlane: 0.07
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -24657,6 +24658,87 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7629811779324647873, guid: b37452bdc62ad2c43a229693f25f12c7, type: 3}
+--- !u!1 &1465706131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1465706132}
+  - component: {fileID: 1465706134}
+  - component: {fileID: 1465706133}
+  m_Layer: 0
+  m_Name: Controles basico
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1465706132
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465706131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 245252584}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 90, y: 0}
+  m_SizeDelta: {x: 160, y: 90}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1465706133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465706131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: efced71056eabf548a64ff6a4fd03b97, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 5
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "M1: coleta\nQ: drop\nE: intera\xE7\xE3o puzzle e porta\nCtrl: agachar\nShift:
+    correr"
+--- !u!222 &1465706134
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465706131}
+  m_CullTransparentMesh: 1
 --- !u!64 &1469295392
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24727,7 +24809,7 @@ Light:
     m_Strength: 0.725
     m_Bias: 0.18
     m_NormalBias: 0.4
-    m_NearPlane: 0.07
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -26416,7 +26498,7 @@ Light:
     m_Strength: 0.725
     m_Bias: 0.18
     m_NormalBias: 0.4
-    m_NearPlane: 0.07
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -28614,7 +28696,7 @@ Light:
     m_Strength: 0.725
     m_Bias: 0.18
     m_NormalBias: 0.4
-    m_NearPlane: 0.07
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -31195,7 +31277,7 @@ Light:
     m_Strength: 0.725
     m_Bias: 0.18
     m_NormalBias: 0.4
-    m_NearPlane: 0.07
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -32674,7 +32756,7 @@ Light:
     m_Strength: 0.725
     m_Bias: 0.18
     m_NormalBias: 0.4
-    m_NearPlane: 0.07
+    m_NearPlane: 1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -39192,8 +39274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 1
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
+  outlineColor: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
+  outlineWidth: 1
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []

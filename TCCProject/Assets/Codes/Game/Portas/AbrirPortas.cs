@@ -29,8 +29,10 @@ public class AbrirPortas : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
+        //if (Physics.Raycast(transform.position, direction, out hit, range, ))
+        
+            if (Input.GetKeyDown(KeyCode.E))
+          {
             float distancia = Vector3.Distance(jogador.position, transform.position);
 
             if (distancia <= distanciaMaxima)
