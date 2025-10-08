@@ -74,7 +74,7 @@ public class VaultPuzzle : MonoBehaviour
 
     private void PlacePiece(GameObject piece) {
         piece.transform.position = plc;
-        piece.transform.localScale = new Vector3(piece.transform.localScale.x * 20, piece.transform.localScale.y * 20, piece.transform.localScale.z * 20);
+        piece.transform.localScale = new Vector3(piece.transform.localScale.x, piece.transform.localScale.y, piece.transform.localScale.z);
         piece.SetActive(true);
         piece.layer = LayerMask.NameToLayer("Default");
     }
