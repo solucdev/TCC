@@ -10,6 +10,7 @@ public class ShowZoomedImage : MonoBehaviour
     public GameObject imagePanel; // Painel com a imagem ampliada
     public Sprite zoomedSprite;   // Imagem que será exibida
     public GameObject texto;
+    public GameObject fechar;
 
     private Image imageComponent;
 
@@ -42,6 +43,7 @@ public class ShowZoomedImage : MonoBehaviour
                 {
                     imageComponent.sprite = zoomedSprite;
                     imagePanel.SetActive(true);
+                    fechar.SetActive(true);
                 }
             }
         }
@@ -50,6 +52,7 @@ public class ShowZoomedImage : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             imagePanel.SetActive(false);
+            fechar.SetActive(false);
         }
     }
 }
