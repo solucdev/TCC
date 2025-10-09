@@ -7,8 +7,8 @@ public class ShowZoomedImage : MonoBehaviour
 {
     public Camera playerCamera;
     public float maxDistance = 5f;
-    public GameObject imagePanel; // Painel com a imagem ampliada
-    public Sprite zoomedSprite;   // Imagem que será exibida
+    public GameObject imagePanel; 
+    public Sprite zoomedSprite;   
     public GameObject texto;
     public GameObject fechar;
 
@@ -39,7 +39,7 @@ public class ShowZoomedImage : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, maxDistance))
             {
-                if (hit.transform.CompareTag("Zoomable")) // Use uma tag para identificar objetos válidos
+                if (hit.transform.CompareTag("Zoomable")) 
                 {
                     imageComponent.sprite = zoomedSprite;
                     imagePanel.SetActive(true);
@@ -48,7 +48,6 @@ public class ShowZoomedImage : MonoBehaviour
             }
         }
 
-        // Pressione ESC para fechar a imagem
         if (Input.GetKeyDown(KeyCode.G))
         {
             imagePanel.SetActive(false);

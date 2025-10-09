@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class DoorInteraction : MonoBehaviour
 {
-    public AudioSource doorAudio;         // Arraste aqui o AudioSource com o som da porta
-    public string nextSceneName;          // Nome da próxima cena
-    private bool playerNear = false;      // Se o jogador está perto da porta
-    private bool doorUsed = false;        // Se já tocou o som
-    private bool loadingScene = false;    // Para não carregar várias vezes
+    public AudioSource doorAudio;       
+    public string nextSceneName;     
+    private bool playerNear = false;   
+    private bool doorUsed = false;       
+    private bool loadingScene = false;    
     public AudioSource doorOpeningAudio;
 
     void Update()
@@ -18,14 +18,13 @@ public class DoorInteraction : MonoBehaviour
         {
             if (!doorUsed)
             {
-                // Primeira vez apertando E → toca o som
                 doorAudio.Play();
                 doorUsed = true;
                 Debug.Log("um");
             }
             else if (!loadingScene)
             {
-                // Segunda vez → troca de cena quando o som terminar
+               
                 doorOpeningAudio.Play();
                 StartCoroutine(LoadSceneAfterSound());
                 loadingScene = true;
@@ -36,13 +35,10 @@ public class DoorInteraction : MonoBehaviour
 
     private System.Collections.IEnumerator LoadSceneAfterSound()
     {
-        // Espera terminar o som
         while (doorAudio.isPlaying)
         {
             yield return null;
         }
-
-        // Carrega a próxima cena
         SceneManager.LoadScene(nextSceneName);
     }
 

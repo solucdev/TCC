@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 
 public class AtticPuzzle : MonoBehaviour
@@ -25,6 +23,10 @@ public class AtticPuzzle : MonoBehaviour
 	private float currentAngle = 0;
 	private bool opening = false;
 
+
+	private void Start() {
+		ladderanim.GetComponent<Animator>().enabled = false;
+	}
 	private void OnTriggerStay(Collider other) {
 		if (other.CompareTag("Player") && withBench) {
 			iplacer.SetActive(true);
@@ -46,7 +48,6 @@ public class AtticPuzzle : MonoBehaviour
 		if (clicked && !opening) {
 			opening = true;
 			StartCoroutine(OpenTrapdoor());
-			//if ((timer += Time.deltaTime) > 0.4f) {ladderanim.GetComponent<Animator>().Play("open_ladder"); timer = 0; }
 		}
 
 		withPdCabra = CheckInv("Pé de Cabra");
@@ -86,6 +87,9 @@ public class AtticPuzzle : MonoBehaviour
 			float step = openSpeed * Time.deltaTime;
 			tdu.transform.Rotate(Vector3.back, step, Space.Self);
 			currentAngle += step;
+
+			ladderanim.GetComponent<Animator>().enabled = true;
+			ladderanim.GetComponent<Animator>().Play("open_ladder");
 			yield return null;
 		}
 	}

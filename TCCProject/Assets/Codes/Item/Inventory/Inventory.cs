@@ -12,11 +12,6 @@ public class Inventory : MonoBehaviour {
 	GameObject useditem;
 	int MaxSlots = 8;
 
-	public bool TemItemSz(GameObject item)
-	{
-		return inventory.Contains(item);
-	}
-
 	private void Start() {
 		drop = GetComponent<ItemDrop>();
 		useditem = null;
@@ -91,6 +86,14 @@ public class Inventory : MonoBehaviour {
 			lastItem = slot;
 		}
 		else { return; }
+	}
+
+	public bool ItemInHand(GameObject item) {
+		if (lastItem >= 0 && lastItem < inventory.Count) {
+			GameObject activeItem = inventory[lastItem];
+			return activeItem == item;
+		}
+		return false;
 	}
 
 	void ReorganizeIcons() {
