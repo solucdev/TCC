@@ -9,10 +9,12 @@ public class ClimbToAttic : MonoBehaviour {
 
 	void Start() {
 		anim = player.GetComponent<Animator>();
+		anim.enabled = false;
 	}
 
 	private void OnTriggerEnter(Collider other) {
 		if (other.CompareTag("Player") && !isPlaying) {
+			anim.enabled = true;
 			isPlaying = true;
 			anim.Play(animname, 0, 0f);
 			StartCoroutine(WaitToFinish());
@@ -24,5 +26,6 @@ public class ClimbToAttic : MonoBehaviour {
 		float dur = anim.GetCurrentAnimatorStateInfo(0).length;
 		yield return new WaitForSeconds(dur);
 		isPlaying = false;
+		anim.enabled = false;
 	}
 }
