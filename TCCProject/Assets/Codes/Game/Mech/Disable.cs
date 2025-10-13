@@ -8,7 +8,6 @@ public class Disable : MonoBehaviour
     [SerializeField] PlayerCam playercam;
     [SerializeField] PlayerMove playermove;
     [SerializeField] CamBreath cambreath;
-    [SerializeField] Transform cam;
 
    public void DisablePlayer()
     {
