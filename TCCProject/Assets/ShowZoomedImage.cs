@@ -32,7 +32,7 @@ public class ShowZoomedImage : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
             RaycastHit hit;

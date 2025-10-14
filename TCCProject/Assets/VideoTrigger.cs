@@ -26,7 +26,7 @@ public class VideoTrigger : MonoBehaviour
 
     void Update()
     {
-        if (isPlayerNear && Input.GetKeyDown(KeyCode.F))
+        if (isPlayerNear && Input.GetKeyDown(KeyCode.E))
         {
             canvasVideo.SetActive(true);
             videoPlayer.Play();
@@ -62,5 +62,6 @@ public class VideoTrigger : MonoBehaviour
         {
             isPlayerNear = false;
         }
+        texto.SetActive(false);
     }
 }

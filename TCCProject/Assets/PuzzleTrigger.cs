@@ -7,6 +7,7 @@ public class PuzzleTrigger : MonoBehaviour
     public GameObject puzzleUI;
     public Transform player;
     public float interactionDistance = 3f;
+    public GameObject texto;
 
     private bool puzzleCompleted = false;
 
@@ -31,6 +32,16 @@ public class PuzzleTrigger : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        texto.SetActive(true);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        texto.SetActive(false);
     }
 
 
