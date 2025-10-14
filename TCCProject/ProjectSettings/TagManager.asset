@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Porta
   - Zoomable
+  - Peca
   layers:
   - Default
   - TransparentFX

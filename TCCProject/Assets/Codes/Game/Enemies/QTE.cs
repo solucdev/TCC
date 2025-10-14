@@ -47,6 +47,7 @@ public class QTE : MonoBehaviour
             timer = startime;
             qte.SetActive(false);
             onqte = false;
+            FindObjectOfType<PlayerDeathManager>().PlayerDied();
         }
         if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.W) && !Input.GetKeyDown(KeyCode.A)
              && !Input.GetKeyDown(KeyCode.S) && !Input.GetKeyDown(KeyCode.D) && !Input.GetKeyDown(KeyCode.LeftShift)
@@ -99,4 +100,8 @@ public class QTE : MonoBehaviour
         gameObject.GetComponent<NavMeshAgent>().isStopped = true;
     }
 
+    public void ResetArrest()
+    {
+        arrest = false;
+    }
 }

@@ -48,6 +48,7 @@ public class PuzzleTrigger : MonoBehaviour
     public void CompletePuzzle()
     {
         puzzleCompleted = true;
+        texto.SetActive(false);
     }
 
 }

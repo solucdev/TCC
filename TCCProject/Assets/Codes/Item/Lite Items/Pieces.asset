@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Pieces
   m_EditorClassIdentifier: 
   itemName: "Pe\xE7a de Amuleto"
-  icon: {fileID: 21300000, guid: 3168140d6f409d0448447f18568d9482, type: 3}
+  icon: {fileID: 21300000, guid: 6bbfd6b7a7955b14c83969ffd3225ee7, type: 3}

@@ -18,6 +18,7 @@ public class VaultPuzzle : MonoBehaviour
 	[SerializeField] private Transform camholder;
     [SerializeField] private Transform placer;
     [SerializeField] private Transform target;
+    public GameObject keyObject;
 
     private List<GameObject> pieces = new List<GameObject>();
 
@@ -108,6 +109,7 @@ public class VaultPuzzle : MonoBehaviour
         playermove.enabled = true;
         cambreath.enabled = true;
         camholder.rotation = Quaternion.Euler(0, 0, 0);
+        keyObject.SetActive(true);
     }
 
     private async void AssembleAmulet() {

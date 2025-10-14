@@ -7,7 +7,7 @@ public class VideoTrigger : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
     public GameObject canvasVideo;
-    public float maxDistance = 5f;
+    public float maxDistance = 10f;
     public Camera playerCamera;
     public GameObject texto;
 
@@ -21,6 +21,7 @@ public class VideoTrigger : MonoBehaviour
     void OnVideoEnd(VideoPlayer vp)
     {
         canvasVideo.SetActive(false);
+        Time.timeScale = 1f;
     }
 
 
@@ -28,21 +29,26 @@ public class VideoTrigger : MonoBehaviour
     {
         if (isPlayerNear && Input.GetKeyDown(KeyCode.E))
         {
-            canvasVideo.SetActive(true);
+            /*canvasVideo.SetActive(true);
             videoPlayer.Play();
             texto.SetActive(false);
-
-            /*Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
+            Time.timeScale = 0f;*/
+            Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, maxDistance))
             {
+
+                Debug.Log("Raycast atingiu: " + hit.transform.name); // Verifica o que foi atingido
+
                 if (hit.transform == transform)
                 {
                     canvasVideo.SetActive(true);
                     videoPlayer.Play();
+                    texto.SetActive(false);
+                    Time.timeScale = 0f;
                 }
-            }*/
+            }
         }
     }
 
