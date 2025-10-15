@@ -90,7 +90,7 @@ public class QTE : MonoBehaviour
 
     [SerializeField] Transform cam;
     [SerializeField] Transform player;
-    [SerializeField] Disable disable;
+    public Disable disable;
     private bool arrest;
 
     void ArrestPlayer()

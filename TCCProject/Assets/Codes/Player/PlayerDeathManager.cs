@@ -6,38 +6,37 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeathManager : MonoBehaviour
 {
-    public GameObject deathScreenUI; // Painel com botão "Reviver"
-    public Transform respawnPoint;   // Ponto específico do cenário
-    public GameObject player;        // Referência ao jogador
-    private Disable disable => FindObjectOfType<Disable>();
-    //public Disable disable;
-    public QTE qteScript; // Referência ao script QTE
+    public GameObject deathscreen;
+    public Transform respawn; 
+    public GameObject player; 
+    public QTE qte;
 
 
     public void PlayerDied()
     {
         Cursor.lockState = CursorLockMode.None;
-        deathScreenUI.SetActive(true);
+		Cursor.visible = true;
+		deathscreen.SetActive(true);
     }
 
     public void RevivePlayer()
     {
 
         // Reposiciona antes de ativar
-        player.transform.position = respawnPoint.position;
+        player.transform.position = respawn.position;
 
         // Se tiver script de controle, reativa
-        if (disable != null)
+        if (qte.disable != null)
         {
-            disable.EnablePlayer();
+            qte.disable.EnablePlayer();
         }
 
         // Esconde a tela de morte
-        deathScreenUI.SetActive(false);
+        deathscreen.SetActive(false);
 
-        if (qteScript != null)
+        if (qte != null)
         {
-            qteScript.ResetArrest();
+            qte.ResetArrest();
         }
 
         // Reativa o jogador e o posiciona no ponto de respawn
