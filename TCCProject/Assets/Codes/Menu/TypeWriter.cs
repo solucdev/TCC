@@ -16,4 +16,24 @@ public class TypeWriter : MonoBehaviour {
 			yield return new WaitForSeconds(delay);
 		}
 	}
+	public IEnumerator EraseMessage(Text uiText, float delay)
+    {
+
+		Color c = uiText.color;
+		c.a = 0.8f;
+		uiText.color = c;
+
+		float t = 0f;
+		while (t < delay)
+		{
+			t += Time.deltaTime;
+			c.a = Mathf.Lerp(0.8f, 0f, t / delay);
+			uiText.color = c;
+			yield return null;
+		}
+
+		c.a = 0f;
+		uiText.color = c;
+
+	}
 }

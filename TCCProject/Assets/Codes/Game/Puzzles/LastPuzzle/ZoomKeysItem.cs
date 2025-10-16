@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ZoomKeysItem : MonoBehaviour
 {
@@ -9,7 +10,9 @@ public class ZoomKeysItem : MonoBehaviour
 	[SerializeField] Disable disable;
 	[SerializeField] QuadVentory invset;
 	[SerializeField] ThoughtTips tip;
+	[SerializeField] TypeWriter effect;
 
+	[SerializeField] Text thought;
 	[SerializeField] Camera cam;
 	[SerializeField] Transform bunchK;
     void Start()
@@ -26,7 +29,9 @@ public class ZoomKeysItem : MonoBehaviour
 			if (enemy.name == "BodyEn" && !saw) {
 				disable.DisablePlayer();
 				invset.enabled = false;
-				//StartCoroutine(tip.Thought("...ali deve estar a chave da porta da frente")); ta todo bugado esse thought
+				StartCoroutine(effect.Typer(thought, "...ali deve estar a chave da porta da frente"));
+				StartCoroutine(effect.EraseMessage(thought, 5));
+				//StartCoroutine(tip.Thought("")); ta todo bugado esse thought
 				StartCoroutine(Zoom());
 			}
 		}

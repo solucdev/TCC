@@ -14,7 +14,7 @@ public class TimeBarKeys : MonoBehaviour {
 	}
 
 	void Update() {
-		if (bunchOK.round > 0 && bunchOK.round <= 7) {
+		if (bunchOK.round > 0 && bunchOK.round <= 8) {
 
 			if (bunchOK.round != lastRound) {
 				timing = 0;

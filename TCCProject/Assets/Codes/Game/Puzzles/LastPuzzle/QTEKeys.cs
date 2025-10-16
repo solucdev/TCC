@@ -47,8 +47,10 @@ public class QTEKeys : MonoBehaviour {
 		}
 		if (tsecs > timer && onqte) {
 			timer = startime;
+			arrest = false;
 			qte.SetActive(false);
 			onqte = false;
+			disable.EnablePlayer();
 			round = 69;
 		}
 		if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.W) && !Input.GetKeyDown(KeyCode.A)
