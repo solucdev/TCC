@@ -24524,7 +24524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scr: {fileID: 11400000, guid: 0bfa5e4f886ed7a4b992d49aad05326b, type: 2}
-  itemname: chave da biblioteca
+  itemname: "chave do escrit\xF3rio"
   icon: {fileID: 21300000, guid: 751b72f67deabed4986f3c01a489c72e, type: 3}
   handfit: {fileID: 894598303}
   i: {fileID: 1657963732}
