@@ -34,7 +34,7 @@ public class ZoomKeysItem : MonoBehaviour
 
 	IEnumerator Zoom() {
 		cam.transform.rotation = Quaternion.LookRotation(bunchK.position - cam.transform.position);
-		cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 40, Time.deltaTime * 10);
+		cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 5, Time.deltaTime * 10);
 		yield return new WaitForSeconds(5);
 		cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 75, Time.deltaTime * 3);
 		disable.EnablePlayer();
