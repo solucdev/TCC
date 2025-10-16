@@ -22,6 +22,8 @@ public class PlayerDeathManager : MonoBehaviour
     public void RevivePlayer()
     {
 
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         // Reposiciona antes de ativar
         player.transform.position = respawn.position;
 
