@@ -1,19 +1,19 @@
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
 public class TypeWriter : MonoBehaviour {
+	public float delay;
 
-	private string fullText;
-	public float delay = 0.05f;
-
-	public IEnumerator Typer(Text uiText) {
-		fullText = uiText.text;
+	public IEnumerator Typer(Text uiText, string message) {
+		StringBuilder sb = new StringBuilder();
 		uiText.text = "";
-		foreach (char c in fullText) {
-			uiText.text += c;
+
+		foreach (char c in message) {
+			sb.Append(c);
+			uiText.text = sb.ToString();
 			yield return new WaitForSeconds(delay);
 		}
 	}
-
 }

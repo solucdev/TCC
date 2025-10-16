@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,22 +10,21 @@ public class ThoughtTips : MonoBehaviour
 	Image img;
 	float duration = 1;
 	[SerializeField] TypeWriter effect;
-    [SerializeField] GameObject thought1;
-	Text text1;
-    void Start()
-    {
-		text1 = thought1.GetComponent<Text>();
+    [SerializeField] GameObject thotip;
+	Text txt;
+	IEnumerator Start() {
+		txt = thotip.GetComponent<Text>();
 		img = GetComponent<Image>();
-        StartCoroutine(Thought1());
-    }
-
-    IEnumerator Thought1() {
 		yield return new WaitForSeconds(4.9f);
-		thought1.SetActive(true);
+		StartCoroutine(Thought("...tenho que sair deste lugar"));
+	}
+
+	public IEnumerator Thought(string message) {
+		thotip.SetActive(true);
 		StartCoroutine(FadeIn());
-        StartCoroutine(effect.Typer(text1));
+        StartCoroutine(effect.Typer(txt, message));
 		yield return new WaitForSeconds(5);
-		thought1.SetActive(false);
+		thotip.SetActive(false);
 		StartCoroutine(FadeOut());
 	}
 
