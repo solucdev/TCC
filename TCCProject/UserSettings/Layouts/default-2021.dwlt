@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 421}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 547
     height: 320
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 47507
+  controlID: 24
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 97
+  controlID: 46
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 98
+  controlID: 47
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 99
+  controlID: 48
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -322,8 +322,8 @@ MonoBehaviour:
     y: 0
     width: 382
     height: 939
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -453,9 +453,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f0a50200
-      m_LastClickedID: 173552
-      m_ExpandedIDs: 6010fefff815feffb62efeffeeaffeff22b0fefff4d4fefff8d4fefffad4feff04d5feffb6d5feffbad5feffbed5feffc0d5feff3cd6feff56d6feffccd6feffd0d6feffd4d6feffd6d6feff0ed8feffe8d9feff48dafeff7adafeff1adbfeff1cdbfeff60dbfeff74dbfeffaedcfefff8dcfeff1addfeff3addfeff78ddfeffdcddfeffe0ddfeffe4ddfeffe6ddfeff5adffeff70dffeff9adffeffc6dffeff6eeafeff34f5feffda27ffff8632fffff03cffff9847ffff4052ffff645dffff8487ffff76720100c6740100b6760100127901006e7a0100f47a0100da7b01006c7f0100228101005883010042860100a0880100388a01006e8202006c87020052a702009ea7020030a8020076a8020078aa02007eaa0200a6aa020026ab020002ac020026ac020088ac02003cad02006ead0200feae020076af0200e6af0200ecaf020082b0020000b102009ab1020084b30200c6b30200eab40200eeb40200f0b40200f2b4020006b502006eb5020086b50200a0b50200ceb50200e0b50200e4b5020006b6020044b6020084b602009cb60200beb60200feb60200dcb7020096b80200c4b80200e8b8020062b9020076b9020040ba0200d6ba020010bb02005cbb020090bb0200a4bb0200bebb020018bc0200
+      m_SelectedIDs: f0030100
+      m_LastClickedID: 66544
+      m_ExpandedIDs: 946dffff5e73ffff5284ffffa685ffff6efa0000d6fe0000200801007e090100bc0b0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -748,9 +748,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 151.388, y: 8.394189, z: 226.201}
+    m_Target: {x: 144.54753, y: 5.0356007, z: 241.71841}
     speed: 2
-    m_Value: {x: 154.22339, y: 3.9824271, z: 229.77687}
+    m_Value: {x: 144.54753, y: 5.0356007, z: 241.71841}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -797,13 +797,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.111854315, y: 0.74889183, z: -0.13661414, w: -0.6400085}
+    m_Target: {x: -0.06788563, y: -0.023918051, z: -0.0021744454, w: -0.99822533}
     speed: 2
-    m_Value: {x: -0.11176356, y: 0.74828416, z: -0.1365033, w: -0.63948923}
+    m_Value: {x: -0.06783006, y: -0.023898473, z: -0.0021726657, w: -0.9974083}
   m_Size:
-    m_Target: 1.3772339
+    m_Target: 10.538677
     speed: 2
-    m_Value: 1.2653878
+    m_Value: 10.538677
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -984,22 +984,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Codes/Player
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Codes/Player
   m_LastFoldersGridSize: 64
-  m_LastProjectPath: C:\Users\aluno\Documents\GitHub\TCC\TCCProject
+  m_LastProjectPath: D:\TCC\TCCProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 70f40000
-    m_LastClickedID: 62576
-    m_ExpandedIDs: 0000000070f4000076f400007af400007cf400007ef4000082f4000086f4000084f901008ef901006c2108008a21080000ca9a3bffffff7f
+    m_SelectedIDs: a82a0100
+    m_LastClickedID: 76456
+    m_ExpandedIDs: 00000000eef60000f4f6000000f70000a22a010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1214,7 +1214,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 61
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
