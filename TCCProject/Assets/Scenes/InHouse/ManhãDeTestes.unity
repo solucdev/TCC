@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0017293917, g: 0.0012069537, b: 0.00033400627, a: 1}
+  m_IndirectSpecularColor: {r: 0.0017293926, g: 0.0012069523, b: 0.00033400516, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -25415,10 +25415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b4bcd38f80f6348b265ab09cc528e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalColetaveis: 3
-  coletados: 0
-  textoContagem: {fileID: 654750403}
-  puzzleUI: {fileID: 1990397599}
 --- !u!4 &1312796210 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 943c39f6fc727d04c88a434eb269d248, type: 3}
@@ -29592,7 +29588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59df0cbb29def14ea22b22ced143526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scr: {fileID: 11400000, guid: daf7eb90ad00f4c42b201cc34595ef8f, type: 2}
+  scr: {fileID: 11400000, guid: c0001018faff98d4ba5d49e95c9d1083, type: 2}
   itemname: 
   icon: {fileID: 0}
   handfit: {fileID: 894598303}
@@ -29612,6 +29608,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inv: {fileID: 314199069}
   target: {fileID: 1576144106}
+--- !u!65 &1538171666
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282818210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0.07, z: 0}
 --- !u!1 &1538362234
 GameObject:
   m_ObjectHideFlags: 0

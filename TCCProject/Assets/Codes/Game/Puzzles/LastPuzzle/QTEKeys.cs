@@ -38,10 +38,11 @@ public class QTEKeys : MonoBehaviour {
 			}
 			else {
 				cbok.StartMoveRotate();
+				gameObject.layer = LayerMask.NameToLayer("Item");
 				arrest = false;
 				qte.SetActive(false);
 				onqte = false;
-				StartCoroutine(cbok.DelayCollect(disable));
+				disable.EnablePlayer();
 			}
 		}
 		if (tsecs > timer && onqte) {

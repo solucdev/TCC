@@ -14,7 +14,10 @@ public class Collect : MonoBehaviour {
 		RaycastHit hit;
 		Vector3 direction = transform.forward;
 
+		Debug.DrawRay(transform.position, direction * range);
+
 		if (Physics.Raycast(transform.position, direction, out hit, range, collects)) {
+
 			GameObject itemPrefab = hit.collider.gameObject;
 			ItemStats script = itemPrefab.GetComponent<ItemStats>();
 
