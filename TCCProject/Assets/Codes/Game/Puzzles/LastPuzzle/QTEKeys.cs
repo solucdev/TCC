@@ -42,7 +42,7 @@ public class QTEKeys : MonoBehaviour {
 				arrest = false;
 				qte.SetActive(false);
 				onqte = false;
-				disable.EnablePlayer();
+				StartCoroutine(EnableDelay());
 			}
 		}
 		if (tsecs > timer && onqte) {
@@ -62,7 +62,7 @@ public class QTEKeys : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter(Collider other) {
-		if (other.CompareTag("Player") && tsecs > timer) {
+		if (other.CompareTag("Player") && tsecs > timer && gameObject.layer != LayerMask.NameToLayer("Item")) {
 			round = 1;
 			qte.SetActive(true);
 			OnQTE();
@@ -105,5 +105,11 @@ public class QTEKeys : MonoBehaviour {
 		yield return new WaitForSeconds(0.2f);
 		OnQTE();
 		round++;
+	}
+
+	IEnumerator EnableDelay()
+    {
+		yield return new WaitForSeconds(2);
+		disable.EnablePlayer();
 	}
 }

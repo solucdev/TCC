@@ -14,10 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OutsideCutscene.unity
     guid: 243ab8d1a3599e94c8a07c124eecb38d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cena2.unity
     guid: 2c20e208a430ba447b9063ade2fb6d9e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/InHouse/WithModels.unity
-    guid: 9cdae5a37ba88e149a190c0e85d48776
+    path: "Assets/Scenes/InHouse/Manh\xE3DeTestes.unity"
+    guid: 9325499766768884693fe0d544768133
+  - enabled: 1
+    path: Assets/Scenes/InHouse/Suzanna3.unity
+    guid: c46e09d595929f843b0f405b0bf0501b
   m_configObjects: {}
