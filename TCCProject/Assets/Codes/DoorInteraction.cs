@@ -11,6 +11,9 @@ public class DoorInteraction : MonoBehaviour
     private bool doorUsed = false;       
     private bool loadingScene = false;    
     public AudioSource doorOpeningAudio;
+    public GameObject texto1;
+    public GameObject texto2;
+    public GameObject ui;
 
     void Update()
     {
@@ -19,6 +22,8 @@ public class DoorInteraction : MonoBehaviour
             if (!doorUsed)
             {
                 doorAudio.Play();
+                texto1.SetActive(false);
+                texto2.SetActive(true);
                 doorUsed = true;
                 Debug.Log("um");
             }
@@ -47,7 +52,7 @@ public class DoorInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNear = true;
-            Debug.Log("oi");
+            ui.SetActive(true);
         }
     }
 
@@ -56,6 +61,7 @@ public class DoorInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNear = false;
+            ui.SetActive(false);
         }
     }
 }

@@ -12,6 +12,10 @@ public class TimelineController : MonoBehaviour
     public CinemachineVirtualCamera scooterCamera;
     public CinemachineVirtualCamera firstPersonCamera;
 
+    public GameObject texto1;
+
+
+
     void Start()
     {
         director.stopped += OnTimelineFinished;
@@ -32,5 +36,6 @@ public class TimelineController : MonoBehaviour
         // Troca de prioridade para mudar a câmera
         scooterCamera.Priority = 10;
         firstPersonCamera.Priority = 20;
+        texto1.SetActive(true); 
     }
 }
