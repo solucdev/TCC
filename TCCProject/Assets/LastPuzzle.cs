@@ -10,6 +10,7 @@ public class LastPuzzle : MonoBehaviour
     public Button[] buttons; // Referência aos 6 botões
     public GameObject victoryScreen;
     public GameObject deathScreen;
+    public GameObject puzzleScreen;
 
     private int correctButtonIndex;
     private int attemptsLeft = 3;
@@ -37,6 +38,7 @@ public class LastPuzzle : MonoBehaviour
         {
             puzzleEnded = true;
             victoryScreen.SetActive(true);
+            puzzleScreen.SetActive(false);
             Debug.Log("Acertou!");
         }
         else
@@ -48,6 +50,7 @@ public class LastPuzzle : MonoBehaviour
             {
                 puzzleEnded = true;
                 deathScreen.SetActive(true);
+                puzzleScreen.SetActive(false);
                 Debug.Log("Morreu!");
             }
         }

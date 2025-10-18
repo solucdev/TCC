@@ -24055,6 +24055,7 @@ MonoBehaviour:
   - {fileID: 2122983959}
   victoryScreen: {fileID: 727139097}
   deathScreen: {fileID: 503159371}
+  puzzleScreen: {fileID: 1136740018}
 --- !u!1 &1137056489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1507767883509144192, guid: ef6eb62e687360a43ac067cdceef4671, type: 3}
