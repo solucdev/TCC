@@ -42,9 +42,10 @@ public class QTEKeys : MonoBehaviour {
 				arrest = false;
 				qte.SetActive(false);
 				onqte = false;
-				StartCoroutine(EnableDelay());
-			}
-		}
+                //StartCoroutine(EnableDelay());
+                disable.EnablePlayer();
+            }
+        }
 		if (tsecs > timer && onqte) {
 			timer = startime;
 			arrest = false;
@@ -107,9 +108,9 @@ public class QTEKeys : MonoBehaviour {
 		round++;
 	}
 
-	IEnumerator EnableDelay()
+	/*IEnumerator EnableDelay()
     {
 		yield return new WaitForSeconds(2);
 		disable.EnablePlayer();
-	}
+	}*/
 }

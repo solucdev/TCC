@@ -7,6 +7,8 @@ public class ExitHouse : MonoBehaviour
     [SerializeField] Inventory inv;
     [SerializeField] GameObject keys;
     [SerializeField] GameObject i;
+    public GameObject uiPuzzle;
+
     void Start()
     {
 
@@ -34,7 +36,7 @@ public class ExitHouse : MonoBehaviour
 
     void StartExitPuzzle()
     {
-
+        uiPuzzle.SetActive(true);
     }
 
     IEnumerator Delay()

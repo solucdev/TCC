@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 0
     path: "Assets/Scenes/InHouse/Manh\xE3DeTestes.unity"
     guid: 9325499766768884693fe0d544768133
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/InHouse/Suzanna3.unity
     guid: c46e09d595929f843b0f405b0bf0501b
   m_configObjects: {}
