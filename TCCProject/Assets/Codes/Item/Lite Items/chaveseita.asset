@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: chaveseita
   m_EditorClassIdentifier: 
   itemName: Chave da Seita
+  itemID: Chave da Seita
   icon: {fileID: 21300000, guid: 4a037806286201244b46f736e93f8ae1, type: 3}

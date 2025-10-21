@@ -16604,7 +16604,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ec186126dfc2ea34885a89e4731c5284, type: 3}
   - {fileID: 21300000, guid: b039cdec09d67b646bba8e76475912b9, type: 3}
   buttonPlace: {fileID: 519450313}
-  errorflash: {fileID: 526527741}
   head: {fileID: 728884485}
   round: 0
   timer: 3
@@ -27254,7 +27253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scr: {fileID: 11400000, guid: 60ea60fc7dded0147950f989b5bab9bb, type: 2}
-  itemname: chave do acervo da seita
+  itemname: Chave da Seita
   itemID: 
   icon: {fileID: 21300000, guid: 4a037806286201244b46f736e93f8ae1, type: 3}
   handfit: {fileID: 894598303}
@@ -29095,7 +29094,9 @@ MonoBehaviour:
   inv: {fileID: 314199069}
   keys: {fileID: 2064079614}
   i: {fileID: 2020065119}
-  uiPuzzle: {fileID: 1136740018}
+  camholder: {fileID: 0}
+  system: {fileID: 0}
+  keymolde: {fileID: 0}
 --- !u!65 &1378286308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43141,7 +43142,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ec186126dfc2ea34885a89e4731c5284, type: 3}
   - {fileID: 21300000, guid: b039cdec09d67b646bba8e76475912b9, type: 3}
   buttonPlace: {fileID: 519450313}
-  errorflash: {fileID: 526527741}
   head: {fileID: 2064079613}
   round: 0
   timer: 3
