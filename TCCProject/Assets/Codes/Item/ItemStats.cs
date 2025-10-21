@@ -4,7 +4,9 @@ using System.Collections;
 
 public class ItemStats : MonoBehaviour {
 	[SerializeField] ItemObject scr;
+	public ItemObject Scr => scr;
 	public string itemname;
+	public string itemID;
 	public Sprite icon;
 	[SerializeField] Transform handfit;
 

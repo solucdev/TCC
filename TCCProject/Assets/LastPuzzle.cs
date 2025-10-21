@@ -18,7 +18,7 @@ public class LastPuzzle : MonoBehaviour
 
     void Start()
     {
-        correctButtonIndex = Random.Range(0, buttons.Length); // Escolhe botão correto aleatoriamente
+        correctButtonIndex = 2; // Escolhe botão correto aleatoriamente
 
         for (int i = 0; i < buttons.Length; i++)
         {
@@ -36,6 +36,8 @@ public class LastPuzzle : MonoBehaviour
 
         if (index == correctButtonIndex)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             puzzleEnded = true;
             victoryScreen.SetActive(true);
             puzzleScreen.SetActive(false);

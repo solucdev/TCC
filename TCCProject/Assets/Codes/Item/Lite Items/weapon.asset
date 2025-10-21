@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: weapon
   m_EditorClassIdentifier: 
   itemName: "P\xE9 de Cabra"
+  itemID: "P\xE9 de Cabra"
   icon: {fileID: 21300000, guid: c7018209a4ca0734ca03470e12aa7a9c, type: 3}

@@ -32,8 +32,37 @@ public class Collect : MonoBehaviour {
 					SetLayerAllChildrens(itemPrefab, "MyItem");
 					//itemPrefab.layer = LayerMask.NameToLayer("MyItem");
 					inv.AddItem(itemPrefab);
+
+					if (script.Scr.itemID.StartsWith("amuleto_"))
+					{
+						ItemCollectionTracker.Instance.RegisterAmuletoPiece(script.Scr.itemID);
+					}
+
+					if (!ItemCollectionTracker.Instance.HasCollected(script.Scr.itemName))
+					{
+						ItemCollectionTracker.Instance.RegisterItem(script.Scr.itemName);
+
+						// Mensagens específicas por item
+						switch (script.Scr.itemID)
+						{
+							case "Banquinho":
+								Objetivos.Instance.SetObjective("Coloque o banquinho no lugar certo");
+								break;
+							case "Pé de Cabra":
+								Objetivos.Instance.SetObjective("Use o pé de cabra no alçapão para fugir do sótão");
+								break;
+
+							/*default:
+								Objetivos.Instance.SetObjective($"Você coletou: {script.itemname}");
+								break;*/
+							case "Chave da Biblioteca":
+								Objetivos.Instance.SetObjective("Abra a biblioteca");
+								break;
+						}
+					}
+
 					//itemPrefab.transform.localScale = new Vector3(itemPrefab.transform.localScale.x * 2,
-						//itemPrefab.transform.localScale.y * 2, itemPrefab.transform.localScale.z * 2);
+					//itemPrefab.transform.localScale.y * 2, itemPrefab.transform.localScale.z * 2);
 					itemPrefab.SetActive(false);
 				}
 			}
@@ -55,4 +84,6 @@ public class Collect : MonoBehaviour {
 			t.gameObject.layer = layer;
 		}
 	}
+
+
 }

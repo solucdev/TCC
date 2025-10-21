@@ -90,6 +90,7 @@ public class AtticPuzzle : MonoBehaviour
 
 			ladderanim.GetComponent<Animator>().enabled = true;
 			ladderanim.GetComponent<Animator>().Play("open_ladder");
+			Objetivos.Instance.SetObjective("Verifique o quarto");
 			yield return null;
 		}
 	}

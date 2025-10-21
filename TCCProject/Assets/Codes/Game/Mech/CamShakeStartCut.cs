@@ -18,6 +18,8 @@ public class CamShakeStartCut : MonoBehaviour {
 
 		foreach (var s in updscripts)
 			s.enabled = true;
+
+		Objetivos.Instance.SetObjective("Explore o ambiente e arrume um jeito de sair do sótão.");
 	}
 
 

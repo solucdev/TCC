@@ -37,21 +37,30 @@ public class ShowZoomedImage : MonoBehaviour
             Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
             RaycastHit hit;
 
+            //imagePanel.SetActive(!isActive);
+
             if (Physics.Raycast(ray, out hit, maxDistance))
             {
+                
                 if (hit.transform.CompareTag("Zoomable")) 
                 {
+                    bool isActive = imagePanel.activeSelf;
+
+                    if (!isActive)
+                    {
+                    Objetivos.Instance.SetObjective("Siga as orientações da carta");
                     imageComponent.sprite = zoomedSprite;
                     imagePanel.SetActive(true);
                     fechar.SetActive(true);
+                    }
+                    else
+                    {
+                    imagePanel.SetActive(false);
+                    fechar.SetActive(false);
+                    }
+                    
                 }
             }
-        }
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            imagePanel.SetActive(false);
-            fechar.SetActive(false);
         }
     }
 }

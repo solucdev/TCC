@@ -22,6 +22,7 @@ public class VideoTrigger : MonoBehaviour
     {
         canvasVideo.SetActive(false);
         Time.timeScale = 1f;
+        Objetivos.Instance.SetObjective("Complete para a estátua o último trecho da oração");
     }
 
 

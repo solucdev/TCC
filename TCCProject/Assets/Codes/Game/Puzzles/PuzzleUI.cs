@@ -12,6 +12,7 @@ public class PuzzleUI : MonoBehaviour
     public Transform keySpawnPoint;
     public string correctAnswer = "sub luna";
     public PuzzleTrigger puzzleTrigger;
+    public GameObject erro;
 
     public void CheckAnswer()
     {
@@ -24,6 +25,10 @@ public class PuzzleUI : MonoBehaviour
             keyObject.SetActive(true);
             puzzleTrigger.CompletePuzzle();            
             Time.timeScale = 1f;
+        }
+        else
+        {
+            erro.SetActive(true);
         }
     }
 }

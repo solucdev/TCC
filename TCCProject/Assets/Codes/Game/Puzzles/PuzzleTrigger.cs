@@ -24,10 +24,26 @@ public class PuzzleTrigger : MonoBehaviour
                 {
                     if (hit.transform == transform)
                     {
-                        puzzleUI.SetActive(true);
-                        Time.timeScale = 0f;
-                        Cursor.lockState = CursorLockMode.None;
-                        Cursor.visible = true;
+
+                        bool isActive = puzzleUI.activeSelf;
+                        puzzleUI.SetActive(!isActive);
+
+
+                        if (!isActive)
+                        {
+                            // Abrir puzzle
+                            Time.timeScale = 0f;
+                            Cursor.lockState = CursorLockMode.None;
+                            Cursor.visible = true;
+                        }
+                        else
+                        {
+                            // Fechar puzzle
+                            Time.timeScale = 1f;
+                            Cursor.lockState = CursorLockMode.Locked;
+                            Cursor.visible = false;
+                        }
+
                     }
                 }
             }
@@ -49,6 +65,7 @@ public class PuzzleTrigger : MonoBehaviour
     {
         puzzleCompleted = true;
         texto.SetActive(false);
+        Objetivos.Instance.SetObjective("Abra a porta do acervo da seita");
     }
 
 }
