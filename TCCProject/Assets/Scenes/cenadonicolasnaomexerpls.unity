@@ -2475,6 +2475,7 @@ MonoBehaviour:
   playerController: {fileID: 1688177942}
   scooterCamera: {fileID: 437648743}
   firstPersonCamera: {fileID: 1639165045}
+  texto1: {fileID: 0}
 --- !u!4 &593602337
 Transform:
   m_ObjectHideFlags: 0
@@ -8203,7 +8204,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.18022428, g: 0.30825028, b: 0.509434, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -21228,6 +21229,9 @@ MonoBehaviour:
   doorAudio: {fileID: 1988094287}
   nextSceneName: IH Suzanna
   doorOpeningAudio: {fileID: 0}
+  texto1: {fileID: 0}
+  texto2: {fileID: 0}
+  ui: {fileID: 0}
 --- !u!64 &7025815150126513011
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22238,6 +22242,9 @@ MonoBehaviour:
   doorAudio: {fileID: 8238746293489911413}
   nextSceneName: Cena2
   doorOpeningAudio: {fileID: 8238746293489911416}
+  texto1: {fileID: 0}
+  texto2: {fileID: 0}
+  ui: {fileID: 0}
 --- !u!65 &8238746293489911415
 BoxCollider:
   m_ObjectHideFlags: 0
