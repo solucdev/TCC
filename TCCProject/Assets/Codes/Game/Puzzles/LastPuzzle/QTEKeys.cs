@@ -10,14 +10,13 @@ public class QTEKeys : MonoBehaviour {
 	public List<KeyCode> KeyButtons = new List<KeyCode>();
 	public List<Sprite> KeySprites = new List<Sprite>();
 	[SerializeField] Image buttonPlace;
-	[SerializeField] Image errorflash;
 	[SerializeField] Transform head;
 	CollectBunchOfKeys cbok;
 
 	public int round = 69;
 	public float timer;
 	private float startime;
-	private float tsecs;
+	private float tsecs = 0;
 	private KeyCode stringkey;
 	[HideInInspector] public bool onqte = false;
 
@@ -38,7 +37,7 @@ public class QTEKeys : MonoBehaviour {
 			}
 			else {
 				cbok.StartMoveRotate();
-				gameObject.layer = LayerMask.NameToLayer("Item");
+				StartCoroutine(LayerDelay());
 				arrest = false;
 				qte.SetActive(false);
 				onqte = false;
@@ -52,6 +51,7 @@ public class QTEKeys : MonoBehaviour {
 			qte.SetActive(false);
 			onqte = false;
 			disable.EnablePlayer();
+			FindObjectOfType<PlayerDeathManager>().PlayerDied();
 			round = 69;
 		}
 		if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.W) && !Input.GetKeyDown(KeyCode.A)
@@ -80,12 +80,12 @@ public class QTEKeys : MonoBehaviour {
 		buttonPlace.sprite = KeySprites[button];
 	}
 	public void PiFlash() {
-		errorflash.color = new Color(1, 0, 0, 0.5f);
+		buttonPlace.color = new Color(1, 0, 0, 0.5f);
 		Invoke(nameof(ClearPF), 0.1f);
 	}
 
 	void ClearPF() {
-		errorflash.color = new Color(1, 1, 1, 1f);
+		buttonPlace.color = new Color(1, 1, 1, 1f);
 	}
 
 	[SerializeField] Transform cam;
@@ -106,6 +106,12 @@ public class QTEKeys : MonoBehaviour {
 		yield return new WaitForSeconds(0.2f);
 		OnQTE();
 		round++;
+	}
+
+	IEnumerator LayerDelay()
+    {
+		yield return new WaitForSeconds(2);
+		gameObject.layer = LayerMask.NameToLayer("Item");
 	}
 
 	/*IEnumerator EnableDelay()

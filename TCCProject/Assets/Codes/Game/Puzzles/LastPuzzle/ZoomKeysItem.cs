@@ -15,6 +15,9 @@ public class ZoomKeysItem : MonoBehaviour
 	[SerializeField] Text thought;
 	[SerializeField] Camera cam;
 	[SerializeField] Transform bunchK;
+
+	private bool zooming;
+	private bool gnimooz;
     void Start()
     {
     }
@@ -35,15 +38,28 @@ public class ZoomKeysItem : MonoBehaviour
 				StartCoroutine(Zoom());
 			}
 		}
+
+        if (zooming)
+        {
+			cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 5, Time.deltaTime * 10);
+		}
+        if (gnimooz)
+        {
+			cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 75, Time.deltaTime * 3);
+		}
+
 	}
 
 	IEnumerator Zoom() {
 		cam.transform.rotation = Quaternion.LookRotation(bunchK.position - cam.transform.position);
-		cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 5, Time.deltaTime * 10);
+		zooming = true;
 		yield return new WaitForSeconds(5);
-		cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 75, Time.deltaTime * 3);
+		zooming = false;
+		gnimooz = true;
 		disable.EnablePlayer();
 		invset.enabled = true;
 		saw = true;
+		yield return new WaitForSeconds(3);
+		gnimooz = false;
 	}
 }
