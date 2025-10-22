@@ -20,26 +20,38 @@ public class Door : MonoBehaviour {
 	}
 
 	public IEnumerator ToggleDoor() {
-		Quaternion targetRotation;
-		Quaternion startRotation = transform.rotation;
 
+        if (locked && key != null)
+        {
+            locked = false;
+        }
 
-		if (opened) {
-			targetRotation = closedRotation;
-		} else {
-			targetRotation = openRotation;
-		}
-		opened = !opened;
+        if (locked)
+        {
+            yield break;
+        }
 
-		float elapsed = 0f;
-		while (elapsed < 1f) {
-			elapsed += Time.deltaTime * speed;
-			transform.rotation = Quaternion.Slerp(startRotation, targetRotation, elapsed);
-			yield return null;
-		}
+        Quaternion targetRotation;
+        Quaternion startRotation = transform.rotation;
 
-		transform.rotation = targetRotation;
+        if (opened)
+        {
+            targetRotation = closedRotation;
+        }
+        else
+        {
+            targetRotation = openRotation;
+        }
+        opened = !opened;
 
-		transform.rotation = targetRotation;
-	}
+        float elapsed = 0f;
+        while (elapsed < 1f)
+        {
+            elapsed += Time.deltaTime * speed;
+            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, elapsed);
+            yield return null;
+        }
+
+        transform.rotation = targetRotation;
+    }
 }

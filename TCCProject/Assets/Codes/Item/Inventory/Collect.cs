@@ -58,6 +58,16 @@ public class Collect : MonoBehaviour {
 							case "Chave da Biblioteca":
 								Objetivos.Instance.SetObjective("Abra a biblioteca");
 								break;
+							case "Chave da Seita":
+								Objetivos.Instance.SetObjective("Abra o acervo da seita");
+								break;
+							case "chave do escritório":
+								Objetivos.Instance.SetObjective("Abra o escritório");
+								break;
+							case "Molho de Chaves":
+								Objetivos.Instance.SetObjective("Abra a porta principal e fuja da casa");
+								break;
+						
 						}
 					}
 

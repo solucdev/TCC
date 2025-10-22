@@ -32,6 +32,7 @@ public class DialogoAcervo : MonoBehaviour
             //playerController.SetActive(false); // Desativa controle do jogador
             ArrestPlayer();
             dialogueManager.SetActive(true); // Inicia diálogo
+            Objetivos.Instance.SetObjective(" ");
         }
     }
 
@@ -44,8 +45,9 @@ public class DialogoAcervo : MonoBehaviour
         disable.EnablePlayer();
         ResetArrest();
         keyObject.SetActive(true); // Ativa a chave
+        Objetivos.Instance.SetObjective("Pegue a chave deixada na mesa");
     }
-    
+
     void ArrestPlayer()
 {
     disable.DisablePlayer();
