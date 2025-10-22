@@ -22,7 +22,7 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         Move();
-        Run();
+        //Run();
     }
     private void Move()
     {
