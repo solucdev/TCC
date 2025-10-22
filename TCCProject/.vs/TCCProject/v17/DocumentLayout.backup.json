@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\desktop\\tcc\\tccproject\\assets\\codes\\game\\togglelight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\togglelight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\desktop\\tcc\\tccproject\\assets\\codes\\game\\interactlights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\interactlights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\desktop\\tcc\\tccproject\\assets\\codes\\item\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\desktop\\tcc\\tccproject\\assets\\codes\\game\\puzzles\\lastpuzzle\\zoomkeysitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\lastpuzzle\\zoomkeysitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\item\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -26,24 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ToggleLight.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\ToggleLight.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\ToggleLight.cs",
-              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\ToggleLight.cs",
-              "RelativeToolTip": "Assets\\Codes\\Game\\ToggleLight.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ZoomKeysItem.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ZoomKeysItem.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ZoomKeysItem.cs",
+              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ZoomKeysItem.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ZoomKeysItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:49:50.877Z",
+              "WhenOpened": "2025-10-22T18:51:05.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "InteractLights.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\InteractLights.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\InteractLights.cs",
+              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\InteractLights.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\InteractLights.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T18:50:40.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Inventory.cs",
               "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Inventory.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Item\\Inventory\\Inventory.cs",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "Assets\\Codes\\Item\\Inventory\\Inventory.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:45:53.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T18:45:53.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Stamina.cs",
               "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Player\\Stamina.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Player\\Stamina.cs",
@@ -68,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PlayerMove.cs",
               "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerMove.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Player\\PlayerMove.cs",

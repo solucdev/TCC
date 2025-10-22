@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\desktop\\tcc\\tccproject\\assets\\codes\\game\\interactlights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\interactlights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\desktop\\tcc\\tccproject\\assets\\codes\\game\\puzzles\\lastpuzzle\\qtekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\lastpuzzle\\qtekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\desktop\\tcc\\tccproject\\assets\\codes\\game\\puzzles\\lastpuzzle\\zoomkeysitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\lastpuzzle\\zoomkeysitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\lastpuzzle\\zoomkeysitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -30,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QTEKeys.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\QTEKeys.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\QTEKeys.cs",
+              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\QTEKeys.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\QTEKeys.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAMwEoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T19:01:36.161Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -43,19 +56,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T18:51:05.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InteractLights.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\InteractLights.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\InteractLights.cs",
-              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\InteractLights.cs",
-              "RelativeToolTip": "Assets\\Codes\\Game\\InteractLights.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:50:40.843Z",
               "EditorCaption": ""
             },
             {
