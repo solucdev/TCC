@@ -32,7 +32,7 @@ public class PreLogoFade : MonoBehaviour
 			fadeImage.color = new Color(c.r, c.g, c.b, alpha);
 			yield return null;
 		}
-		yield return new WaitForSeconds(fadeDuration);
+		yield return new WaitForSeconds(fadeDuration +0.5f);
 		SceneManager.LoadScene("MenuKinematic");
 	}
 }
