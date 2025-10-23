@@ -18,7 +18,12 @@ public class VaultPuzzle : MonoBehaviour
 	[SerializeField] private Transform camholder;
     [SerializeField] private Transform placer;
     [SerializeField] private Transform target;
-    [SerializeField] private GameObject keyPrefab;
+    //[SerializeField] private GameObject keyPrefab;
+    [SerializeField] private GameObject keyObject;
+
+    [SerializeField] private Collider puzzleCollider;
+    //[SerializeField] private Component script;
+
     //public Transform pontoSpawn;
 
 
@@ -118,9 +123,15 @@ public class VaultPuzzle : MonoBehaviour
         cambreath.enabled = true;
         camholder.rotation = Quaternion.Euler(0, 0, 0);
 
-        GameObject keyInstance = Instantiate(keyPrefab);
-        keyInstance.SetActive(false); // evita que apareça na cena
-        inv.AddItem(keyInstance);
+
+        puzzleCollider.enabled = false;
+        this.enabled = false;
+
+
+        //GameObject keyInstance = Instantiate(keyPrefab);
+        //keyInstance.SetActive(false); // evita que apareça na cena
+        //inv.AddItem(keyInstance);
+        keyObject.SetActive(true);
 
         Debug.Log("Chave adicionada ao inventário!");
 
