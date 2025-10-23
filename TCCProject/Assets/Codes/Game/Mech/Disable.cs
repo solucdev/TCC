@@ -11,10 +11,17 @@ public class Disable : MonoBehaviour
 
    public void DisablePlayer()
     {
+        playermove.enabled = false;
         orientation.enabled = false;
         playercam.enabled = false;
-        playermove.enabled = false;
         cambreath.enabled = false;
+        Rigidbody rb = playermove.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+
     }
     public void EnablePlayer()
     {

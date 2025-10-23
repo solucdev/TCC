@@ -9,7 +9,6 @@ public class PlayerMove : MonoBehaviour
     public PlayerCrouchCam crouch;
     public Camera cam;
     public float speed;
-    public float spdrun;
     private float isp;
     public GameObject orientation;
 
@@ -22,33 +21,28 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         Move();
-        //Run();
+        Run();
+      
     }
     private void Move()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveZ = Input.GetAxisRaw("Vertical");
-        //Vector3 move = (transform.right * moveX + transform.forward * moveZ).normalized * speed;
         Vector3 move = (orientation.transform.right * moveX + orientation.transform.forward * moveZ).normalized * speed;
         rb.velocity = new Vector3(move.x, rb.velocity.y, move.z);
     }
     private void Run()
     {
 
-        if (Input.GetKey(KeyCode.LeftShift) && crouch.isdown == false && !stamina.IsTired())
+        if (crouch.isdown)
         {
-            speed = spdrun;
-            cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 90, Time.deltaTime * 10f);
+            speed = 1;
         }
+
         else
         {
             speed = isp;
-            cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 75, Time.deltaTime * 10f);
         }
 
-        if (crouch.isdown)
-        {
-            speed -= 1;
-        }
     }
 }
