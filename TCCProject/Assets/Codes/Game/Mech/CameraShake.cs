@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-    public float duration = 0.5f;     // Duração do tremor
-    public float magnitude = 0.3f;    // Intensidade do tremor
+    public float duration; 
+    public float magnitude; 
 
     private Vector3 originalPos;
 
