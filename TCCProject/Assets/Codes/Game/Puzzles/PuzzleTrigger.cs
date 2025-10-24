@@ -13,51 +13,46 @@ public class PuzzleTrigger : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !puzzleCompleted)
+
+        Ray ray = new Ray(player.position, player.forward);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, interactionDistance))
         {
-            Vector3 direction = transform.position - player.position;
-            if (direction.magnitude <= interactionDistance)
+            if (hit.transform == transform && !puzzleCompleted)
             {
-                Ray ray = new Ray(player.position, player.forward);
-                RaycastHit hit;
-                if (Physics.Raycast(ray, out hit, interactionDistance))
+                texto.SetActive(true); // Ativa o texto quando o jogador olha para o objeto
+
+                if (Input.GetKeyDown(KeyCode.E))
                 {
-                    if (hit.transform == transform)
+                    bool isActive = puzzleUI.activeSelf;
+                    puzzleUI.SetActive(!isActive);
+
+                    if (!isActive)
                     {
-
-                        bool isActive = puzzleUI.activeSelf;
-                        puzzleUI.SetActive(!isActive);
-
-
-                        if (!isActive)
-                        {
-                            // Abrir puzzle
-                            Time.timeScale = 0f;
-                            Cursor.lockState = CursorLockMode.None;
-                            Cursor.visible = true;
-                        }
-                        else
-                        {
-                            // Fechar puzzle
-                            Time.timeScale = 1f;
-                            Cursor.lockState = CursorLockMode.Locked;
-                            Cursor.visible = false;
-                        }
-
+                        // Abrir puzzle
+                        Time.timeScale = 0f;
+                        Cursor.lockState = CursorLockMode.None;
+                        Cursor.visible = true;
+                    }
+                    else
+                    {
+                        // Fechar puzzle
+                        Time.timeScale = 1f;
+                        Cursor.lockState = CursorLockMode.Locked;
+                        Cursor.visible = false;
                     }
                 }
             }
+            else
+            {
+                texto.SetActive(false); // Desativa se não estiver olhando para o objeto
+            }
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        texto.SetActive(true);
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        texto.SetActive(false);
+        else
+        {
+            texto.SetActive(false); // Desativa se não houver hit
+        }
     }
 
 

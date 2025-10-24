@@ -18,49 +18,55 @@ public class ShowZoomedImage : MonoBehaviour
     {
         imageComponent = imagePanel.GetComponentInChildren<Image>();
         imagePanel.SetActive(false);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        texto.SetActive(true);
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
         texto.SetActive(false);
     }
 
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
+        
             Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
             RaycastHit hit;
 
-            //imagePanel.SetActive(!isActive);
+        //imagePanel.SetActive(!isActive);
 
-            if (Physics.Raycast(ray, out hit, maxDistance))
+
+        if (Physics.Raycast(ray, out hit, maxDistance))
+        {
+            // Verifica se o jogador está olhando para o objeto com a tag "Zoomable"
+            if (hit.transform.CompareTag("Zoomable"))
             {
-                
-                if (hit.transform.CompareTag("Zoomable")) 
+                texto.SetActive(true); // Ativa o texto
+
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     bool isActive = imagePanel.activeSelf;
 
                     if (!isActive)
                     {
-                    Objetivos.Instance.SetObjective("Siga as orientações da carta");
-                    imageComponent.sprite = zoomedSprite;
-                    imagePanel.SetActive(true);
-                    fechar.SetActive(true);
+                        Objetivos.Instance.SetObjective("Siga as orientações da carta");
+                        imageComponent.sprite = zoomedSprite;
+                        imagePanel.SetActive(true);
+                        fechar.SetActive(true);
+                        Time.timeScale = 0f;
                     }
                     else
                     {
-                    imagePanel.SetActive(false);
-                    fechar.SetActive(false);
+                        imagePanel.SetActive(false);
+                        fechar.SetActive(false);
+                        Time.timeScale = 1f;
                     }
-                    
                 }
             }
+            else
+            {
+                texto.SetActive(false); // Desativa se não estiver olhando para o objeto
+            }
+        }
+        else
+        {
+            texto.SetActive(false); // Desativa se não houver hit
         }
     }
 }
+

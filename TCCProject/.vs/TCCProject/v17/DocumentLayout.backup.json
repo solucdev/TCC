@@ -1,26 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\",
+  "WorkspaceRootPath": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\desktop\\tcc\\tccproject\\assets\\codes\\game\\interactlights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\interactlights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\documents\\github\\tcc\\tccproject\\assets\\codes\\game\\puzzles\\showzoomedimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\showzoomedimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\desktop\\tcc\\tccproject\\assets\\codes\\game\\puzzles\\lastpuzzle\\zoomkeysitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\lastpuzzle\\zoomkeysitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\item\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\player\\stamina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\player\\stamina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\player\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\player\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\documents\\github\\tcc\\tccproject\\assets\\codes\\game\\puzzles\\puzzleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\puzzleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ZoomKeysItem.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ZoomKeysItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ZoomKeysItem.cs",
-              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ZoomKeysItem.cs",
-              "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ZoomKeysItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:51:05.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InteractLights.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\InteractLights.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\InteractLights.cs",
-              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\InteractLights.cs",
-              "RelativeToolTip": "Assets\\Codes\\Game\\InteractLights.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
+              "Title": "ShowZoomedImage.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
+              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:50:40.843Z",
+              "WhenOpened": "2025-10-24T20:08:10.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Inventory.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Item\\Inventory\\Inventory.cs",
-              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Inventory.cs",
-              "RelativeToolTip": "Assets\\Codes\\Item\\Inventory\\Inventory.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:45:53.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Stamina.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Player\\Stamina.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Player\\Stamina.cs",
-              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Player\\Stamina.cs",
-              "RelativeToolTip": "Assets\\Codes\\Player\\Stamina.cs",
+              "DocumentIndex": 1,
+              "Title": "PuzzleUI.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\PuzzleUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\PuzzleUI.cs",
+              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\PuzzleUI.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\PuzzleUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:38:51.704Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerMove.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerMove.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Player\\PlayerMove.cs",
-              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerMove.cs",
-              "RelativeToolTip": "Assets\\Codes\\Player\\PlayerMove.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T18:38:04.214Z"
+              "WhenOpened": "2025-10-24T20:07:48.842Z",
+              "EditorCaption": ""
             }
           ]
         }

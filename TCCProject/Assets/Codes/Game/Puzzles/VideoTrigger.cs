@@ -45,6 +45,7 @@ public class VideoTrigger : MonoBehaviour
                 if (hit.transform == transform)
                 {
                     canvasVideo.SetActive(true);
+                    Objetivos.Instance.SetObjective(" ");
                     videoPlayer.Play();
                     texto.SetActive(false);
                     Time.timeScale = 0f;

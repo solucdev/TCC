@@ -7,9 +7,10 @@ public class Door : MonoBehaviour {
 	public bool locked;
 	public GameObject key;
 
-	bool opened = false;
+    bool opened = false;
 	Quaternion closedRotation;
 	Quaternion openRotation;
+    public string roomName;
 
 	void Start() {
 		closedRotation = transform.rotation;
@@ -54,4 +55,5 @@ public class Door : MonoBehaviour {
 
         transform.rotation = targetRotation;
     }
+    public bool IsOpen => opened;
 }
