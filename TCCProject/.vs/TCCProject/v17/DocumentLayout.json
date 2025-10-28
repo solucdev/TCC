@@ -1,34 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\",
+  "WorkspaceRootPath": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\documents\\github\\tcc\\tccproject\\assets\\codes\\game\\enemies\\qte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\desktop\\tcc\\tccproject\\assets\\codes\\game\\puzzles\\lastpuzzle\\exithouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\lastpuzzle\\exithouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\vaultpuzzle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\vaultpuzzle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\game\\mech\\disable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\mech\\disable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\navmeshmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\navmeshmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\player\\playercrouchcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\player\\playercrouchcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\qte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\qte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\documents\\github\\tcc\\tccproject\\assets\\codes\\game\\portas\\opendoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\game\\portas\\opendoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\portas\\opendoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\documents\\github\\tcc\\tccproject\\assets\\codes\\game\\puzzles\\puzzletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\puzzletrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\documents\\github\\tcc\\tccproject\\assets\\codes\\game\\portas\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\portas\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\documents\\github\\tcc\\tccproject\\assets\\codes\\game\\puzzles\\videotrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\videotrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\aluno\\documents\\github\\tcc\\tccproject\\assets\\codes\\game\\puzzles\\showzoomedimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\showzoomedimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\puzzleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\puzzleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\assets\\codes\\item\\inventory\\collect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\inventory\\collect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,98 +42,104 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QTE.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\QTE.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Enemies\\QTE.cs",
-              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\QTE.cs",
-              "RelativeToolTip": "Assets\\Codes\\Game\\Enemies\\QTE.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T20:54:45.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Door.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\Door.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Portas\\Door.cs",
-              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\Door.cs",
-              "RelativeToolTip": "Assets\\Codes\\Game\\Portas\\Door.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T20:28:32.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OpenDoor.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
-              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
-              "RelativeToolTip": "Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAIwB4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T20:24:10.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "VideoTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\VideoTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\VideoTrigger.cs",
-              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\VideoTrigger.cs",
-              "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\VideoTrigger.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwD8AAAAAAAAAAAAAAA==",
+              "Title": "PlayerCrouchCam.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerCrouchCam.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Player\\PlayerCrouchCam.cs",
+              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerCrouchCam.cs",
+              "RelativeToolTip": "Assets\\Codes\\Player\\PlayerCrouchCam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T20:23:29.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T18:27:07.461Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PuzzleTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\PuzzleTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\PuzzleTrigger.cs",
-              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\PuzzleTrigger.cs",
-              "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\PuzzleTrigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Title": "Disable.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Mech\\Disable.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Mech\\Disable.cs",
+              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Mech\\Disable.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\Mech\\Disable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T20:10:49.361Z",
+              "WhenOpened": "2025-10-28T18:13:40.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VaultPuzzle.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\VaultPuzzle.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\VaultPuzzle.cs",
+              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\VaultPuzzle.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\VaultPuzzle.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwGcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:18:02.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExitHouse.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ExitHouse.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ExitHouse.cs",
+              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ExitHouse.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ExitHouse.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:08:32.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ShowZoomedImage.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
-              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
-              "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwDgAAAAsAAAAAAAAAA==",
+              "Title": "QTE.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\QTE.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Enemies\\QTE.cs",
+              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\QTE.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\Enemies\\QTE.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwGAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T20:08:10.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T18:16:41.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMeshMove.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\NavMeshMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Enemies\\NavMeshMove.cs",
+              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\NavMeshMove.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\Enemies\\NavMeshMove.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T17:38:43.237Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PuzzleUI.cs",
-              "DocumentMoniker": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\PuzzleUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\PuzzleUI.cs",
-              "ToolTip": "C:\\Users\\aluno\\Documents\\GitHub\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\PuzzleUI.cs",
-              "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\PuzzleUI.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Title": "OpenDoor.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
+              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowDEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T20:07:48.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T17:14:13.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Collect.cs",
+              "DocumentMoniker": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Collect.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Item\\Inventory\\Collect.cs",
+              "ToolTip": "C:\\Users\\aluno\\Desktop\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Collect.cs",
+              "RelativeToolTip": "Assets\\Codes\\Item\\Inventory\\Collect.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwBwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T17:11:21.02Z"
             }
           ]
         }

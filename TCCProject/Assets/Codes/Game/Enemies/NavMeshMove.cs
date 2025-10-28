@@ -3,6 +3,7 @@ using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEditor;
 
 public class NavMeshMove : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class NavMeshMove : MonoBehaviour
     [SerializeField] int idleTime;
     [SerializeField] int difficult;
     [SerializeField] Transform player;
+    [SerializeField] GameObject fbx;
 
     int times;
     int randpoint;
@@ -26,12 +28,18 @@ public class NavMeshMove : MonoBehaviour
     {
         if (!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance && !fp)
         {
-            await Task.Delay(idleTime * 1000); // aq teria uma animação do inimigo em idle fazendo nada
+            fbx.GetComponent<Animator>().Play("idle"); 
+            await Task.Delay(idleTime * 1000);
             AIWalk();
         }
         if(!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance && fp)
         {
             FollowAgain(difficult);
+        }
+
+        if(ai.speed < 0.2f)
+        {
+            fbx.GetComponent<Animator>().Play("idle");
         }
     }
 
@@ -40,11 +48,11 @@ public class NavMeshMove : MonoBehaviour
         randpoint = Random.Range(0, points.Count);
         destination = new Vector3(points[randpoint].position.x, points[randpoint].position.y, points[randpoint].position.z);
         int s = randpoint + 1;
-        Debug.LogWarning("Inimigo está indo para o point" + s);
     }
 
     void AIWalk()
     {
+        fbx.GetComponent<Animator>().Play("swagger");
         if (!fp)
         { RandomPoint();
         ai.SetDestination(destination); }

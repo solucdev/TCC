@@ -1,16 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-
 public class LastPuzzle : MonoBehaviour
 {
-
-    public Button[] buttons; // Referência aos 6 botões
+    public GameObject[] keys;
     public GameObject victoryScreen;
     public GameObject deathScreen;
     public GameObject puzzleScreen;
+
+    public Text[] numbers;
 
     private int correctButtonIndex;
     private int attemptsLeft = 3;
@@ -18,19 +15,10 @@ public class LastPuzzle : MonoBehaviour
 
     void Start()
     {
-        correctButtonIndex = 2; // Escolhe botão correto aleatoriamente
-
-        for (int i = 0; i < buttons.Length; i++)
-        {
-            int index = i; // Necessário para capturar o índice corretamente no lambda
-            buttons[i].onClick.AddListener(() => OnButtonPressed(index));
-        }
-
-        victoryScreen.SetActive(false);
-        deathScreen.SetActive(false);
+        correctButtonIndex = 4;
     }
 
-    void OnButtonPressed(int index)
+    public void Press(int index)
     {
         if (puzzleEnded) return;
 
@@ -41,19 +29,18 @@ public class LastPuzzle : MonoBehaviour
             puzzleEnded = true;
             victoryScreen.SetActive(true);
             puzzleScreen.SetActive(false);
-            Debug.Log("Acertou!");
         }
         else
         {
+            keys[index].GetComponent<Rigidbody>().AddForce(Vector3.up * 800);
             attemptsLeft--;
-            Debug.Log("Errou! Tentativas restantes: " + attemptsLeft);
+            numbers[index].color = Color.red;
 
             if (attemptsLeft <= 0)
             {
                 puzzleEnded = true;
                 deathScreen.SetActive(true);
                 puzzleScreen.SetActive(false);
-                Debug.Log("Morreu!");
             }
         }
     }

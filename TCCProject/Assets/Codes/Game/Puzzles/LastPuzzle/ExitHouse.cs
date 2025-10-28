@@ -11,24 +11,13 @@ public class ExitHouse : MonoBehaviour
     [SerializeField] Transform camholder;
     [SerializeField] Disable system;
     [SerializeField] GameObject keymolde;
-    private Transform cam;
-
-    private int chances;
-
-    void Start()
-    {
-        cam = camholder.GetComponentInChildren<Transform>();
-    }
-
-    void Update()
-    {
-    }
+    [SerializeField] Transform cam;
+    [SerializeField] GameObject puzzle;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            StartExitPuzzle(); //para jogo apagar essa linha <<<
             if (inv.ItemInHand(keys))
             {
                 StartExitPuzzle();
@@ -44,10 +33,10 @@ public class ExitHouse : MonoBehaviour
     void StartExitPuzzle()
     {
         system.DisablePlayer();
-        cam.rotation = Quaternion.Euler(0, 0, 0);
-        camholder.position = new Vector3(148.733994f, 2.29500008f, 247.169998f);
-        camholder.rotation = Quaternion.Euler(67.8154526f, 265.242645f, 355.204651f);
         keymolde.SetActive(true);
+        camholder.position = new Vector3(149, 2.5f, 247.2f);
+        cam.rotation = Quaternion.Euler(60, -90, 0);
+        puzzle.SetActive(true);
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -65,17 +54,6 @@ public class ExitHouse : MonoBehaviour
         Time.timeScale = 1.0f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-    }
-    public void Wrong()
-    {
-        if(chances <= 2)
-        {
-            chances++;
-        }
-        else
-        {
-			FindObjectOfType<PlayerDeathManager>().PlayerDied();
-        }
     }
 }
 
