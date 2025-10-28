@@ -42,6 +42,9 @@ public class ShowZoomedImage : MonoBehaviour
                 {
                     bool isActive = imagePanel.activeSelf;
 
+                    if (!isActive && UIManager.Instance != null && UIManager.Instance.IsAnyUIOpen && !UIManager.Instance.isCartaOpen)
+                        return;
+
                     if (!isActive)
                     {
                         Objetivos.Instance.SetObjective("Siga as orientações da carta");
@@ -49,12 +52,16 @@ public class ShowZoomedImage : MonoBehaviour
                         imagePanel.SetActive(true);
                         fechar.SetActive(true);
                         Time.timeScale = 0f;
+                        UIManager.Instance.isCartaOpen = true;
+                        UIManager.Instance.UpdateTimeScale();
                     }
                     else
                     {
                         imagePanel.SetActive(false);
                         fechar.SetActive(false);
                         Time.timeScale = 1f;
+                        UIManager.Instance.isCartaOpen = false;
+                        UIManager.Instance.UpdateTimeScale();
                     }
                 }
             }

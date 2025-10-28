@@ -4750,8 +4750,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230050068}
   m_LocalRotation: {x: 0.6532815, y: 0.27059805, z: -0.27059805, w: 0.6532815}
-  m_LocalPosition: {x: 2.29, y: 41, z: 6.18}
-  m_LocalScale: {x: 14.205608, y: 1, z: 10}
+  m_LocalPosition: {x: 1.609, y: 41, z: 6.83}
+  m_LocalScale: {x: 14.53319, y: 1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 174658265}
@@ -4766,7 +4766,7 @@ MeshCollider:
   m_GameObject: {fileID: 230050068}
   m_Material: {fileID: 13400000, guid: 3b68240e5738b7042910397a71d88d25, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -11578,6 +11578,55 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5076798556035486163, guid: a5b1738d1de77d6448ce2f5c3adbf2bf, type: 3}
+--- !u!1 &544469145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 544469147}
+  - component: {fileID: 544469146}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &544469146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544469145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90275dede393e1943a765edb315f1ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPuzzleOpen: 0
+  isInventoryOpen: 0
+  isPauseOpen: 0
+  isVideoOpen: 0
+  isCartaOpen: 0
+--- !u!4 &544469147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544469145}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 151.46, y: 2.52, z: 228.36}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544904318 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8555723066921467593, guid: 16987acd668cccf49802447c835b7a86, type: 3}
@@ -23684,16 +23733,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f94ccccaa3eb4f47807bbe5de04461e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 610096145}
-  - {fileID: 613002674}
-  - {fileID: 562079743}
-  - {fileID: 311137204}
-  - {fileID: 1357302681}
-  - {fileID: 2122983959}
+  keys: []
   victoryScreen: {fileID: 727139097}
   deathScreen: {fileID: 503159371}
   puzzleScreen: {fileID: 1136740018}
+  numbers: []
 --- !u!1 &1137056489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1507767883509144192, guid: ef6eb62e687360a43ac067cdceef4671, type: 3}
@@ -25563,7 +25607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e23115a81af94ec46ac96f7c3463f710, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -381.30188
+      value: -372.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e23115a81af94ec46ac96f7c3463f710, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28540,6 +28584,8 @@ MonoBehaviour:
   camholder: {fileID: 0}
   system: {fileID: 0}
   keymolde: {fileID: 0}
+  cam: {fileID: 0}
+  puzzle: {fileID: 0}
 --- !u!65 &1378286308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43025,6 +43071,7 @@ MonoBehaviour:
   idleTime: 5
   difficult: 10
   player: {fileID: 314199067}
+  fbx: {fileID: 0}
 --- !u!195 &2074267320
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46773,7 +46820,7 @@ GameObject:
   - component: {fileID: 3469287837655759685}
   - component: {fileID: 1711813854937026447}
   - component: {fileID: 2076152591}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: parede2andar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46862,7 +46909,7 @@ GameObject:
   - component: {fileID: 3469287837069937577}
   - component: {fileID: 1711813855492177763}
   - component: {fileID: 1742052852}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: paredes1andar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

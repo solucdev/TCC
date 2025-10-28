@@ -17,6 +17,9 @@ public class QuadVentory : MonoBehaviour
 	}
     void Update()
     {
+        if (UIManager.Instance != null && UIManager.Instance.IsAnyUIOpen && !UIManager.Instance.isInventoryOpen)
+            return;
+
         if (Input.GetKeyDown(KeyCode.I) && !open)
         {
             camb = cam.rotation;
@@ -25,6 +28,7 @@ public class QuadVentory : MonoBehaviour
             Cursor.visible = true;
             Time.timeScale = 0;
             StartCoroutine(delay(true));
+            UIManager.Instance.isInventoryOpen = true;
         }
         if (Input.GetKeyDown(KeyCode.I) && open)
         {
@@ -34,6 +38,7 @@ public class QuadVentory : MonoBehaviour
 			Time.timeScale = 1;
 			StartCoroutine(delay(false));
             invset.SetActive(false);
+            UIManager.Instance.isInventoryOpen = false;
         }
 
     }
@@ -46,6 +51,7 @@ public class QuadVentory : MonoBehaviour
         Time.timeScale = 1;
 		StartCoroutine(delay(false));
         invset.SetActive(false);
+        UIManager.Instance.isInventoryOpen = false;
     }
 
     public void PlaceBox(Transform slotpos)

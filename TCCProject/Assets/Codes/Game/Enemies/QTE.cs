@@ -60,12 +60,34 @@ public class QTE : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && tsecs > timer)
+        if (other.CompareTag("Player") && tsecs > timer && HasLineOfSight())
         {
             qte.SetActive(true);
             OnQTE();
             arrest = true;
         }
+    }
+
+    bool HasLineOfSight()
+    {
+        Vector3 directionToPlayer = player.position - transform.position;
+        float distanceToPlayer = directionToPlayer.magnitude;
+
+        // Raycast para verificar se há algo entre o inimigo e o jogador
+        if (Physics.Raycast(transform.position, directionToPlayer.normalized, out RaycastHit hit, distanceToPlayer))
+        {
+            // Verifica se o que foi atingido é o jogador
+            if (hit.collider.CompareTag("Player"))
+            {
+                return true; // Visão desobstruída
+            }
+            else
+            {
+                return false; // Algo está bloqueando a visão
+            }
+        }
+
+        return false;
     }
 
     void OnQTE()
