@@ -36,7 +36,7 @@ public class ZoomKeysItem : MonoBehaviour
 				StartCoroutine(effect.EraseMessage(thought, 5));
 				//StartCoroutine(tip.Thought("")); ta todo bugado esse thought
 				StartCoroutine(Zoom());
-				//Objetivos.Instance.SetObjective("Vá furtivamente pegar o molho de chaves");
+				Objetivos.Instance.SetObjective("Vá furtivamente pegar o molho de chaves");
 			}
 		}
 
