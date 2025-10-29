@@ -27,10 +27,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _Amount: 200
-    - _Blur: 0.3
+    - _Blur: 1
     - _Glossiness: 0.5
     - _Metallic: 0
-    - _Size: 0.3
+    - _Size: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
