@@ -3,7 +3,7 @@ using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEditor;
+using UnityEngine.UI;
 
 public class NavMeshMove : MonoBehaviour
 {
@@ -13,6 +13,9 @@ public class NavMeshMove : MonoBehaviour
     [SerializeField] int difficult;
     [SerializeField] Transform player;
     [SerializeField] GameObject fbx;
+
+    [SerializeField] TypeWriter effect;
+    [SerializeField] Text thought;
 
     int times;
     int randpoint;
@@ -35,6 +38,8 @@ public class NavMeshMove : MonoBehaviour
         if(!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance && fp)
         {
             FollowAgain(difficult);
+            StartCoroutine(effect.Typer(thought, "você foi visto!"));
+            StartCoroutine(effect.EraseMessage(thought, 2));
         }
 
         if(ai.speed < 0.2f)
@@ -62,8 +67,7 @@ public class NavMeshMove : MonoBehaviour
     {
         fp = true;
         StartCoroutine(Recalculate());
-        Debug.Log("é para seguir o jogador");
-
+        Debug.Log("visto");
     }
 
     void FollowAgain(int difficult)
