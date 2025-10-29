@@ -63,6 +63,8 @@ public class Inventory : MonoBehaviour {
 			item.SetActive(true);
 			item.transform.position = transform.position;
 			item.transform.rotation = transform.rotation;
+			item.transform.localScale = new Vector3(item.transform.localScale.x / 4,
+						item.transform.localScale.y / 4, item.transform.localScale.z / 4);
 			SetLayerAllChildrens(item, "Item"); 
 			ReorganizeIcons();
 		}
