@@ -5,6 +5,7 @@ using UnityEngine.Video;
 
 public class VideoTrigger : MonoBehaviour
 {
+    public AudioSource videoAudio;
     public VideoPlayer videoPlayer;
     public GameObject canvasVideo;
     public float maxDistance = 10f;
@@ -47,6 +48,7 @@ public class VideoTrigger : MonoBehaviour
                 {
                     canvasVideo.SetActive(true);
                     Objetivos.Instance.SetObjective(" ");
+                    videoAudio.Play();
                     videoPlayer.Play();
                     texto.SetActive(false);
                     Time.timeScale = 0f;

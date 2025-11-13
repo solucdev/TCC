@@ -9274,7 +9274,7 @@ GameObject:
   - component: {fileID: 1067338885}
   m_Layer: 0
   m_Name: Terrain A--------------------
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9610,6 +9610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scr: {fileID: 11400000, guid: 62665883e55f3fd4798e39abc3de8117, type: 2}
   itemname: 
+  itemID: 
   icon: {fileID: 0}
   handfit: {fileID: 0}
   i: {fileID: 0}
@@ -11074,7 +11075,6 @@ MonoBehaviour:
   crouch: {fileID: 1992879084}
   cam: {fileID: 891293803}
   speed: 3
-  spdrun: 6
   orientation: {fileID: 1992879082}
 --- !u!146 &1688177950
 WheelCollider:

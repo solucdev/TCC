@@ -7,6 +7,8 @@ TagManager:
   - Porta
   - Zoomable
   - Peca
+  - Wood
+  - Grass
   layers:
   - Default
   - TransparentFX
