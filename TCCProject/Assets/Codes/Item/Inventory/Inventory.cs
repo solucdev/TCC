@@ -58,13 +58,15 @@ public class Inventory : MonoBehaviour {
     {
 		if (!inventory.Contains(item)) return;
 		else {
-			inventory.Remove(item);
+            ItemStats script = item.GetComponent<ItemStats>();
+
+            inventory.Remove(item);
 			item.transform.SetParent(null);
 			item.SetActive(true);
 			item.transform.position = transform.position;
 			item.transform.rotation = transform.rotation;
-			item.transform.localScale = new Vector3(item.transform.localScale.x / 4,
-						item.transform.localScale.y / 4, item.transform.localScale.z / 4);
+			item.transform.localScale = new Vector3(item.transform.localScale.x / script.scale,
+						item.transform.localScale.y / script.scale, item.transform.localScale.z / script.scale);
 			SetLayerAllChildrens(item, "Item"); 
 			ReorganizeIcons();
 		}
