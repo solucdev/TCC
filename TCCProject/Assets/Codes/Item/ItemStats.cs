@@ -7,6 +7,7 @@ public class ItemStats : MonoBehaviour {
 	public ItemObject Scr => scr;
 	public string itemname;
 	public string itemID;
+	public float scale;
 	public Sprite icon;
 	[SerializeField] Transform handfit;
 
@@ -16,6 +17,7 @@ public class ItemStats : MonoBehaviour {
 	void Start() {
 		itemname = scr.itemName;
 		icon = scr.icon;
+		scale = scr.scale;	
 	}
 
 	public Transform PerfectPosition(Transform playerP) {

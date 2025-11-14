@@ -71,8 +71,8 @@ public class Collect : MonoBehaviour {
 						}
 					}
 
-					itemPrefab.transform.localScale = new Vector3(itemPrefab.transform.localScale.x * 4,
-					itemPrefab.transform.localScale.y * 4, itemPrefab.transform.localScale.z * 4);
+					itemPrefab.transform.localScale = new Vector3(itemPrefab.transform.localScale.x * script.scale,
+					itemPrefab.transform.localScale.y * script.scale, itemPrefab.transform.localScale.z * script.scale);
 					itemPrefab.SetActive(false);
 				}
 			}

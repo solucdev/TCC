@@ -24,20 +24,37 @@ public class Stun : MonoBehaviour
         {
             if (hit.collider.gameObject.name == "fbx do mixamo")
             {
-                if(inv.ItemInHand(weapons[0]) || inv.ItemInHand(weapons[1]) || inv.ItemInHand(weapons[2]))
+                for(int i = 0; i < weapons.Length; i++)
                 {
-                    attack.SetActive(true);
-                    if (Input.GetMouseButton(0))
+                    if (inv.ItemInHand(weapons[i]))
                     {
-                        //diminuir rotation x
-                        stun.DisableEnemy();
+                        attack.SetActive(true);
+                        if (Input.GetMouseButton(0))
+                        {
+                            WeaponAction(weapons[i], i);
+                            stun.DisableEnemy();
+                        }
+                    }
+                    else
+                    {
+                        attack.SetActive(false);
                     }
                 }
-                else
-                {
-                    attack.SetActive(false);
-                }
+                
             }
         }
     }
-}
+
+    void WeaponAction(GameObject item, int index)
+    {
+        if (index == 0 )
+        {
+            Quaternion targt = Quaternion.LookRotation(Vector3.right * 60, Vector3.up);
+            item.transform.rotation = Quaternion.RotateTowards(transform.rotation, targt, 3 * Time.deltaTime);
+        }
+        if(index == 1)
+        {
+            item.transform.position = Vector3.MoveTowards(item.transform.position, item.transform.forward, 3 * Time.deltaTime);
+        }
+    }
+    }

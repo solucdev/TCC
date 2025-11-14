@@ -9,6 +9,7 @@ public class StunEffect : MonoBehaviour
     private TimeBar timebar;
     private NavMeshMove navmesh;
     private NavMeshAgent ai;
+    public GameObject fbx;
 
     private void Start()
     {
@@ -23,7 +24,7 @@ public class StunEffect : MonoBehaviour
         timebar.enabled = false;
         navmesh.enabled = false;
         ai.enabled = false;
-        //animation
+        fbx.GetComponent<Animator>().Play("walking to die");
     }
     public void ResetEnemy()
     {
