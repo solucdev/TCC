@@ -4,7 +4,6 @@ using UnityEngine;
 public class ItemObject : ScriptableObject {
 	public string itemName;
 	public string itemID;
-	public float scale;
 	public Sprite icon;
 
 }

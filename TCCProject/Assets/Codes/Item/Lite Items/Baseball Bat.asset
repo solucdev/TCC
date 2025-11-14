@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Taco de Beisebol
   itemID: 
-  scale: 2
   icon: {fileID: 21300000, guid: d29ce5630a8c79442833ce80091a5708, type: 3}

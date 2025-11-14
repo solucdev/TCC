@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Molho de Chaves
   itemID: Molho de Chaves
-  scale: 2.25
   icon: {fileID: 21300000, guid: 4a4c0a47d12474c42a29fd1302e738e6, type: 3}
