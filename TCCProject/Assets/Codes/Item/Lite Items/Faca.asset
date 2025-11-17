@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Faca
   itemID: 
   scale: 2
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 503f9decd390c444ca0b3decc9ededdb, type: 3}

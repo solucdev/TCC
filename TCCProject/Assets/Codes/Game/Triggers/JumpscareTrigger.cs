@@ -13,6 +13,12 @@ public class JumpscareTrigger : MonoBehaviour
     public string nextSceneName;           // Nome da próxima cena
     public GameObject playerController;
     public GameObject text;
+    public Disable disable;
+    [SerializeField] Transform head;
+    [SerializeField] Transform cam;
+
+
+
 
     private bool hasTriggered = false;
 
@@ -28,9 +34,12 @@ public class JumpscareTrigger : MonoBehaviour
 
     IEnumerator TriggerJumpscare()
     {
+        cam.LookAt(head);
+
+        disable.DisablePlayer();
         // Toca som
-       /* if (jumpscareSound != null)
-            jumpscareSound.Play();*/
+        /* if (jumpscareSound != null)
+             jumpscareSound.Play();*/
 
         playerController.SetActive(false);
 

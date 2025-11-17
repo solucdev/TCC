@@ -4472,7 +4472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angle: 60
-  locked: 1
+  locked: 0
   key: {fileID: 1286424636}
   roomName: "o escrit\xF3rio"
 --- !u!1 &207951980 stripped
@@ -6831,7 +6831,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314199066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 151.104, y: 8.516, z: 228.292}
+  m_LocalPosition: {x: 143.37, y: 1.28, z: 226.412}
   m_LocalScale: {x: 1, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10850,7 +10850,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498551773}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9df4606960e3640e7a8481bf09ad48ef, type: 3}
   m_Name: 
@@ -24420,7 +24420,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119499835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2be68ffcd6b9447d1b66af2abe98c721, type: 3}
   m_Name: 
@@ -24437,7 +24437,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119499835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9df4606960e3640e7a8481bf09ad48ef, type: 3}
   m_Name: 
@@ -24453,7 +24453,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119499835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ab33814d3e304398a9dc8c472d212cb, type: 3}
   m_Name: 
@@ -24470,7 +24470,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119499835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94e3e00c7db294d8489f45358437019e, type: 3}
   m_Name: 
@@ -24485,7 +24485,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119499835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88571dab8b35d4986bd57c94d47728a1, type: 3}
   m_Name: 
@@ -24504,7 +24504,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119499835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d54c6bfda817a46eb9d976719fd25909, type: 3}
   m_Name: 
@@ -35828,7 +35828,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -188, y: 451}
+  m_AnchoredPosition: {x: -6, y: -461}
   m_SizeDelta: {x: 803.326, y: 44.4919}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667440711
@@ -35844,7 +35844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6132076, g: 0.5267502, b: 0.4830456, a: 1}
+  m_Color: {r: 0.9150943, g: 0.88344014, b: 0.867613, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -35858,7 +35858,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 254
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -45672,7 +45672,7 @@ MonoBehaviour:
   scr: {fileID: 11400000, guid: c0001018faff98d4ba5d49e95c9d1083, type: 2}
   itemname: 
   itemID: 
-  scale: 0
+  scale: 0.05
   icon: {fileID: 0}
   handfit: {fileID: 773662965}
   i: {fileID: 1899574618}

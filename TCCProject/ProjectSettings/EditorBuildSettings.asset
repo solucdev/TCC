@@ -5,25 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Build/Pre-Game.unity
-    guid: 9013cc6203e91844d8a829f7d2c03b1d
+    path: Assets/Scenes/Pre-Game.unity
+    guid: fd644069a2e239d4c91c0770eff51a1f
   - enabled: 1
-    path: Assets/Scenes/Build/MenuKinematic.unity
-    guid: 406460718d1ea93438249c90b895b42e
+    path: Assets/Scenes/MenuKinematic.unity
+    guid: 44e54ba61f5b0594fa9ffa61ac4e402f
   - enabled: 1
     path: Assets/Scenes/OutsideCutscene.unity
     guid: 243ab8d1a3599e94c8a07c124eecb38d
   - enabled: 1
-    path: Assets/Scenes/Build/Cena2.unity
-    guid: 2c20e208a430ba447b9063ade2fb6d9e
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: "Assets/Scenes/InHouse/Manh\xE3DeTestes.unity"
-    guid: 9325499766768884693fe0d544768133
+    path: Assets/Scenes/Cena2.unity
+    guid: 55127ee9a1728c44cb2ecd60dd7d544d
   - enabled: 1
-    path: Assets/Scenes/InHouse/Suzanna3.unity
-    guid: c46e09d595929f843b0f405b0bf0501b
+    path: Assets/Scenes/FinalNQP.unity
+    guid: bf83359618c5eac4290b5c17769f7f3d
   m_configObjects: {}
