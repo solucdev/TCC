@@ -5,33 +5,57 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
-    [SerializeField] GameObject screen;
+    [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject settingsMenu;
     [SerializeField] GameObject qte;
+
     void Update()
     {
-        PauseOn();
+        HandlePauseInput();
     }
 
-    private void PauseOn()
+    private void HandlePauseInput()
     {
         if (UIManager.Instance != null && UIManager.Instance.IsAnyUIOpen && !UIManager.Instance.isPauseOpen)
             return;
 
-
-        if (Input.GetKeyDown(KeyCode.P) && !qte.activeSelf || Input.GetKeyDown(KeyCode.Escape) && !qte.activeSelf)
+        if ((Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape)) && !qte.activeSelf)
         {
-            Time.timeScale = 0f;
-            screen.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            UIManager.Instance.isPauseOpen = true;        }
+            if (settingsMenu.activeSelf)
+            {
+                // Fecha ajustes e volta para pausa
+                settingsMenu.SetActive(false);
+                pauseMenu.SetActive(true);
+            }
+            else if (pauseMenu.activeSelf)
+            {
+                // Fecha tudo
+                PauseOff();
+            }
+            else
+            {
+                // Abre pausa
+                PauseOn();
+            }
+        }
     }
+
+    public void PauseOn()
+    {
+        Time.timeScale = 0f;
+        pauseMenu.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        UIManager.Instance.isPauseOpen = true;
+    }
+
     public void PauseOff()
     {
-            screen.SetActive(false);
-            Time.timeScale = 1f;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            UIManager.Instance.isPauseOpen = false;    }
+        pauseMenu.SetActive(false);
+        settingsMenu.SetActive(false);
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        UIManager.Instance.isPauseOpen = false;
+    }
 }
-

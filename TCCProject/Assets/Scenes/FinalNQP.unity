@@ -7872,7 +7872,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da4a8c4a938f1fb4987e2c6142147c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screen: {fileID: 1490000719}
+  pauseMenu: {fileID: 1490000719}
+  settingsMenu: {fileID: 245252583}
   qte: {fileID: 1369370952}
 --- !u!114 &355372989
 MonoBehaviour:
