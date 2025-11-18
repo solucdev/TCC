@@ -15,6 +15,7 @@ public class LastPuzzle : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 0f;
         correctButtonIndex = 4;
     }
 
@@ -29,6 +30,7 @@ public class LastPuzzle : MonoBehaviour
             puzzleEnded = true;
             victoryScreen.SetActive(true);
             puzzleScreen.SetActive(false);
+            Time.timeScale = 1f;
         }
         else
         {
@@ -41,6 +43,7 @@ public class LastPuzzle : MonoBehaviour
                 puzzleEnded = true;
                 deathScreen.SetActive(true);
                 puzzleScreen.SetActive(false);
+                Time.timeScale = 1f;
             }
         }
     }
