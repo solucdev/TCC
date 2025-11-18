@@ -1,10 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Animations;
 
 public class TriggerCenadois : MonoBehaviour
 {
+    [Header("Referências")]
     public GameObject playerController;
     public Animator inimigoAnimator;
     public Disable disable;
@@ -14,16 +13,35 @@ public class TriggerCenadois : MonoBehaviour
     [SerializeField] Transform cam;
     [SerializeField] Camera mainCamera;
 
+    [Header("Configurações de Zoom")]
+    public float zoomFOV = 30f;
+    public float zoomDuration = 1f;
 
     private bool hasTriggered = false;
     private bool arrest = false;
+    private bool zoomRestored = false;
+    private float originalFOV;
+
+    private void Start()
+    {
+        // Salva o FOV original da câmera
+        originalFOV = Mathf.Clamp(mainCamera.fieldOfView, 30f, 90f);
+        Debug.Log("[TriggerCenadois] FOV original salvo: " + originalFOV);
+    }
 
     private void Update()
     {
         if (arrest)
         {
-            // Travar a câmera olhando para o ponto de interesse
             cam.LookAt(head);
+
+            // Verifica se a animação terminou
+            AnimatorStateInfo stateInfo = inimigoAnimator.GetCurrentAnimatorStateInfo(0);
+            if (stateInfo.IsName("inimigocena2") && stateInfo.normalizedTime >= 1f && !zoomRestored)
+            {
+                Debug.Log("[TriggerCenadois] Animação terminou, iniciando ZoomOut...");
+                EndSequence();
+            }
         }
     }
 
@@ -31,53 +49,59 @@ public class TriggerCenadois : MonoBehaviour
     {
         if (!hasTriggered && other.CompareTag("Player"))
         {
-            StartZoom();
+            Debug.Log("[TriggerCenadois] Player entrou no trigger, iniciando sequência...");
             hasTriggered = true;
             arrest = true;
 
-            // Desativa os scripts de controle do jogador
             disable.DisablePlayer();
-
-            // Inicia a animação do inimigo
             inimigoAnimator.Play("inimigocena2");
 
-            // Espera a animação terminar
+            StartCoroutine(ZoomIn());
         }
-
     }
 
-   
-
-    void OnAnimationEnd()
+    private void EndSequence()
     {
+        zoomRestored = true;
         arrest = false;
 
         texto.SetActive(true);
-        // Reativa os scripts de controle do jogador
         disable.EnablePlayer();
-    }
 
-
-    public void StartZoom()
-    {
-        StartCoroutine(ZoomIn());
+        StartCoroutine(ZoomOut());
     }
 
     IEnumerator ZoomIn()
     {
-        float targetFOV = 30f; // Zoom desejado
-        float duration = 1f;
+        Debug.Log("[TriggerCenadois] ZoomIn iniciado...");
         float startFOV = mainCamera.fieldOfView;
         float time = 0;
 
-        while (time < duration)
+        while (time < zoomDuration)
         {
-            mainCamera.fieldOfView = Mathf.Lerp(startFOV, targetFOV, time / duration);
+            mainCamera.fieldOfView = Mathf.Lerp(startFOV, zoomFOV, time / zoomDuration);
             time += Time.deltaTime;
             yield return null;
         }
 
-        mainCamera.fieldOfView = targetFOV;
+        mainCamera.fieldOfView = zoomFOV;
+        Debug.Log("[TriggerCenadois] ZoomIn concluído. FOV atual: " + mainCamera.fieldOfView);
     }
 
+    IEnumerator ZoomOut()
+    {
+        Debug.Log("[TriggerCenadois] ZoomOut iniciado...");
+        float startFOV = mainCamera.fieldOfView;
+        float time = 0;
+
+        while (time < zoomDuration)
+        {
+            mainCamera.fieldOfView = Mathf.Lerp(startFOV, originalFOV, time / zoomDuration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        mainCamera.fieldOfView = originalFOV;
+        Debug.Log("[TriggerCenadois] ZoomOut concluído. FOV restaurado: " + mainCamera.fieldOfView);
+    }
 }

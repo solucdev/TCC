@@ -9,6 +9,7 @@ public class Collect : MonoBehaviour {
 	[SerializeField] Transform handfit;
 	[SerializeField] float range;
 	[SerializeField] Inventory inv;
+	[SerializeField] GameObject Keys;
 
 	void Update() {
 		RaycastHit hit;
@@ -45,7 +46,8 @@ public class Collect : MonoBehaviour {
 						// Mensagens específicas por item
 						switch (script.Scr.itemID)
 						{
-							case "Banquinho":
+
+                            case "Banquinho":
 								Objetivos.Instance.SetObjective("Coloque o banquinho no lugar certo");
 								break;
 							case "Pé de Cabra":
@@ -66,7 +68,9 @@ public class Collect : MonoBehaviour {
 								break;
 							case "Molho de Chaves":
 								Objetivos.Instance.SetObjective("Abra a porta principal e fuja da casa");
-								break;
+								Keys.GetComponent<QTEKeys>().enabled = false;
+                                Keys.GetComponent<TimeBarKeys>().enabled = false;
+                                break;
 						
 						}
 					}

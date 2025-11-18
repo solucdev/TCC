@@ -4472,7 +4472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angle: 60
-  locked: 0
+  locked: 1
   key: {fileID: 1286424636}
   roomName: "o escrit\xF3rio"
 --- !u!1 &207951980 stripped
@@ -6831,7 +6831,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314199066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 143.37, y: 1.28, z: 226.412}
+  m_LocalPosition: {x: 151.41, y: 8.53, z: 228.19}
   m_LocalScale: {x: 1, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11015,6 +11015,7 @@ MonoBehaviour:
   handfit: {fileID: 773662965}
   range: 3.5
   inv: {fileID: 314199069}
+  Keys: {fileID: 0}
 --- !u!114 &498551789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35828,8 +35829,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: -461}
-  m_SizeDelta: {x: 803.326, y: 44.4919}
+  m_AnchoredPosition: {x: -0.000021935, y: -371}
+  m_SizeDelta: {x: 1029.5725, y: 44.4919}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667440711
 MonoBehaviour:
@@ -35853,7 +35854,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 57f9f07b278e18c4cac83f6c5eec5053, type: 3}
-    m_FontSize: 35
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0

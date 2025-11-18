@@ -11,21 +11,32 @@ public class JumpscareTrigger : MonoBehaviour
     public CameraShake cameraShake;        // Script de tremor de câmera
     public float scareDuration = 2f;       // Tempo antes de trocar a cena
     public string nextSceneName;           // Nome da próxima cena
-    public GameObject playerController;
     public GameObject text;
     public Disable disable;
     [SerializeField] Transform head;
     [SerializeField] Transform cam;
+    private bool arrest = false;
 
 
 
 
     private bool hasTriggered = false;
 
+    private void Update()
+    {
+        if (arrest)
+        {
+            // Travar a câmera olhando para o ponto de interesse
+            cam.LookAt(head);
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (!hasTriggered && other.CompareTag("Player"))
         {
+            arrest = true;
+            disable.DisablePlayer();
             text.SetActive(false);
             hasTriggered = true;
             StartCoroutine(TriggerJumpscare());
@@ -34,14 +45,9 @@ public class JumpscareTrigger : MonoBehaviour
 
     IEnumerator TriggerJumpscare()
     {
-        cam.LookAt(head);
-
-        disable.DisablePlayer();
         // Toca som
         /* if (jumpscareSound != null)
              jumpscareSound.Play();*/
-
-        playerController.SetActive(false);
 
         // Inicia animação
         if (jumpscareAnimator != null)
