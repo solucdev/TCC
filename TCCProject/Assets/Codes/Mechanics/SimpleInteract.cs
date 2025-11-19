@@ -19,7 +19,6 @@ public class SimpleInteract : MonoBehaviour
         {
             GameObject door = hit.collider.gameObject;
             GameObject mind = door.GetComponentInParent<GameObject>();
-            SimpleInteract changer = mind.GetComponent<SimpleInteract>();
 
             StartCoroutine(ToggleDoor(mind));
             closedRotation = door.transform.rotation;

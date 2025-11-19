@@ -1,0 +1,7 @@
+1- animação do inimigo matando
+2- stunar o inimigo
+3- interagir com todas as portas e gavetas
+4- decorar mais a casa
+5- arrumar a rotação de cada item na mão
+6- verificar todos os colliders da casa
+7- arrumar a intro da logo

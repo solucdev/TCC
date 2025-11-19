@@ -5,6 +5,7 @@ using UnityEngine;
 public class ToggleLight : MonoBehaviour
 {
     private Light lighte;
+    public GameObject flashlight;
 
 	private void Start() {
         lighte = GetComponent<Light>();
@@ -14,6 +15,7 @@ public class ToggleLight : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F)) {
             lighte.enabled = !lighte.enabled;
+            flashlight.SetActive(lighte.enabled);
         }
     }
 }

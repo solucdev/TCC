@@ -12,6 +12,7 @@ public class QTE : MonoBehaviour
     [SerializeField] Image buttonPlace;
     [SerializeField] Image errorflash;
     [SerializeField] Transform head;
+    [SerializeField] Animator fbx;
 
     public float timer;
     private float startime;
@@ -47,6 +48,7 @@ public class QTE : MonoBehaviour
             timer = startime;
             qte.SetActive(false);
             onqte = false;
+            //fbx.Play("matando");
             FindObjectOfType<PlayerDeathManager>().PlayerDied();
         }
         if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.W) && !Input.GetKeyDown(KeyCode.A)

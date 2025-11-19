@@ -5,56 +5,61 @@ using UnityEngine;
 public class Stun : MonoBehaviour
 {
     public Camera cam;
-    public float range;
+    public float range = 10f;
     private Inventory inv;
     public GameObject[] weapons;
-    public GameObject attack;
-    public StunEffect stun;
+    public GameObject attackIndicator;
 
     private void Start()
     {
         inv = GetComponent<Inventory>();
     }
+
     void Update()
     {
         RaycastHit hit;
         Vector3 direction = cam.transform.forward;
+        bool canStunTarget = false;
 
         if (Physics.Raycast(cam.transform.position, direction, out hit, range))
         {
-            if (hit.collider.gameObject.name == "fbx do mixamo")
+            StunEffect targetStunEffect = hit.collider.GetComponent<StunEffect>();
+
+            if (targetStunEffect != null)
             {
-                for(int i = 0; i < weapons.Length; i++)
+                for (int i = 0; i < weapons.Length; i++)
                 {
                     if (inv.ItemInHand(weapons[i]))
                     {
-                        attack.SetActive(true);
+                        canStunTarget = true;
+
                         if (Input.GetMouseButton(0))
                         {
                             WeaponAction(weapons[i], i);
-                            stun.DisableEnemy();
+                            targetStunEffect.DisableEnemy();
                         }
                     }
-                    else
-                    {
-                        attack.SetActive(false);
-                    }
                 }
-                
             }
+        }
+
+
+        if (attackIndicator != null)
+        {
+            attackIndicator.SetActive(canStunTarget);
         }
     }
 
     void WeaponAction(GameObject item, int index)
     {
-        if (index == 0 )
+        if (index == 0)
         {
-            Quaternion targt = Quaternion.LookRotation(Vector3.right * 60, Vector3.up);
-            item.transform.rotation = Quaternion.RotateTowards(transform.rotation, targt, 3 * Time.deltaTime);
+            Quaternion target = Quaternion.LookRotation(Vector3.right * 60, Vector3.up);
+            item.transform.rotation = Quaternion.RotateTowards(item.transform.rotation, target, 3 * Time.deltaTime);
         }
-        if(index == 1)
+        if (index == 1)
         {
-            item.transform.position = Vector3.MoveTowards(item.transform.position, item.transform.forward, 3 * Time.deltaTime);
+            item.transform.position += item.transform.forward * 3 * Time.deltaTime;
         }
     }
-    }
+}

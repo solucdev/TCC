@@ -38,8 +38,6 @@ public class NavMeshMove : MonoBehaviour
         if(!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance && fp)
         {
             FollowAgain(difficult);
-            StartCoroutine(effect.Typer(thought, "você foi visto!"));
-            StartCoroutine(effect.EraseMessage(thought, 2));
         }
 
         if(ai.speed < 0.2f)
@@ -68,6 +66,8 @@ public class NavMeshMove : MonoBehaviour
         fp = true;
         StartCoroutine(Recalculate());
         Debug.Log("visto");
+        StartCoroutine(effect.Typer(thought, "você foi visto!"));
+        StartCoroutine(effect.EraseMessage(thought, 2));
     }
 
     void FollowAgain(int difficult)
