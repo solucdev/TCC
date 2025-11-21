@@ -8,6 +8,7 @@ public class Pause : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject settingsMenu;
     [SerializeField] GameObject qte;
+    [SerializeField] private AudioSource ambientSound;
 
     void Update()
     {
@@ -47,6 +48,11 @@ public class Pause : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         UIManager.Instance.isPauseOpen = true;
+
+
+        if (ambientSound != null && ambientSound.isPlaying)
+            ambientSound.Pause();
+
     }
 
     public void PauseOff()
@@ -57,5 +63,10 @@ public class Pause : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         UIManager.Instance.isPauseOpen = false;
+
+
+        if (ambientSound != null)
+            ambientSound.UnPause();
+
     }
 }
