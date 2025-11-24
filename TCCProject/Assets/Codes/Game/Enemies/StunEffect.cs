@@ -26,8 +26,13 @@ public class StunEffect : MonoBehaviour
         ai.enabled = false;
         fbx.GetComponent<Animator>().Play("walking to die");
     }
-    public void ResetEnemy()
+    IEnumerator ResetEnemy()
     {
-
+        yield return new WaitForSeconds(10);
+        qte.enabled = true;
+        timebar.enabled = true;
+        navmesh.enabled = true;
+        ai.enabled = true;
+        fbx.GetComponent<Animator>().Play("swagger");
     }
 }

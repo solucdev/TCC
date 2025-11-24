@@ -23,7 +23,7 @@ public class Stun : MonoBehaviour
 
         if (Physics.Raycast(cam.transform.position, direction, out hit, range))
         {
-            StunEffect targetStunEffect = hit.collider.GetComponent<StunEffect>();
+            StunEffect targetStunEffect = hit.collider.GetComponentInChildren<StunEffect>();
 
             if (targetStunEffect != null)
             {
