@@ -34,6 +34,8 @@ public class ItemDrop : MonoBehaviour
 		if (rb == null) {
 			rb = itemdrop.AddComponent<Rigidbody>();
 		}
+		ItemStats script = itemdrop.GetComponent<ItemStats>();
+
 		StartCoroutine(delay(rb));
 		itemdrop.SetActive(true);
 		itemdrop.transform.SetParent(null);
@@ -43,8 +45,8 @@ public class ItemDrop : MonoBehaviour
 		itemdrop.layer = LayerMask.NameToLayer("Item");
 		rb.AddForce(Vector3.up);
 
-		itemdrop.transform.localScale = new Vector3(itemdrop.transform.localScale.x / 4,
-						itemdrop.transform.localScale.y / 4, itemdrop.transform.localScale.z / 4);
+		itemdrop.transform.localScale = new Vector3(itemdrop.transform.localScale.x / script.scale,
+						itemdrop.transform.localScale.y / script.scale, itemdrop.transform.localScale.z / script.scale);
 	}
 
 	IEnumerator delay(Rigidbody rb) {

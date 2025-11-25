@@ -4,3 +4,4 @@
 4- decorar mais a casa (jotape)
 5- arrumar a rotação de cada item na mão
 6- verificar todos os colliders da casa (verificado NQPFinal)
+7- animar cena2

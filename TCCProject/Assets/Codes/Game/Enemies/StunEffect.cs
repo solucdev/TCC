@@ -10,6 +10,7 @@ public class StunEffect : MonoBehaviour
     private NavMeshMove navmesh;
     private NavMeshAgent ai;
     public GameObject fbx;
+    public bool stunned;
 
     private void Start()
     {
@@ -24,15 +25,20 @@ public class StunEffect : MonoBehaviour
         timebar.enabled = false;
         navmesh.enabled = false;
         ai.enabled = false;
+        stunned = true;
         fbx.GetComponent<Animator>().Play("walking to die");
+        StartCoroutine(ResetEnemy());
     }
     IEnumerator ResetEnemy()
     {
         yield return new WaitForSeconds(10);
+        fbx.GetComponent<Animator>().Play("standing up");
         qte.enabled = true;
         timebar.enabled = true;
         navmesh.enabled = true;
         ai.enabled = true;
+        stunned = false;
+        yield return new WaitForSeconds(2);
         fbx.GetComponent<Animator>().Play("swagger");
     }
 }

@@ -79,8 +79,6 @@ public class FootstepSound : MonoBehaviour
 
             // Toca som
             audioSource.PlayOneShot(clip);
-            Debug.Log("Som tocado: " + clip.name);
-
             // Ajusta intervalo conforme velocidade
             float speedFactor = rb.velocity.magnitude > 3f ? runMultiplier : 1f;
             yield return new WaitForSeconds(clip.length * speedFactor);
