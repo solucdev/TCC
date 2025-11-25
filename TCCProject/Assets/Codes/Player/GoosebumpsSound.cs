@@ -13,9 +13,9 @@ public class GoosebumpsSound : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.position) <= 5)
+        /*if (Vector3.Distance(transform.position, player.position) <= 5)
         {
             audio.Play();
-        }
+        }*/
     }
 }

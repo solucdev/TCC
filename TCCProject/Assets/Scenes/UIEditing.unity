@@ -7294,6 +7294,8 @@ MonoBehaviour:
   - {fileID: 1276024045}
   - {fileID: 919132148677177685}
   attackIndicator: {fileID: 2036859920}
+  stunIndicator: {fileID: 0}
+  qte: {fileID: 0}
 --- !u!1 &318014174 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6085036178219441596, guid: ef6eb62e687360a43ac067cdceef4671, type: 3}
@@ -11067,7 +11069,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &503159372
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16132,7 +16134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &727139098
 RectTransform:
   m_ObjectHideFlags: 0
@@ -47008,6 +47010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fbx: {fileID: 1787296999}
+  stunned: 0
 --- !u!82 &2074267328
 AudioSource:
   m_ObjectHideFlags: 0
