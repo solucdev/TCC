@@ -1,7 +1,7 @@
 1- animação do inimigo matando (nicolas)
 2- stunar o inimigo (só falta o inimigo reviver + feedback disso)
 3- interagir com todas as portas e gavetas
-4- decorar mais a casa (jotape)
 5- arrumar a rotação de cada item na mão
-6- verificar todos os colliders da casa (verificado NQPFinal)
+6- verificar todos os colliders da casa (verificado NQPFinal sem decoracao)
 7- animar cena2
+8- arrumar o quicktimeevent quando stunnado
