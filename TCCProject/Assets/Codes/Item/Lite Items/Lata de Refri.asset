@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7e1c12cd739dba469f0c3853f38a8a9, type: 3}
-  m_Name: Chave Inglesa
+  m_Name: Lata de Refri
   m_EditorClassIdentifier: 
-  itemName: Chave Inglesa
+  itemName: Lata de Refrigerante
   itemID: 
   scale: 3
-  icon: {fileID: 21300000, guid: 9bd07f54031352e4a86dd0d9cf203c8d, type: 3}
+  icon: {fileID: 21300000, guid: 74cf03eaa9d16b942b437e67d551a65e, type: 3}

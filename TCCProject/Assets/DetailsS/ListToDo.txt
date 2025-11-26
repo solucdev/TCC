@@ -3,3 +3,4 @@
 3- pegar a lanterna no começo
 4- audio do inimigo perto tem q testar
 5- testar os audios do jogo
+6- abaixar o risco de seleção do inventário
