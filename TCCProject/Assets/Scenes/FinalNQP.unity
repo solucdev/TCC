@@ -7167,7 +7167,7 @@ MonoBehaviour:
   stamina: {fileID: 355372989}
   crouch: {fileID: 1857840984}
   cam: {fileID: 498551791}
-  speed: 3
+  speed: 6
   orientation: {fileID: 1857840982}
 --- !u!82 &314199080
 AudioSource:
@@ -45050,6 +45050,7 @@ MonoBehaviour:
   errorflash: {fileID: 526527741}
   head: {fileID: 912907777}
   fbx: {fileID: 0}
+  ai: {fileID: 0}
   stun: {fileID: 0}
   attack: {fileID: 0}
   timer: 4
@@ -47390,6 +47391,7 @@ MonoBehaviour:
   errorflash: {fileID: 519450313}
   head: {fileID: 1170233860}
   fbx: {fileID: 1787297000}
+  ai: {fileID: 0}
   stun: {fileID: 314199082}
   attack: {fileID: 2036859920}
   timer: 1.3

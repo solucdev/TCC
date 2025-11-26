@@ -24,6 +24,8 @@ public class QTE : MonoBehaviour
     private KeyCode stringkey;
    [HideInInspector] public bool onqte = false;
 
+    public float GetHookDuration() => System.Array.Find(fbx.runtimeAnimatorController.animationClips, clip => clip.name == "right hook").length;
+
     private void Start()
     {
         startime = timer;
@@ -53,9 +55,11 @@ public class QTE : MonoBehaviour
             qte.SetActive(false);
             onqte = false;
             stun.enabled = false;
+            arrest = false;
             fbx.Play("right hook");
             fbx.Play("swagger");
-            FindObjectOfType<PlayerDeathManager>().PlayerDied();
+            StartCoroutine(delaytodie());
+            gameObject.GetComponent<NavMeshAgent>().isStopped = false;
         }
         if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.W) && !Input.GetKeyDown(KeyCode.A)
              && !Input.GetKeyDown(KeyCode.S) && !Input.GetKeyDown(KeyCode.D) && !Input.GetKeyDown(KeyCode.LeftShift)
@@ -70,6 +74,11 @@ public class QTE : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         stun.enabled = true;
+    }
+    IEnumerator delaytodie()
+    {
+        yield return new WaitForSeconds(GetHookDuration());
+        FindObjectOfType<PlayerDeathManager>().PlayerDied();
     }
 
     private void OnTriggerEnter(Collider other)

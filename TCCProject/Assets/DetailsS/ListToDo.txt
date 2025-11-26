@@ -1,4 +1,5 @@
-1- animação do inimigo matando!! (tá travada no final)
 2- interagir com todas as portas e gavetas
 3- arrumar a rotação de cada item na mão (ferramentas bugam)
-4- arrumar o quicktimeevent quando stunnado!!! não sei pq está zoado
+5- pegar a lanterna no começo
+6- audio do inimigo perto tem q testar
+7- som da lambreta

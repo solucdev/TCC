@@ -27,8 +27,8 @@ public class Stun : MonoBehaviour
 
         if (Physics.Raycast(cam.transform.position, direction, out hit, range))
         {
-
-            if (targetStunEffect != null && !qte.onqte && !targetStunEffect.stunned && !gameover.activeSelf)
+            GameObject target = hit.collider.gameObject;
+            if (targetStunEffect != null && !qte.onqte && !targetStunEffect.stunned && !gameover.activeSelf && target.name == "fbx do mixamo")
             {
                 for (int i = 0; i < weapons.Length; i++)
                 {
@@ -45,6 +45,10 @@ public class Stun : MonoBehaviour
                         }
                     }
                 }
+            }
+            else
+            {
+                canStunTarget = false;
             }
                 stunIndicator.SetActive(targetStunEffect.stunned);
                 attackIndicator.SetActive(canStunTarget);
