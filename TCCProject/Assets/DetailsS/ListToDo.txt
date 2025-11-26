@@ -3,5 +3,4 @@
 3- interagir com todas as portas e gavetas
 5- arrumar a rotação de cada item na mão
 6- verificar todos os colliders da casa (verificado NQPFinal)
-7- animar cena2 (suzanna, nao tem cm eu fzr isso)
-8- arrumar o quicktimeevent quando stunnado
+7- arrumar o quicktimeevent quando stunnado
