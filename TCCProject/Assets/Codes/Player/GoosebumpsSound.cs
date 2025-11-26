@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoosebumpsSound : MonoBehaviour {
-	public AudioSource audio;
-	public Transform player;
-	public float distanceTrigger = 5;
-	public int cooldown = 60;
+public class GoosebumpsSound : MonoBehaviour
+{
+    public AudioSource audio;
 
-	private float lastPlayTime = -Mathf.Infinity;
+    void Start()
+    {
+        
+    }
 
-	void Update() {
-		float distance = Vector3.Distance(transform.position, player.position);
-
-		if (distance <= distanceTrigger && Time.time - lastPlayTime >= cooldown) {
-			audio.Play();
-			lastPlayTime = Time.time;
-		}
-	}
+    void Update()
+    {
+        /*if (Vector3.Distance(transform.position, player.position) <= 5)
+        {
+            audio.Play();
+        }*/
+    }
 }
