@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Script1
-{
 public class Objetivos : MonoBehaviour
 {
     public static Objetivos Instance;
@@ -47,5 +45,4 @@ public class Objetivos : MonoBehaviour
 
         isShowingMessage = false;
     }*/
-}
 }
