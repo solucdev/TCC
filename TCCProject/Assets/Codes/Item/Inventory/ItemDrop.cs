@@ -23,7 +23,7 @@ public class ItemDrop : MonoBehaviour
 
 			if (Physics.Raycast(origin, cam.transform.forward, out hit, 3, mask, QueryTriggerInteraction.Ignore)) {
 
-				drope = hit.point + Vector3.up * 0.5f;
+				drope = hit.point + Vector3.up * 1f;
 			}
 		else
 		{

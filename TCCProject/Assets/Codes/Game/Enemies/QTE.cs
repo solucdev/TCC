@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.AI;
+using System.Collections;
 
 public class QTE : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class QTE : MonoBehaviour
     [SerializeField] Transform head;
     [SerializeField] Animator fbx;
 
+    public NavMeshMove ai;
+    public Stun stun;
+    public GameObject attack;
     public float timer;
     private float startime;
     private float tsecs;
@@ -48,7 +52,9 @@ public class QTE : MonoBehaviour
             timer = startime;
             qte.SetActive(false);
             onqte = false;
-            //fbx.Play("matando");
+            stun.enabled = false;
+            fbx.Play("right hook");
+            fbx.Play("swagger");
             FindObjectOfType<PlayerDeathManager>().PlayerDied();
         }
         if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.W) && !Input.GetKeyDown(KeyCode.A)
@@ -60,10 +66,17 @@ public class QTE : MonoBehaviour
         }
     }
 
+    IEnumerator delay()
+    {
+        yield return new WaitForSeconds(2);
+        stun.enabled = true;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && tsecs > timer && HasLineOfSight())
         {
+            attack.SetActive(false);
             qte.SetActive(true);
             OnQTE();
             arrest = true;

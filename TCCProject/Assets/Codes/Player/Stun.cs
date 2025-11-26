@@ -11,6 +11,8 @@ public class Stun : MonoBehaviour
     public GameObject attackIndicator;
     public GameObject stunIndicator;
     public QTE qte;
+    public GameObject gameover;
+    public StunEffect targetStunEffect;
 
     private void Start()
     {
@@ -25,9 +27,8 @@ public class Stun : MonoBehaviour
 
         if (Physics.Raycast(cam.transform.position, direction, out hit, range))
         {
-            StunEffect targetStunEffect = hit.collider.GetComponentInChildren<StunEffect>();
 
-            if (targetStunEffect != null && !qte.onqte && !targetStunEffect.stunned)
+            if (targetStunEffect != null && !qte.onqte && !targetStunEffect.stunned && !gameover.activeSelf)
             {
                 for (int i = 0; i < weapons.Length; i++)
                 {
@@ -39,6 +40,7 @@ public class Stun : MonoBehaviour
                         {
                             WeaponAction(weapons[i], i);
                             targetStunEffect.DisableEnemy();
+                            inv.RemoveItem(weapons[i]);
                             Destroy(weapons[i]);
                         }
                     }
