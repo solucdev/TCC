@@ -59,7 +59,6 @@ public class FootstepSound : MonoBehaviour
             yield break; // Não achou chão
         }
 
-        Debug.Log("Tag detectada: " + groundHit.collider.tag);
 
         // Seleciona lista de clipes
         List<AudioClip> clips = null;
