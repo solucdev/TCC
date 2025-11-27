@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: 44e54ba61f5b0594fa9ffa61ac4e402f
   - enabled: 1
     path: Assets/Scenes/OutsideCutscene.unity
-    guid: 243ab8d1a3599e94c8a07c124eecb38d
+    guid: 1bb0d35257f00b340a64032f180505b1
   - enabled: 1
     path: Assets/Scenes/Cena2.unity
     guid: 55127ee9a1728c44cb2ecd60dd7d544d
