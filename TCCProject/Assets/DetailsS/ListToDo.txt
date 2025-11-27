@@ -1,6 +1,4 @@
 1- interagir com todas as portas e gavetas
 2- arrumar a rotação de cada item na mão (ferramentas bugam)
 3- pegar a lanterna no começo
-4- audio do inimigo perto tem q testar
-5- testar os audios do jogo
-6- abaixar o risco de seleção do inventário
+4- testar áudio

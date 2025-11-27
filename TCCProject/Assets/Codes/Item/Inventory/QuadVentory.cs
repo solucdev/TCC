@@ -56,7 +56,7 @@ public class QuadVentory : MonoBehaviour
 
     public void PlaceBox(Transform slotpos)
     {
-        slctdbox.position = new Vector3(slotpos.position.x, slotpos.position.y - 25, slotpos.position.z);
+        slctdbox.position = new Vector3(slotpos.position.x, slotpos.position.y - 40, slotpos.position.z);
     }
     IEnumerator delay(bool torf)
     {
