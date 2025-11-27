@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e1c12cd739dba469f0c3853f38a8a9, type: 3}
   m_Name: chave 1
   m_EditorClassIdentifier: 
-  itemName: "chave do escrit\xF3rio"
-  itemID: "chave do escrit\xF3rio"
+  itemName: "Chave do Escrit\xF3rio"
+  itemID: "Chave do Escrit\xF3rio"
   scale: 2
   icon: {fileID: 21300000, guid: 751b72f67deabed4986f3c01a489c72e, type: 3}

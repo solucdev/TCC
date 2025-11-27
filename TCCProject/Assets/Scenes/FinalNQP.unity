@@ -18099,7 +18099,7 @@ GameObject:
   m_Component:
   - component: {fileID: 795740039}
   - component: {fileID: 795740041}
-  - component: {fileID: 795740040}
+  - component: {fileID: 795740042}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -18122,23 +18122,6 @@ Transform:
   m_Father: {fileID: 498551774}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &795740040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795740038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31e965e2cdd0c4b4b838f734dad27fe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashlight: {fileID: 1731625159}
-  txtC: {fileID: 190550865}
-  cam: {fileID: 498551773}
-  range: 6
-  txtF: {fileID: 2041504430}
 --- !u!108 &795740041
 Light:
   m_ObjectHideFlags: 0
@@ -18146,7 +18129,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795740038}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -18201,6 +18184,23 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &795740042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795740038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e965e2cdd0c4b4b838f734dad27fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashlight: {fileID: 1731625159}
+  txtC: {fileID: 190550865}
+  cam: {fileID: 498551773}
+  range: 6
+  txtF: {fileID: 2041504430}
 --- !u!1001 &798754149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28005,7 +28005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59df0cbb29def14ea22b22ced143526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scr: {fileID: 11400000, guid: 0bfa5e4f886ed7a4b992d49aad05326b, type: 2}
+  scr: {fileID: 11400000, guid: ebd7a4daa93dd28408abc735b3bf9740, type: 2}
   itemname: "chave do escrit\xF3rio"
   itemID: "chave do escrit\xF3rio"
   scale: 0
@@ -52079,7 +52079,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: -4125471728267972529, guid: 7e00eb80e83a2644fbab158e932a714f, type: 3}
+  - {fileID: 2100000, guid: 3dba30fbd8df1f7488ffae0e9faba264, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
