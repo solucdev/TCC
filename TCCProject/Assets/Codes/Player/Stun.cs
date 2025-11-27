@@ -28,7 +28,8 @@ public class Stun : MonoBehaviour
         if (Physics.Raycast(cam.transform.position, direction, out hit, range))
         {
             GameObject target = hit.collider.gameObject;
-            if (targetStunEffect != null && !qte.onqte && !targetStunEffect.stunned && !gameover.activeSelf && target.name == "fbx do mixamo")
+            Debug.Log(target.name);
+            if (targetStunEffect != null && !qte.onqte && !targetStunEffect.stunned && !gameover.activeSelf && target.name == "+INIMIGO REAL OFICIAL")
             {
                 for (int i = 0; i < weapons.Length; i++)
                 {
@@ -38,7 +39,6 @@ public class Stun : MonoBehaviour
 
                         if (Input.GetMouseButton(0))
                         {
-                            WeaponAction(weapons[i], i);
                             targetStunEffect.DisableEnemy();
                             inv.RemoveItem(weapons[i]);
                             Destroy(weapons[i]);

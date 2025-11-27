@@ -48,7 +48,7 @@ public class Collect : MonoBehaviour {
 						{
 
                             case "Banquinho":
-								Objetivos.Instance.SetObjective("Coloque o banquinho no lugar certo");
+								Objetivos.Instance.SetObjective("Este banco pode ser usado para alcançar algum lugar mais alto");
 								break;
 							case "Pé de Cabra":
 								Objetivos.Instance.SetObjective("Use o pé de cabra no alçapão para fugir do sótão");

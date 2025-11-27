@@ -19,6 +19,7 @@ public class PlayerDeathManager : MonoBehaviour
 		Cursor.visible = true;
         screenPause.SetActive(false);
 		deathscreen.SetActive(true);
+        Time.timeScale = 1;
     }
 
     public void RevivePlayer()

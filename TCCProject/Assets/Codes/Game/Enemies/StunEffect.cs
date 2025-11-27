@@ -21,6 +21,7 @@ public class StunEffect : MonoBehaviour
     }
     public void DisableEnemy()
     {
+        GetComponent<Collider>().enabled = false;
         qte.enabled = false;
         timebar.enabled = false;
         navmesh.enabled = false;
@@ -33,6 +34,7 @@ public class StunEffect : MonoBehaviour
     {
         yield return new WaitForSeconds(10);
         fbx.GetComponent<Animator>().Play("standing up");
+        GetComponent<Collider>().enabled = true;
         qte.enabled = true;
         timebar.enabled = true;
         navmesh.enabled = true;

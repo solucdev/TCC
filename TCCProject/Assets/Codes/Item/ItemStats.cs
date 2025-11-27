@@ -29,7 +29,7 @@ public class ItemStats : MonoBehaviour {
 
 	public void ShowName()
 	{
-		i.text = "pressione 'M1' para coletar " + itemname;
+		i.text = "clique para coletar " + itemname;
 	}
 	public void Feedback() {
 		f.text = "Coletou " + itemname;
