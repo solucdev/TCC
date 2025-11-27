@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeathManager : MonoBehaviour
 {
+    public GameObject screenPause;
     public GameObject deathscreen;
     public Transform respawn; 
     public GameObject player; 
@@ -16,6 +17,7 @@ public class PlayerDeathManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
 		Cursor.visible = true;
+        screenPause.SetActive(false);
 		deathscreen.SetActive(true);
     }
 

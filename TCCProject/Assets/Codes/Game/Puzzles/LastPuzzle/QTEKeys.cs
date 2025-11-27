@@ -32,12 +32,13 @@ public class QTEKeys : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown(stringkey) && tsecs < timer && onqte) {
-			if(round <= 7) {
+			if(round <= 6) {
 				StartCoroutine(Delay());
 			}
 			else {
 				cbok.StartMoveRotate();
-				StartCoroutine(LayerDelay());
+				gameObject.layer = LayerMask.NameToLayer("Item");//atualização 27/11
+				GetComponent<Collider>().enabled = false; //att 27/11
 				arrest = false;
 				qte.SetActive(false);
 				onqte = false;
