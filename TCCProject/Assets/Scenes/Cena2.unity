@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0017293926, g: 0.0012069523, b: 0.00033400516, a: 1}
+  m_IndirectSpecularColor: {r: 0.0017293917, g: 0.0012069537, b: 0.00033400627, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -299,7 +299,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9233697}
-  - component: {fileID: 9233698}
   m_Layer: 0
   m_Name: portabibli
   m_TagString: Untagged
@@ -324,18 +323,6 @@ Transform:
   m_Father: {fileID: 2134085664}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &9233698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9233696}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a63d92427051934bab8d0a0ccf3aa7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &9607406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2534,7 +2521,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 118377835}
-  - component: {fileID: 118377836}
   m_Layer: 0
   m_Name: portacervo
   m_TagString: Untagged
@@ -2559,18 +2545,6 @@ Transform:
   m_Father: {fileID: 688424825}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &118377836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118377834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a63d92427051934bab8d0a0ccf3aa7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &126207406
 GameObject:
   m_ObjectHideFlags: 0
@@ -19666,7 +19640,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 735805485}
-  - component: {fileID: 735805487}
   - component: {fileID: 735805486}
   m_Layer: 0
   m_Name: portaquarto2
@@ -19706,18 +19679,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &735805487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 735805484}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a63d92427051934bab8d0a0ccf3aa7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &736627412
 GameObject:
   m_ObjectHideFlags: 0
@@ -34544,18 +34505,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4376704773820688008, guid: 23caaca8eb6ba1645805a775991a2be5, type: 3}
---- !u!114 &1311281895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311281890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a63d92427051934bab8d0a0ccf3aa7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &1311281896
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37790,18 +37739,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &1412506895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311281887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a63d92427051934bab8d0a0ccf3aa7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &1412506896
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48612,7 +48549,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1856219309}
-  - component: {fileID: 1856219311}
   - component: {fileID: 1856219310}
   m_Layer: 0
   m_Name: portaesc
@@ -48652,18 +48588,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &1856219311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856219308}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a63d92427051934bab8d0a0ccf3aa7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1857587684
 GameObject:
   m_ObjectHideFlags: 0
@@ -52592,7 +52516,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2026365701}
-  - component: {fileID: 2026365702}
   m_Layer: 0
   m_Name: porta (2)
   m_TagString: Untagged
@@ -52617,18 +52540,6 @@ Transform:
   m_Father: {fileID: 673304532}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2026365702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2026365700}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a63d92427051934bab8d0a0ccf3aa7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2027520813
 GameObject:
   m_ObjectHideFlags: 0
