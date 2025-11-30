@@ -11,7 +11,7 @@ public class ScanPlayer : MonoBehaviour
     {
         if (((1 << other.gameObject.layer) & pLayer) != 0)
         {
-            ai.FollowPlayer();
+            ai.TriggerEncounter();
         }
     }
 }

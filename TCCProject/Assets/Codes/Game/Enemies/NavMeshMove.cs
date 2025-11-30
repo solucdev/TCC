@@ -1,87 +1,237 @@
 using System.Collections.Generic;
 using System.Collections;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
-public class NavMeshMove : MonoBehaviour
-{
-    NavMeshAgent ai;
-    public List<Transform> points = new List<Transform>();
-    [SerializeField] int idleTime;
-    [SerializeField] int difficult;
-    [SerializeField] Transform player;
-    [SerializeField] GameObject fbx;
+public class NavMeshMove : MonoBehaviour {
+	NavMeshAgent ai;
+	public List<Transform> points = new List<Transform>();
+	[SerializeField] int idleTime;
+	[SerializeField] int difficult;
+	[SerializeField] Transform player;
+	[SerializeField] GameObject fbx;
 
-    [SerializeField] TypeWriter effect;
-    [SerializeField] Text thought;
+	int randpoint;
+	bool fp;
+	Vector3 destination;
 
-    int times;
-    int randpoint;
-    bool fp;
-    Vector3 destination;
+	void Start() {
+		ai = GetComponent<NavMeshAgent>();
+		defaultFOV = playerCam.fieldOfView;
+		Invoke(nameof(AIWalk), 2f);
+	}
 
-    void Start()
-    {
-        ai = GetComponent<NavMeshAgent>();
-        Invoke(nameof(AIWalk), 2f);
-    }
-    async private void Update()
-    {
-        if (!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance && !fp)
-        {
-            fbx.GetComponent<Animator>().Play("idle"); 
-            await Task.Delay(idleTime * 1000);
-            AIWalk();
-        }
-        if(!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance && fp)
-        {
-            FollowAgain(difficult);
-        }
+	private void Update() {
+		if (!ai.pathPending && ai.remainingDistance <= ai.stoppingDistance && !fp) {
+			fbx.GetComponent<Animator>().Play("idle");
+			StartCoroutine(IdleDelay());
+		}
 
-        if(ai.speed < 0.2f)
-        {
-            fbx.GetComponent<Animator>().Play("idle");
-        }
-    }
+		if (ai.speed < 0.2f) {
+			fbx.GetComponent<Animator>().Play("idle");
+		}
 
-    void RandomPoint()
-    {
-        randpoint = Random.Range(0, points.Count);
-        destination = new Vector3(points[randpoint].position.x, points[randpoint].position.y, points[randpoint].position.z);
-        int s = randpoint + 1;
-    }
+		Debug.DrawRay(fbx.transform.position, Vector3.up * safeDistance, Color.red);
+		Debug.DrawRay(fbx.transform.position, Vector3.forward * safeDistance, Color.red);
+		Debug.DrawRay(fbx.transform.position, Vector3.right * safeDistance, Color.red);
+	}
 
-    void AIWalk()
-    {
-        fbx.GetComponent<Animator>().Play("swagger");
-        if (!fp)
-        { RandomPoint();
-        ai.SetDestination(destination); }
-    }
+	IEnumerator IdleDelay() {
+		yield return new WaitForSeconds(idleTime);
+		AIWalk();
+	}
 
-    public void FollowPlayer()
-    {
-        fp = true;
-        StartCoroutine(Recalculate());
-        Debug.Log("visto");
-    }
+	void RandomPoint() {
+		randpoint = Random.Range(0, points.Count);
+		destination = points[randpoint].position;
+	}
 
-    void FollowAgain(int difficult)
-    {
-        StartCoroutine(Recalculate());
-        times++;
-        if(times >= difficult)
-        {
-            fp = false;
-            AIWalk();
-        }
-    }
+	void AIWalk() {
+		fbx.GetComponent<Animator>().Play("swagger");
+		if (!fp) {
+			RandomPoint();
+			ai.SetDestination(destination);
+		}
+	}
 
-    IEnumerator Recalculate()
-    {
-        yield return new WaitForSeconds(0.01f);
-        ai.SetDestination(player.position);
-    }
+	[SerializeField] Transform head;
+	[SerializeField] Camera playerCam;
+	[SerializeField] AudioSource audioSource;
+	[SerializeField] AudioClip firstSound;
+	[SerializeField] AudioClip secondSound;
+	[SerializeField] List<Light> lights = new List<Light>();
+	[SerializeField] Disable system;
+
+	[SerializeField] List<ScanPlayer> scanners = new List<ScanPlayer>();
+	[SerializeField] QTEPure qte;
+
+	[SerializeField] GameObject indicator;
+	[SerializeField] AudioSource backgroundAudio;
+	private float defaultFOV;
+
+	private bool encontroAtivo = false;
+
+	
+	[SerializeField] PlayerCrouchCam crouchCam;
+	[SerializeField] float safeDistance = 10f;
+
+	public void TriggerEncounter() {
+		if (encontroAtivo) return; // só uma vez por encontro
+		encontroAtivo = true;
+		fp = true;
+
+		ai.isStopped = true;
+		ai.ResetPath();
+		fbx.GetComponent<Animator>().Play("idle");
+
+		if (backgroundAudio != null && backgroundAudio.isPlaying) {
+			backgroundAudio.Pause();
+		}
+
+		system.DisablePlayer();
+		StartCoroutine(FaceEnemySequence());
+	}
+
+	IEnumerator FaceEnemySequence() {
+		DisableAllScanners();
+
+		FaceEnemy();
+		StartCoroutine(ZoomIn());
+		StartCoroutine(CameraShake(0.3f, 1f));
+		yield return new WaitForSeconds(2f);
+		EndEncounter();
+	}
+
+	void EndEncounter() {
+		indicator.SetActive(true);
+		audioSource.Stop();
+		system.EnablePlayer();
+
+		foreach (Light l in lights) {
+			l.enabled = false;
+		}
+
+		fbx.SetActive(false);
+		playerCam.fieldOfView = defaultFOV;
+
+		audioSource.clip = secondSound;
+		audioSource.Play();
+
+		// inicia QTE e espera resultado
+		qte.StartQTE(4, 3);
+		StartCoroutine(CameraShake(0.02f, secondSound.length));
+
+		// escuta resultado do QTE
+		StartCoroutine(WaitQTEResult());
+	}
+
+	IEnumerator WaitQTEResult() {
+		// espera até o QTE terminar
+		while (qte.onQTE) {
+			yield return null;
+		}
+
+		if (!qte.PlayerSurvived) {
+			indicator.SetActive(false);
+			// 1. Player perdeu o QTE > morre
+			PlayerDeathManager pdm = FindObjectOfType<PlayerDeathManager>();
+			if (pdm != null) pdm.PlayerDied();
+			foreach (Light l in lights) {
+				l.enabled = true;
+			}
+			StartCoroutine(ReappearEnemy());
+		} else {
+			indicator.SetActive(false);
+			// Player ganhou o QTE >
+
+			float dist = Vector3.Distance(player.position, fbx.transform.position);
+
+			if (dist < safeDistance || !crouchCam.isdown) {
+				// 3. Player não fugiu/agachou > morre
+				PlayerDeathManager pdm = FindObjectOfType<PlayerDeathManager>();
+				if (pdm != null) pdm.PlayerDied();
+				foreach (Light l in lights) {
+					l.enabled = true;
+				}
+				StartCoroutine(ReappearEnemy());
+			} else {
+				// 2. Player fugiu e se escondeu corretamente
+				foreach (Light l in lights) {
+					l.enabled = true;
+				}
+
+				if (backgroundAudio != null) {
+					backgroundAudio.UnPause();
+				}
+
+				// inimigo reaparece depois de 1 minuto
+				StartCoroutine(ReappearEnemy());
+			}
+		}
+	}
+
+	IEnumerator ReappearEnemy() {
+		yield return new WaitForSeconds(60f);
+
+		fbx.SetActive(true);
+		EnableAllScanners();
+		fp = false;
+		AIWalk();
+		encontroAtivo = false;
+	}
+
+	IEnumerator CameraShake(float intensity, float duration) {
+		Vector3 originalPos = playerCam.transform.localPosition;
+		float elapsed = 0f;
+
+		while (elapsed < duration) {
+			float x = Random.Range(-1f, 1f) * intensity;
+			float y = Random.Range(-1f, 1f) * intensity;
+			playerCam.transform.localPosition = originalPos + new Vector3(x, y, 0);
+
+			elapsed += Time.deltaTime;
+			yield return null;
+		}
+
+		playerCam.transform.localPosition = originalPos;
+	}
+
+	IEnumerator ZoomIn() {
+		float startFOV = playerCam.fieldOfView;
+		float targetFOV = 30f;
+		float duration = 0.3f;
+		float elapsed = 0f;
+
+		while (elapsed < duration) {
+			playerCam.fieldOfView = Mathf.Lerp(startFOV, targetFOV, elapsed / duration);
+			elapsed += Time.deltaTime;
+			yield return null;
+		}
+
+		playerCam.fieldOfView = targetFOV;
+	}
+
+	void FaceEnemy() {
+		Vector3 dir = head.position - playerCam.transform.position;
+		Quaternion lookRot = Quaternion.LookRotation(dir);
+
+		playerCam.transform.rotation = lookRot;
+		player.rotation = lookRot;
+
+		audioSource.clip = firstSound;
+		audioSource.Play();
+	}
+
+	void DisableAllScanners() {
+		foreach (ScanPlayer sp in scanners) {
+			if (sp != null) sp.enabled = false;
+		}
+	}
+
+	void EnableAllScanners() {
+		foreach (ScanPlayer sp in scanners) {
+			if (sp != null) sp.enabled = true;
+		}
+	}
 }
