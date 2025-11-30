@@ -12,7 +12,7 @@ public class QTEPure : MonoBehaviour {
 
 	public float timer;
 	private float startTime;
-	private float elapsed;
+	public float elapsed;
 	private KeyCode currentKey;
 	[HideInInspector] public bool onQTE = false;
 

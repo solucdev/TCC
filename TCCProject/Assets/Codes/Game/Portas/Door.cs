@@ -9,7 +9,9 @@ public class Door : MonoBehaviour
     public bool locked;
     public GameObject key;
 
-    bool opened = false;
+    public float elapsed;
+
+    public bool opened = false;
     Quaternion closedRotation;
     Quaternion openRotation;
     public string roomName;
@@ -35,15 +37,9 @@ public class Door : MonoBehaviour
     public IEnumerator ToggleDoor()
     {
         if (locked && key != null)
-        {
-            locked = false;
-        }
-
+        {locked = false;}
         if (locked)
-        {
-            yield break;
-        }
-
+        {yield break;}
         Quaternion targetRotation;
         Quaternion startRotation = transform.rotation;
 
@@ -59,7 +55,7 @@ public class Door : MonoBehaviour
         }
         opened = !opened;
 
-        float elapsed = 0f;
+        elapsed = 0f;
         while (elapsed < 1f)
         {
             elapsed += Time.deltaTime * speed;

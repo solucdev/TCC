@@ -119,7 +119,7 @@ public class NavMeshMove : MonoBehaviour {
 		audioSource.Play();
 
 		// inicia QTE e espera resultado
-		qte.StartQTE(4, 3);
+		qte.StartQTE(6, 3);
 		StartCoroutine(CameraShake(0.02f, secondSound.length));
 
 		// escuta resultado do QTE
@@ -127,45 +127,35 @@ public class NavMeshMove : MonoBehaviour {
 	}
 
 	IEnumerator WaitQTEResult() {
-		// espera até o QTE terminar
 		while (qte.onQTE) {
 			yield return null;
 		}
 
 		if (!qte.PlayerSurvived) {
 			indicator.SetActive(false);
-			// 1. Player perdeu o QTE > morre
 			PlayerDeathManager pdm = FindObjectOfType<PlayerDeathManager>();
 			if (pdm != null) pdm.PlayerDied();
-			foreach (Light l in lights) {
-				l.enabled = true;
-			}
+			foreach (Light l in lights) { l.enabled = true; }
 			StartCoroutine(ReappearEnemy());
 		} else {
-			indicator.SetActive(false);
-			// Player ganhou o QTE >
+			
 
+			// pega tempo de sobra do QTE
+			float sobraTempo = Mathf.Max(0f, qte.timer - qte.elapsed);
+
+			// dá ao player esse tempo extra para fugir
+			yield return new WaitForSeconds(sobraTempo);
+			indicator.SetActive(false);
 			float dist = Vector3.Distance(player.position, fbx.transform.position);
 
 			if (dist < safeDistance || !crouchCam.isdown) {
-				// 3. Player não fugiu/agachou > morre
 				PlayerDeathManager pdm = FindObjectOfType<PlayerDeathManager>();
 				if (pdm != null) pdm.PlayerDied();
-				foreach (Light l in lights) {
-					l.enabled = true;
-				}
+				foreach (Light l in lights) { l.enabled = true; }
 				StartCoroutine(ReappearEnemy());
 			} else {
-				// 2. Player fugiu e se escondeu corretamente
-				foreach (Light l in lights) {
-					l.enabled = true;
-				}
-
-				if (backgroundAudio != null) {
-					backgroundAudio.UnPause();
-				}
-
-				// inimigo reaparece depois de 1 minuto
+				foreach (Light l in lights) { l.enabled = true; }
+				if (backgroundAudio != null) backgroundAudio.UnPause();
 				StartCoroutine(ReappearEnemy());
 			}
 		}
