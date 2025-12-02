@@ -112,6 +112,7 @@ public class NavMeshMove : MonoBehaviour {
 			l.enabled = false;
 		}
 
+		gameObject.name = "INIMIGO DESATIVADO";
 		fbx.SetActive(false);
 		playerCam.fieldOfView = defaultFOV;
 
@@ -164,6 +165,7 @@ public class NavMeshMove : MonoBehaviour {
 	IEnumerator ReappearEnemy() {
 		yield return new WaitForSeconds(60f);
 
+		gameObject.name = "INIMIGO ATIVO";
 		fbx.SetActive(true);
 		EnableAllScanners();
 		fp = false;

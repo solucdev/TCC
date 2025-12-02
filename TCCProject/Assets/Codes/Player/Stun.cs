@@ -29,7 +29,7 @@ public class Stun : MonoBehaviour
         {
             GameObject target = hit.collider.gameObject;
             Debug.Log(target.name);
-            if (targetStunEffect != null && !qte.onqte && !targetStunEffect.stunned && !gameover.activeSelf && target.name == "+INIMIGO REAL OFICIAL")
+            if (targetStunEffect != null && !qte.onqte && !targetStunEffect.stunned && !gameover.activeSelf && target.name == "INIMIGO ATIVO")
             {
                 for (int i = 0; i < weapons.Length; i++)
                 {

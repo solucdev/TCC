@@ -1,47 +1,60 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ActScare : MonoBehaviour
-{
-    [SerializeField] GameObject poser;
-    [SerializeField] AudioSource jumpscare;
-    [SerializeField] Door door;
-    [SerializeField] int probability;
-    int index;
+public class ActScare : MonoBehaviour {
+	[SerializeField] GameObject poser;
+	[SerializeField] AudioSource jumpscare;
+	[SerializeField] Door door;
 
-	private void OnTriggerEnter(Collider other) {
-		if (other.CompareTag("Player")) {
-			Randomizer();
-		}
-	}
+	[Header("Configuração de susto")]
+	[SerializeField] int orderScare;
+	[SerializeField] float cooldown;
+
+	int currentTriggerCount = 0;
+	bool onCooldown = false;
+
+
+
 	private void OnTriggerStay(Collider other) {
-
-        if(index <= probability) {
+		if (currentTriggerCount >= orderScare && !onCooldown) {
 			if (other.CompareTag("Player") && door.opened && door.elapsed > 0 && door.elapsed < 1) {
 				Jumpscare();
 				StartCoroutine(Disappear());
+				CountTrigger();
+				StartCoroutine(CooldownRoutine());
 			}
-            if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && !door.opened) {
-			jumpscare.Play();
+			if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && !door.opened) {
+				jumpscare.Play();
+				StartCoroutine(Sound());
 			}
+		}
+		if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && !door.opened) {
+			CountTrigger();
 		}
 	}
 
 	void Jumpscare() {
-			poser.SetActive(true);
+		poser.SetActive(true);
 	}
 
-    void Randomizer() {
-        index = Random.Range(1, 100);
-    }
+	void CountTrigger() {
+		currentTriggerCount++;
+	}
 
-    IEnumerator Disappear() {
-        yield return new WaitForSeconds(1);
-        poser.SetActive(false);
-    }
+	IEnumerator Disappear() {
+		yield return new WaitForSeconds(1);
+		poser.SetActive(false);
+	}
+
 	IEnumerator Sound() {
 		yield return new WaitForSeconds(3);
 		jumpscare.Stop();
+	}
+
+	IEnumerator CooldownRoutine() {
+		onCooldown = true;
+		yield return new WaitForSeconds(cooldown);
+		onCooldown = false;
+		currentTriggerCount = 0;
 	}
 }

@@ -1,59 +1,42 @@
-using System.Collections;
 using UnityEngine;
 
 public class TimeBar : MonoBehaviour {
-	public QTEPure enemie;
+	private QTEPure enemie; // referência atual do QTE
 	public RectTransform bar;
 
-	float timing = 0;
-	bool top = false;
-	bool coroutineStarted = false;
+	const float maxWidth = 72f; // largura inicial
+	const float overflowWidth = 400f; // efeito "top"
 
 	void Start() {
-		bar.sizeDelta = new Vector2(72, bar.sizeDelta.y);
+		bar.sizeDelta = new Vector2(maxWidth, bar.sizeDelta.y);
 	}
 
 	void Update() {
-		if (gameObject.activeSelf) {
-			if (enemie.onQTE) {
-				top = false;
-				timing += Time.deltaTime;
-				float t = Mathf.Clamp01(timing / enemie.timer);
+		if (enemie == null || !gameObject.activeSelf) return;
 
-				bar.sizeDelta = new Vector2(Mathf.Lerp(72, 0, t), bar.sizeDelta.y);
-
-				if (!coroutineStarted) {
-					StartCoroutine(Reset());
-					coroutineStarted = true;
-				}
-			} else {
-				// Se o QTE terminou, reseta barra e estado
-				timing = 0;
-				coroutineStarted = false;
-				bar.sizeDelta = new Vector2(72, bar.sizeDelta.y);
-			}
-
-			if (top) {
-				bar.sizeDelta = new Vector2(400, bar.sizeDelta.y);
-				top = false;
-			}
-		}
-	}
-
-	IEnumerator Reset() {
-		yield return new WaitForSeconds(enemie.timer + 0.25f);
-
-		// Só reseta se o QTE ainda estiver ativo
 		if (enemie.onQTE) {
-			top = true;
-			timing = 0;
+			// Se a UI não deve pausar, use Time.unscaledDeltaTime e derive progress do QTE
+			float t = enemie.timer > 0f ? Mathf.Clamp01(enemie.elapsed / enemie.timer) : 1f;
+			// Barra diminuindo ao longo do tempo
+			float w = Mathf.Lerp(maxWidth, 0f, t);
+			bar.sizeDelta = new Vector2(w, bar.sizeDelta.y);
+
+			// Efeito “top” quando estourar tempo (t ~ 1). Evita piscadas com threshold.
+			if (t >= 1f - 0.0001f) {
+				bar.sizeDelta = new Vector2(overflowWidth, bar.sizeDelta.y);
+			}
+		} else {
+			// QTE terminou: reset visual
+			ResetRound();
 		}
-
-		coroutineStarted = false;
 	}
+
+	public void Begin(QTEPure enemie) {
+		this.enemie = enemie;
+		ResetRound();
+	}
+
 	public void ResetRound() {
-		timing = 0;
-		bar.sizeDelta = new Vector2(72, bar.sizeDelta.y);
+		bar.sizeDelta = new Vector2(maxWidth, bar.sizeDelta.y);
 	}
-
 }
