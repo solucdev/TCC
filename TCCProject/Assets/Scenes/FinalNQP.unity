@@ -625,8 +625,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -184.2952, y: 0.5}
-  m_SizeDelta: {x: 82.5028, y: 22.4041}
+  m_AnchoredPosition: {x: -178.8, y: 0.5}
+  m_SizeDelta: {x: 89.9, y: 22.4041}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33317703
 MonoBehaviour:
@@ -641,7 +641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+  m_Color: {r: 0.04705883, g: 0.04705883, b: 0.04705883, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2452,7 +2452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.05660379, g: 0.05660379, b: 0.05660379, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -41306,7 +41306,7 @@ MonoBehaviour:
   key: {fileID: 1589811314}
   elapsed: 0
   opened: 0
-  roomName: a biblioteca secreta
+  roomName: o quarto secreto
   openSound: {fileID: 8300000, guid: d6db1cdcbf893da45a4e699c790261af, type: 3}
   closeSound: {fileID: 8300000, guid: c8f7f1ab51d42a44aade99db588188ab, type: 3}
 --- !u!82 &1685679047
@@ -48041,7 +48041,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Digitar...
+  m_Text: Digite aqui...
 --- !u!222 &1942392351
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -49283,7 +49283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

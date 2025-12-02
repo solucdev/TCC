@@ -36,7 +36,7 @@ public class ShowZoomedImage : MonoBehaviour
             // Verifica se o jogador está olhando para o objeto com a tag "Zoomable"
             if (hit.transform.CompareTag("Zoomable"))
             {
-                texto.SetActive(true); // Ativa o texto
+                texto.SetActive(true);
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {

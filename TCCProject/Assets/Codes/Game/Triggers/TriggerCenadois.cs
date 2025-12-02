@@ -26,7 +26,6 @@ public class TriggerCenadois : MonoBehaviour
     {
         // Salva o FOV original da câmera
         originalFOV = Mathf.Clamp(mainCamera.fieldOfView, 30f, 90f);
-        Debug.Log("[TriggerCenadois] FOV original salvo: " + originalFOV);
     }
 
     private void Update()
@@ -39,7 +38,6 @@ public class TriggerCenadois : MonoBehaviour
             AnimatorStateInfo stateInfo = inimigoAnimator.GetCurrentAnimatorStateInfo(0);
             if (stateInfo.IsName("inimigocena2") && stateInfo.normalizedTime >= 1f && !zoomRestored)
             {
-                Debug.Log("[TriggerCenadois] Animação terminou, iniciando ZoomOut...");
                 EndSequence();
             }
         }
@@ -49,7 +47,6 @@ public class TriggerCenadois : MonoBehaviour
     {
         if (!hasTriggered && other.CompareTag("Player"))
         {
-            Debug.Log("[TriggerCenadois] Player entrou no trigger, iniciando sequência...");
             hasTriggered = true;
             arrest = true;
 
@@ -73,7 +70,6 @@ public class TriggerCenadois : MonoBehaviour
 
     IEnumerator ZoomIn()
     {
-        Debug.Log("[TriggerCenadois] ZoomIn iniciado...");
         float startFOV = mainCamera.fieldOfView;
         float time = 0;
 
@@ -85,12 +81,12 @@ public class TriggerCenadois : MonoBehaviour
         }
 
         mainCamera.fieldOfView = zoomFOV;
-        Debug.Log("[TriggerCenadois] ZoomIn concluído. FOV atual: " + mainCamera.fieldOfView);
+       
     }
 
     IEnumerator ZoomOut()
     {
-        Debug.Log("[TriggerCenadois] ZoomOut iniciado...");
+       
         float startFOV = mainCamera.fieldOfView;
         float time = 0;
 
@@ -102,6 +98,5 @@ public class TriggerCenadois : MonoBehaviour
         }
 
         mainCamera.fieldOfView = originalFOV;
-        Debug.Log("[TriggerCenadois] ZoomOut concluído. FOV restaurado: " + mainCamera.fieldOfView);
     }
 }

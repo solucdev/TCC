@@ -21,7 +21,7 @@ public class PuzzleTrigger : MonoBehaviour
         {
             if (hit.transform == transform && !puzzleCompleted)
             {
-                texto.SetActive(true); // Ativa o texto quando o jogador olha para o objeto
+                texto.SetActive(true);
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -55,12 +55,12 @@ public class PuzzleTrigger : MonoBehaviour
             }
             else
             {
-                texto.SetActive(false); // Desativa se não estiver olhando para o objeto
+                texto.SetActive(false);
             }
         }
         else
         {
-            texto.SetActive(false); // Desativa se não houver hit
+            texto.SetActive(false); 
         }
     }
 
