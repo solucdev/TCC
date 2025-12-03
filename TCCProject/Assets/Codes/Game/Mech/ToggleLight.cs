@@ -11,6 +11,8 @@ public class ToggleLight : MonoBehaviour
     [SerializeField] int range;
     [SerializeField] GameObject txtF;
 
+    bool collected;
+
     private void Start()
     {
         lighte = GetComponent<Light>();
@@ -18,7 +20,7 @@ public class ToggleLight : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && collected)
         {
             lighte.enabled = !lighte.enabled;
             flashlight.SetActive(lighte.enabled);
@@ -35,6 +37,7 @@ public class ToggleLight : MonoBehaviour
                 txtC.SetActive(true);
                 if (Input.GetMouseButtonDown(0))
                 {
+                    collected = true;
                     hit.collider.gameObject.SetActive(false);
                     flashlight.SetActive(true);
                     txtF.SetActive(true);

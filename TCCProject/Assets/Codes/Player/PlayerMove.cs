@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField] Stamina stamina;
     public PlayerCrouchCam crouch;
     public Camera cam;
     public float speed;

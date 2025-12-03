@@ -1,30 +1,45 @@
-using System.Collections;
 using UnityEngine;
 
 public class TimeBarKeys : MonoBehaviour {
-	QTEKeys bunchOK;
+	private QTEKeys bunchOK;
 	public RectTransform bar;
 
-	float timing = 0;
+	const float maxWidth = 72f;
+	const float overflowWidth = 400f;
+
+	float timing = 0f;
 	int lastRound = 0;
 
 	void Start() {
 		bunchOK = GetComponent<QTEKeys>();
-		bar.sizeDelta = new Vector2(72, bar.sizeDelta.y);
+		bar.sizeDelta = new Vector2(maxWidth, bar.sizeDelta.y);
 	}
 
 	void Update() {
-		if (bunchOK.round > 0 && bunchOK.round <= 8) {
+		if (bunchOK == null || !gameObject.activeSelf) return;
 
+		if (bunchOK.round > 0 && bunchOK.round <= 8) {
 			if (bunchOK.round != lastRound) {
-				timing = 0;
-				bar.sizeDelta = new Vector2(72, bar.sizeDelta.y);
+				timing = 0f;
+				bar.sizeDelta = new Vector2(maxWidth, bar.sizeDelta.y);
 				lastRound = bunchOK.round;
 			}
 
 			timing += Time.deltaTime;
-			float t = Mathf.Clamp01(timing / bunchOK.timer);
-			bar.sizeDelta = new Vector2(Mathf.Lerp(72, 0, t), bar.sizeDelta.y);
+			float t = bunchOK.timer > 0f ? Mathf.Clamp01(timing / bunchOK.timer) : 1f;
+			float w = Mathf.Lerp(maxWidth, 0f, t);
+			bar.sizeDelta = new Vector2(w, bar.sizeDelta.y);
+
+			if (t >= 1f - 0.0001f) {
+				bar.sizeDelta = new Vector2(overflowWidth, bar.sizeDelta.y);
+			}
+		} else {
+			ResetRound();
 		}
+	}
+
+	public void ResetRound() {
+		bar.sizeDelta = new Vector2(maxWidth, bar.sizeDelta.y);
+		timing = 0f;
 	}
 }
