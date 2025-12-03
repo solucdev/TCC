@@ -1,101 +1,105 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lucas\\TCC\\TCCProject\\",
+  "WorkspaceRootPath": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\lucas\\tcc\\tccproject\\assets\\codes\\game\\enemies\\navmeshmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\navmeshmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\showzoomedimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\showzoomedimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\qtepure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\qtepure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\timebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\timebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\player\\playercrouchcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\player\\playercrouchcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\scanplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\scanplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\enemievision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\enemievision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\qte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\qte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\lastpuzzle\\qtekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\lastpuzzle\\qtekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\item\\inventory\\collect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\inventory\\collect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\item\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\player\\stun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\player\\stun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\stuneffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\stuneffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\item\\inventory\\itemdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\inventory\\itemdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\player\\playerdeathmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\player\\playerdeathmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\lastpuzzle\\collectbunchofkeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\lastpuzzle\\collectbunchofkeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\lastpuzzle\\exithouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\lastpuzzle\\exithouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\item\\outlineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\outlineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\detailss\\listtodo.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\detailss\\listtodo.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\player\\goosebumpssound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\player\\goosebumpssound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\developer\\cleanrender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\developer\\cleanrender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\vaultpuzzle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\vaultpuzzle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\vaultpuzzle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\mech\\disable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\lucas\\tcc dez12\\tcc\\tccproject\\assets\\codes\\game\\portas\\actscare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\portas\\actscare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\item\\inventory\\collect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\inventory\\collect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|c:\\users\\lucas\\tcc dez12\\tcc\\tccproject\\assets\\codes\\game\\enemies\\navmeshmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\navmeshmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\showzoomedimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\showzoomedimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\qtepure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\qtepure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\timebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\timebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\player\\playercrouchcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\player\\playercrouchcam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\scanplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\scanplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\enemievision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\enemievision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\qte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\qte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\lastpuzzle\\qtekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\lastpuzzle\\qtekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\item\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\inventory\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\player\\stun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\player\\stun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\enemies\\stuneffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\enemies\\stuneffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\item\\inventory\\itemdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\inventory\\itemdrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\player\\playerdeathmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\player\\playerdeathmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\lastpuzzle\\collectbunchofkeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\lastpuzzle\\collectbunchofkeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\puzzles\\lastpuzzle\\exithouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\puzzles\\lastpuzzle\\exithouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\item\\outlineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\item\\outlineitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\detailss\\listtodo.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\detailss\\listtodo.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\player\\goosebumpssound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\player\\goosebumpssound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\developer\\cleanrender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\developer\\cleanrender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\mech\\disable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\mech\\disable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC\\TCCProject\\assets\\codes\\game\\portas\\opendoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\assets\\codes\\game\\portas\\opendoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46DFA822-D9F5-DC49-2C51-B23E867B77B2}|Assembly-CSharp.csproj|solutionrelative:assets\\codes\\game\\portas\\opendoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -106,15 +110,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "ActScare.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\ActScare.cs",
+              "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Portas\\ActScare.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\ActScare.cs",
+              "RelativeToolTip": "Assets\\Codes\\Game\\Portas\\ActScare.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T01:29:56.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "EnemieVision.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\EnemieVision.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\EnemieVision.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Enemies\\EnemieVision.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\EnemieVision.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\EnemieVision.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Enemies\\EnemieVision.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -122,11 +139,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "QTEPure.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\QTEPure.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\QTEPure.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\QTEPure.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\QTEPure.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\QTEPure.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\QTEPure.cs",
               "ViewState": "AQIAAFIAAAAAAAAAAAAAwF0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -134,11 +151,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ScanPlayer.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\ScanPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\ScanPlayer.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Enemies\\ScanPlayer.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\ScanPlayer.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\ScanPlayer.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Enemies\\ScanPlayer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -146,11 +163,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Inventory.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Item\\Inventory\\Inventory.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Inventory.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Inventory.cs",
               "RelativeToolTip": "Assets\\Codes\\Item\\Inventory\\Inventory.cs",
               "ViewState": "AQIAAGcAAAAAAAAAAAAAAHMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -158,11 +175,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Stun.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Player\\Stun.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Player\\Stun.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Player\\Stun.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Player\\Stun.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Player\\Stun.cs",
               "RelativeToolTip": "Assets\\Codes\\Player\\Stun.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAAACYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -170,11 +187,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "PlayerDeathManager.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerDeathManager.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerDeathManager.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Player\\PlayerDeathManager.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerDeathManager.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerDeathManager.cs",
               "RelativeToolTip": "Assets\\Codes\\Player\\PlayerDeathManager.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -182,11 +199,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ItemDrop.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\ItemDrop.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\ItemDrop.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Item\\Inventory\\ItemDrop.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\ItemDrop.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\ItemDrop.cs",
               "RelativeToolTip": "Assets\\Codes\\Item\\Inventory\\ItemDrop.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAswC8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -194,11 +211,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "OutlineItem.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\OutlineItem.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Item\\OutlineItem.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Item\\OutlineItem.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\OutlineItem.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Item\\OutlineItem.cs",
               "RelativeToolTip": "Assets\\Codes\\Item\\OutlineItem.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -206,11 +223,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "CollectBunchOfKeys.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\CollectBunchOfKeys.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\CollectBunchOfKeys.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\CollectBunchOfKeys.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\CollectBunchOfKeys.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\CollectBunchOfKeys.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\CollectBunchOfKeys.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwBMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -218,11 +235,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "QTEKeys.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\QTEKeys.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\QTEKeys.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\QTEKeys.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\QTEKeys.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\QTEKeys.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\QTEKeys.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAQwCIAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -230,11 +247,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ShowZoomedImage.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\ShowZoomedImage.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -242,11 +259,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "TimeBar.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\TimeBar.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\TimeBar.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Enemies\\TimeBar.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\TimeBar.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\TimeBar.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Enemies\\TimeBar.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAYwDMAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -254,11 +271,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "StunEffect.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\StunEffect.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\StunEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Enemies\\StunEffect.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\StunEffect.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\StunEffect.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Enemies\\StunEffect.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAACQAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -266,11 +283,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "GoosebumpsSound.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Player\\GoosebumpsSound.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Player\\GoosebumpsSound.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Player\\GoosebumpsSound.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Player\\GoosebumpsSound.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Player\\GoosebumpsSound.cs",
               "RelativeToolTip": "Assets\\Codes\\Player\\GoosebumpsSound.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -278,11 +295,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "ListToDo.txt",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\DetailsS\\ListToDo.txt",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\DetailsS\\ListToDo.txt",
               "RelativeDocumentMoniker": "Assets\\DetailsS\\ListToDo.txt",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\DetailsS\\ListToDo.txt",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\DetailsS\\ListToDo.txt",
               "RelativeToolTip": "Assets\\DetailsS\\ListToDo.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -290,11 +307,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "CleanRender.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Developer\\CleanRender.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Developer\\CleanRender.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Developer\\CleanRender.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Developer\\CleanRender.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Developer\\CleanRender.cs",
               "RelativeToolTip": "Assets\\Codes\\Developer\\CleanRender.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -302,11 +319,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "PlayerCrouchCam.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerCrouchCam.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerCrouchCam.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Player\\PlayerCrouchCam.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerCrouchCam.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Player\\PlayerCrouchCam.cs",
               "RelativeToolTip": "Assets\\Codes\\Player\\PlayerCrouchCam.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAgwBIAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -314,11 +331,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Disable.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Mech\\Disable.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Mech\\Disable.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Mech\\Disable.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Mech\\Disable.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Mech\\Disable.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Mech\\Disable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -326,23 +343,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 0,
               "Title": "VaultPuzzle.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\VaultPuzzle.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\VaultPuzzle.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\VaultPuzzle.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\VaultPuzzle.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\VaultPuzzle.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\VaultPuzzle.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAmwGcAAAAjAAAAAAAAAA==",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAkwJEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T18:18:02.742Z"
+              "WhenOpened": "2025-10-28T18:18:02.742Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "ExitHouse.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ExitHouse.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ExitHouse.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ExitHouse.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ExitHouse.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ExitHouse.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Puzzles\\LastPuzzle\\ExitHouse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -350,11 +368,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "QTE.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\QTE.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\QTE.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Enemies\\QTE.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\QTE.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\QTE.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Enemies\\QTE.cs",
               "ViewState": "AQIAADYAAAAAAAAAAAAmwEEAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -362,11 +380,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "NavMeshMove.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\NavMeshMove.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\NavMeshMove.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Enemies\\NavMeshMove.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\NavMeshMove.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Enemies\\NavMeshMove.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Enemies\\NavMeshMove.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAgwCMAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -375,11 +393,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "OpenDoor.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
               "RelativeToolTip": "Assets\\Codes\\Game\\Portas\\OpenDoor.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAowDEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -387,15 +405,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Collect.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Collect.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Collect.cs",
               "RelativeDocumentMoniker": "Assets\\Codes\\Item\\Inventory\\Collect.cs",
-              "ToolTip": "C:\\Users\\Lucas\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Collect.cs",
+              "ToolTip": "C:\\Users\\Lucas\\TCC dez12\\TCC\\TCCProject\\Assets\\Codes\\Item\\Inventory\\Collect.cs",
               "RelativeToolTip": "Assets\\Codes\\Item\\Inventory\\Collect.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAgwEUAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T17:11:21.02Z"
+              "WhenOpened": "2025-10-28T17:11:21.02Z",
+              "EditorCaption": ""
             }
           ]
         }

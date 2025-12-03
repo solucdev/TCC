@@ -10,9 +10,9 @@ public class ActScare : MonoBehaviour {
 	[SerializeField] int orderScare;
 	[SerializeField] float cooldown;
 
-	int currentTriggerCount = 0;
-	bool onCooldown = false;
-
+	public int currentTriggerCount = 0;
+	public bool onCooldown = false;
+	bool puxou;
 
 
 	private void OnTriggerStay(Collider other) {
@@ -20,7 +20,6 @@ public class ActScare : MonoBehaviour {
 			if (other.CompareTag("Player") && door.opened && door.elapsed > 0 && door.elapsed < 1) {
 				Jumpscare();
 				StartCoroutine(Disappear());
-				CountTrigger();
 				StartCoroutine(CooldownRoutine());
 			}
 			if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && !door.opened) {
@@ -28,8 +27,9 @@ public class ActScare : MonoBehaviour {
 				StartCoroutine(Sound());
 			}
 		}
-		if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && !door.opened) {
+		if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E) && !door.opened && !puxou) {
 			CountTrigger();
+			puxou = true;
 		}
 	}
 
@@ -39,6 +39,12 @@ public class ActScare : MonoBehaviour {
 
 	void CountTrigger() {
 		currentTriggerCount++;
+		StartCoroutine(Security());
+	}
+
+	IEnumerator Security() {
+		yield return new WaitForSeconds(0.2f);
+		puxou = false;
 	}
 
 	IEnumerator Disappear() {

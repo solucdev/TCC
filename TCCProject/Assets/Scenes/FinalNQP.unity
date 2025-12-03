@@ -375,6 +375,7 @@ MonoBehaviour:
   target: {fileID: 98520375}
   keyObject: {fileID: 1589811314}
   puzzleCollider: {fileID: 13123676}
+  amuletFinish: {fileID: 919132149167521033}
 --- !u!65 &13123676
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5204,6 +5205,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233039721}
   m_CullTransparentMesh: 1
+--- !u!1 &234074860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234074861}
+  m_Layer: 0
+  m_Name: spawn key
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &234074861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234074860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.343, y: 0.183, z: 1.095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450653695223730}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &235928844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2552277589381591713, guid: 91744d18b6b623c4a9c2b130b05f6282, type: 3}
@@ -16316,6 +16348,8 @@ MonoBehaviour:
   door: {fileID: 978863328}
   orderScare: 3
   cooldown: 25
+  currentTriggerCount: 0
+  onCooldown: 0
 --- !u!1 &642221256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6697803551545264273, guid: 16987acd668cccf49802447c835b7a86, type: 3}
@@ -16960,6 +16994,37 @@ RectTransform:
   m_AnchoredPosition: {x: -30, y: -150}
   m_SizeDelta: {x: 45, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &682399919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 682399920}
+  m_Layer: 0
+  m_Name: target slot vault
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &682399920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682399919}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.004495064, y: 0.45, z: 0.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450653695223730}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &683846594
 GameObject:
   m_ObjectHideFlags: 0
@@ -17404,7 +17469,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ec186126dfc2ea34885a89e4731c5284, type: 3}
   - {fileID: 21300000, guid: b039cdec09d67b646bba8e76475912b9, type: 3}
   buttonPlace: {fileID: 519450313}
-  errorflash: {fileID: 526527741}
+  errorflash: {fileID: 519450313}
   timeBar: {fileID: 2074267321}
   timer: 0
   elapsed: 0
@@ -18822,6 +18887,8 @@ MonoBehaviour:
   door: {fileID: 1684658483}
   orderScare: 2
   cooldown: 110
+  currentTriggerCount: 0
+  onCooldown: 0
 --- !u!65 &765364682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31422,6 +31489,8 @@ MonoBehaviour:
   door: {fileID: 940188303}
   orderScare: 1
   cooldown: 240
+  currentTriggerCount: 0
+  onCooldown: 0
 --- !u!65 &1286567073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38794,6 +38863,7 @@ GameObject:
   - component: {fileID: 1589811316}
   - component: {fileID: 1589811319}
   - component: {fileID: 1589811318}
+  - component: {fileID: 1589811320}
   m_Layer: 7
   m_Name: chave_bibli
   m_TagString: Untagged
@@ -38882,6 +38952,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRadius: 4
+--- !u!114 &1589811320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589811314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd3a77ee618fb74baa0a83fcfbf190e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.08
+  frequency: 1.2
+  rotationSpeed: 70
 --- !u!1 &1592916946 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7235015103121818086, guid: 503b2a1fa3b2b054abc075fba2ff74e3, type: 3}
@@ -55283,6 +55368,8 @@ Transform:
   - {fileID: 1102812198}
   - {fileID: 5651683567684536075}
   - {fileID: 1186709499}
+  - {fileID: 234074861}
+  - {fileID: 682399920}
   m_Father: {fileID: 3185384848230829291}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -56892,6 +56979,7 @@ GameObject:
   - component: {fileID: 543450653695223730}
   - component: {fileID: 13123676}
   - component: {fileID: 13123675}
+  - component: {fileID: 919132149167521033}
   m_Layer: 0
   m_Name: cofreaa
   m_TagString: Untagged
@@ -56899,6 +56987,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132149167521033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149167521032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a26843c036837f4fb297f20c7264d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amulet: {fileID: 5651683567684536075}
+  targetSlot: {fileID: 682399920}
+  keySpawn: {fileID: 234074861}
+  keyObject: {fileID: 1589811314}
+  cam: {fileID: 498551791}
+  moveSpeed: 0.25
+  rotateSpeed: 20
 --- !u!1 &919132149228362821
 GameObject:
   m_ObjectHideFlags: 0

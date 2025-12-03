@@ -58,16 +58,16 @@ public class Collect : MonoBehaviour {
 								Objetivos.Instance.SetObjective($"Você coletou: {script.itemname}");
 								break;*/
 							case "Chave da Biblioteca":
-								Objetivos.Instance.SetObjective("Abra a biblioteca");
+								Objetivos.Instance.SetObjective("Destranque o quarto secreto");
 								break;
 							case "Chave da Seita":
 								Objetivos.Instance.SetObjective("Abra o acervo da seita");
 								break;
 							case "chave do escritório":
-								Objetivos.Instance.SetObjective("Abra o escritório");
+								Objetivos.Instance.SetObjective("Verifique o escritório");
 								break;
 							case "Molho de Chaves":
-								Objetivos.Instance.SetObjective("Abra a porta principal e fuja da casa");
+								Objetivos.Instance.SetObjective("Vá até a porta da frente para fugir");
 								Keys.GetComponent<QTEKeys>().enabled = false;
                                 Keys.GetComponent<TimeBarKeys>().enabled = false;
                                 break;
